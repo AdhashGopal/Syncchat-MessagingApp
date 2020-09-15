@@ -33,7 +33,7 @@ android {
 
     defaultConfig {
         resConfigs "en"
-        applicationId "com.chatapp.android"
+        applicationId "com.chatapp.synchat"
         minSdkVersion 23
         targetSdkVersion 27
 //        minSdkVersion 15

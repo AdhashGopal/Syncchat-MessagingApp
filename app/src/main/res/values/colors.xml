@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#372577</color>
-    <color name="colorPrimaryDark">#372577</color>
-    <color name="colorAccent">#372577</color>
+    <color name="colorPrimary">#b52838</color>
+    <color name="colorPrimaryDark">#b52838</color>
+    <color name="colorAccent">#b52838</color>
     <color name="chatscreen">#f0f0f0</color>
     <color name="loader_screen_text">#2E394B</color>
     <color name="unread_txt_color">#B3B3B3</color>

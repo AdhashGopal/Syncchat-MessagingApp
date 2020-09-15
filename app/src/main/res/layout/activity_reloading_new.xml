@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/achat_splash_bg">
+    android:background="@drawable/splashscreen_bg">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:id="@+id/img_logo_one"
-        android:src="@drawable/achat_logo"
+        android:src="@drawable/synchat_logo"
         app:layout_constraintVertical_bias="0.5"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

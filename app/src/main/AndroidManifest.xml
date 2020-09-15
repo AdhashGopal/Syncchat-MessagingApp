@@ -83,7 +83,7 @@
         android:name="com.chatapp.android.core.CoreController"
         android:allowBackup="false"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_app_launcher"
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
