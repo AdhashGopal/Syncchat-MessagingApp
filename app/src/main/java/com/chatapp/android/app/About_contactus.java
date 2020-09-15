@@ -33,9 +33,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/**
- * created by  Adhash Team on 12/22/2016.
- */
 public class About_contactus extends CoreActivity {
     ImageView backarrow_About_contactus, imagescreen1, imagescreen2, imagescreen3;
     protected static final int CAMERA_REQUEST = 0;
