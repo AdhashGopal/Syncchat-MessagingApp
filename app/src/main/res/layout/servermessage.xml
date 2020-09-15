@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/tvServerMsgLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:background="@color/secret_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/dayLblLayout"
+        layout="@layout/day_label_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvServerMsgLbl"
+        />
+
+</RelativeLayout>

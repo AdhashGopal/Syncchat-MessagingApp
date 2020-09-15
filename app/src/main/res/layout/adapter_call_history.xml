@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/ivProfilePic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/personprofile" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@id/ivProfilePic"
+        android:layout_toRightOf="@id/ivProfilePic"
+        android:orientation="vertical">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/call_layout"
+            android:layout_toStartOf="@+id/call_layout"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="UserName"
+            android:textStyle="bold"
+            android:textColor="@color/chat_list_header"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivCallType"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/tvName"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_in_call_missed" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvTS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/ivCallType"
+            android:layout_toLeftOf="@+id/call_layout"
+            android:layout_toRightOf="@id/ivCallType"
+            android:layout_toStartOf="@+id/call_layout"
+            android:singleLine="true"
+            android:text="message"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/call_layout"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/ibCall"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ivProfilePic"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@id/ivProfilePic"
+        android:layout_toRightOf="@id/ivProfilePic"
+        android:background="@color/divider" />
+</RelativeLayout>

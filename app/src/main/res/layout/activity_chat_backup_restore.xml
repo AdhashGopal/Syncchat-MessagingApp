@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="15dp"
+    android:id="@+id/svParent"
+    android:visibility="gone"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_restore_msg"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginTop="10dp"
+        />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvGmailId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gmail_id"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="25dp"
+            />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvBackupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/backup_time"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            android:id="@+id/btnRestore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restore"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="25dp"
+        />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            android:id="@+id/btnSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Skip"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@color/ripple_dark_grey"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

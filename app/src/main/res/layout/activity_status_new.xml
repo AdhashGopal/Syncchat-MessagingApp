@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addatatusmainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/status_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/backnavigate"
+            android:src="@mipmap/arrow_left"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:layout_toRightOf="@+id/backnavigate"
+            android:id="@+id/text_action_title"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="Add new status"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_alignParentLeft="true"
+            /></RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_header"
+        android:background="#fff">
+
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/editText_addStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="17dp"
+        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+        android:layout_toLeftOf="@+id/statusCharCount"
+        android:inputType="textCapSentences"
+        android:maxLength="139"
+        android:singleLine="true"
+        android:hint="Type a status"
+        android:imeOptions="actionDone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancleAddNewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/appthemecolour"
+            android:text="@string/cancle"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"/>
+
+
+        <Button
+            android:id="@+id/okAddNewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_weight="1"
+            android:background="@color/appthemecolour"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="139"
+        android:layout_marginTop="20dp"
+        android:id="@+id/statusCharCount"
+        android:padding="5dp"
+        android:layout_toLeftOf="@+id/happyFace"/>
+
+    <ImageView
+        android:id="@+id/happyFace"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/editText_addStatus"
+        android:padding="5dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/happy_face"
+        android:src="@drawable/smile" />
+
+    <TextView
+        android:id="@+id/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/happyFace"
+        android:layout_alignRight="@+id/editText_addStatus"
+        android:layout_marginRight="10dp"
+        android:text="139"
+        android:textColor="@color/maxTextSize"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

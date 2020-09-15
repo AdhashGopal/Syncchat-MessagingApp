@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/selection_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_30"
+    android:paddingTop="@dimen/margin_4"
+    android:paddingBottom="@dimen/margin_4"
+    tools:ignore="ContentDescription"
+
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        app:layout_constraintLeft_toLeftOf="@+id/space"
+        app:layout_constraintRight_toRightOf="@+id/tv_time" />
+
+
+    <View
+        android:id="@+id/space"
+        android:layout_width="@dimen/margin_10"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_deleted_icon" />
+
+
+    <ImageView
+        android:id="@+id/iv_deleted_icon"
+        android:layout_width="@dimen/margin_15"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginEnd="@dimen/margin_13"
+        android:layout_marginRight="@dimen/margin_5"
+        android:src="@drawable/icon_deleted"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvCallLbl"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCallLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:text="@string/you_deleted_text"
+        android:textColor="@color/date_lbl_textcolor"
+        android:textSize="@dimen/txt_size_small5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_2"
+        android:paddingLeft="@dimen/margin_2"
+        android:paddingEnd="@dimen/margin_6"
+        android:paddingRight="@dimen/margin_6"
+        android:text="@string/_5_00pm"
+        android:textColor="@color/date_lbl_textcolor"
+        android:textSize="@dimen/txt_size_small2"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCallLbl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvCallLbl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

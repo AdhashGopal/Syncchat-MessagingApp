@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactlist_item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/userPhoto_contacts"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/chat_attachment_profile_default_image_frame" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/mobileText"
+        android:layout_toEndOf="@+id/userPhoto_contacts"
+        android:layout_toRightOf="@+id/userPhoto_contacts"
+        android:paddingLeft="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/userName_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#3f3f3f"
+            android:textSize="16sp" />
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/status_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName_contacts"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#808080"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/contact_status_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#757575"
+        android:textSize="12sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="3dp"
+        android:background="#cccccc" />
+
+    <ImageView
+        android:id="@+id/img_fav"
+        android:layout_width="@dimen/margin_20"
+        android:layout_height="@dimen/margin_20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_20"
+        android:src="@drawable/fav_focus"
+        android:visibility="gone" />
+</RelativeLayout>

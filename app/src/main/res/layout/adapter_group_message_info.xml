@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/ivUserDp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+        <LinearLayout
+            android:id="@+id/llName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/ivUserDp"
+            android:layout_toRightOf="@id/ivUserDp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvMsisdn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="40"
+                android:gravity="right|end"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlDeliver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llName"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/ivUserDp"
+            android:layout_toRightOf="@id/ivUserDp"
+            android:paddingLeft="5dp">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvDeliverLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Delivered"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvDeliverTS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/tvDeliverLbl"
+                android:layout_toRightOf="@id/tvDeliverLbl"
+                android:gravity="right|end"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlDeliver"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/ivUserDp"
+            android:layout_toRightOf="@id/ivUserDp"
+            android:paddingLeft="5dp">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvReadLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Read"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvReadTS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/tvReadLbl"
+                android:layout_toRightOf="@id/tvReadLbl"
+                android:gravity="right|end"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rlRead"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="10dp"
+            android:background="#E4E4E4" />
+
+    </RelativeLayout>
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/tvReadPending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_3"
+    tools:ignore="ContentDescription">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSecretLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/secret_title"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_8"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_small4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:background="@drawable/info_msg_border"
+        android:paddingLeft="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_3"
+        android:paddingRight="@dimen/margin_8"
+        android:paddingBottom="@dimen/margin_4"
+        android:textAllCaps="true"
+        android:textColor="@color/date_lbl_textcolor"
+        android:textSize="@dimen/txt_size_small4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecretLbl" />
+
+    <View
+        android:id="@+id/selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relative_layout_message"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/forward_image"
+        android:layout_width="@dimen/margin_45"
+        android:layout_height="@dimen/margin_45"
+        android:layout_marginStart="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:padding="@dimen/margin_7"
+        android:tint="@color/colorPrimary"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_15"
+        android:layout_height="@dimen/margin_9"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:src="@drawable/sendcornerindicator"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/right_space"
+        android:layout_width="@dimen/margin_12"
+        android:layout_height="@dimen/margin_9"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+    <View
+        android:id="@+id/relative_layout_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_message"
+        app:layout_constraintBottom_toBottomOf="@+id/rlTsCaption"
+        app:layout_constraintRight_toLeftOf="@+id/right_space"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl"
+        app:layout_constraintWidth_default="wrap"
+        app:layout_constraintWidth_max="@dimen/chat_max_width">
+
+    </View>
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_image"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_3"
+        app:layout_constraintLeft_toLeftOf="@+id/relative_layout_message"
+        app:layout_constraintRight_toRightOf="@+id/relative_layout_message"
+        app:layout_constraintTop_toTopOf="@+id/relative_layout_message">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgshow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="@dimen/margin_200"
+            android:minHeight="@dimen/margin_200"
+            android:scaleType="centerCrop"
+            android:transitionName="image"
+            tools:ignore="UnusedAttribute" />
+
+        <View
+            android:id="@+id/rlDownload"
+            android:layout_width="@dimen/margin_60"
+            android:layout_height="@dimen/margin_60"
+            android:layout_centerInParent="true"
+            android:alpha="0.6"
+            android:padding="@dimen/margin_45"
+            android:visibility="gone" />
+
+        <com.github.lzyzsd.circleprogress.DonutProgress
+            android:id="@+id/pbUpload"
+            android:layout_width="@dimen/margin_45"
+            android:layout_height="@dimen/margin_45"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:donut_finished_stroke_width="8dp"
+            app:donut_text_color="@color/white"
+            app:donut_text_size="10sp"
+            app:donut_unfinished_stroke_width="@dimen/margin_3" />
+
+        <RelativeLayout
+            android:id="@+id/ts_abovecaption_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:visibility="visible"
+            tools:ignore="RelativeOverlap">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ts_abovecaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:alpha="0.5"
+                android:background="@color/black"
+                android:paddingLeft="@dimen/margin_6"
+                android:paddingRight="@dimen/margin_6"
+                android:shadowColor="@color/white"
+                android:shadowRadius="20"
+                android:text="@string/_5_00pm"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_small3"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/starredindicator_above"
+                android:layout_width="@dimen/margin_10"
+                android:layout_height="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_2"
+                android:layout_toStartOf="@+id/ts_abovecaption"
+                android:layout_toLeftOf="@+id/ts_abovecaption"
+                android:background="@drawable/ic_starred"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/pause_resume_icon"
+            android:layout_width="@dimen/margin_35"
+            android:layout_height="@dimen/margin_35"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_5"
+            android:alpha="0.7"
+            android:padding="@dimen/margin_3"
+            android:src="@drawable/ic_pause"
+            android:tint="@color/white"
+            android:visibility="gone"
+            app:civ_border_color="@color/white"
+            app:civ_circle_background_color="@color/black"
+            app:civ_fill_color="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rlMsgStatus_above"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginBottom="1dp"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/tick_above"
+                android:layout_width="@dimen/margin_13"
+                android:layout_height="@dimen/margin_13"
+                android:src="@mipmap/ic_single_tick"
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clock_above"
+                android:layout_width="@dimen/margin_7"
+                android:layout_height="@dimen/margin_7"
+                android:layout_marginEnd="@dimen/margin_3"
+                android:layout_marginRight="@dimen/margin_3"
+                android:layout_marginBottom="@dimen/margin_2"
+                android:background="@drawable/clock"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTsCaption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_3"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="@+id/relative_layout_message"
+        app:layout_constraintRight_toRightOf="@+id/relative_layout_message"
+        app:layout_constraintTop_toBottomOf="@+id/relativelayout_image">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/captiontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:autoLink="all"
+            android:textColor="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/captiontext"
+            android:layout_marginEnd="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_2"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/ts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:shadowColor="@color/white"
+                android:shadowRadius="20"
+                android:text="@string/_5_00pm"
+                android:textAllCaps="true"
+                android:textColor="@color/ts_color"
+                android:textSize="@dimen/txt_size_small3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/starredindicator_below"
+                android:layout_width="@dimen/margin_10"
+                android:layout_height="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_2"
+                android:layout_toStartOf="@+id/ts"
+                android:layout_toLeftOf="@+id/ts"
+                android:background="@drawable/ic_starred"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlMsgStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/captiontext"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:paddingBottom="@dimen/margin_3"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivTick"
+                android:layout_width="@dimen/margin_13"
+                android:layout_height="@dimen/margin_13"
+                android:visibility="gone" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/clock"
+                android:layout_width="@dimen/margin_7"
+                android:layout_height="@dimen/margin_7"
+                android:layout_marginTop="@dimen/margin_2"
+                android:layout_marginEnd="@dimen/margin_3"
+                android:layout_marginRight="@dimen/margin_3"
+                android:background="@drawable/clock"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

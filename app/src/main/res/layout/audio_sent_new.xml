@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audio_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_3"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSecretLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/secret_title"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_8"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_small4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDateLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:background="@drawable/info_msg_border"
+        android:paddingLeft="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_3"
+        android:paddingRight="@dimen/margin_8"
+        android:paddingBottom="@dimen/margin_4"
+        android:textAllCaps="true"
+        android:textColor="@color/date_lbl_textcolor"
+        android:textSize="@dimen/txt_size_small4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecretLbl" />
+
+
+    <View
+        android:id="@+id/selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_space"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_15"
+        android:layout_height="@dimen/margin_9"
+        android:src="@drawable/sendcornerindicator"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <Space
+        android:id="@+id/right_space"
+        android:layout_width="@dimen/margin_10"
+        android:layout_height="@dimen/margin_9"
+        android:src="@drawable/sendcornerindicator"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <View
+        android:id="@+id/background_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_message"
+        app:layout_constraintBottom_toBottomOf="@+id/bottom_space"
+        app:layout_constraintLeft_toLeftOf="@+id/left_space"
+        app:layout_constraintRight_toLeftOf="@+id/right_space"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl"
+        app:layout_constraintWidth_default="wrap" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lblMsgFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/sbDuration"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:progressDrawable="@drawable/seekbar_progress_re"
+        android:thumb="@drawable/blueseekbarthum"
+        app:layout_constraintRight_toRightOf="@+id/background_view"
+        app:layout_constraintTop_toTopOf="@+id/background_view" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_play_icon"
+        android:layout_width="@dimen/margin_25"
+        android:layout_height="@dimen/margin_25"
+        android:layout_marginTop="@dimen/margin_12"
+        android:background="@drawable/ic_play"
+        android:tag="0"
+        app:layout_constraintRight_toLeftOf="@+id/sbDuration"
+        app:layout_constraintTop_toTopOf="@+id/background_view" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/recodingduration"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="end"
+        android:text="@string/sample_duration"
+        android:textColor="@color/ts_color"
+        android:textSize="@dimen/txt_size_small2"
+        app:layout_constraintLeft_toLeftOf="@+id/sbDuration"
+        app:layout_constraintTop_toBottomOf="@+id/sbDuration" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/single_tick_green"
+        android:layout_width="@dimen/margin_12"
+        android:layout_height="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_5"
+        android:src="@mipmap/ic_single_tick"
+
+        app:layout_constraintRight_toRightOf="@+id/sbDuration"
+        app:layout_constraintTop_toBottomOf="@+id/sbDuration" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ts"
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center|top"
+        android:text="@string/_5_00pm"
+        android:textAllCaps="true"
+        android:textColor="@color/ts_color"
+        android:textSize="@dimen/txt_size_small3"
+        app:layout_constraintRight_toLeftOf="@+id/single_tick_green"
+        app:layout_constraintTop_toBottomOf="@+id/sbDuration" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/starredindicator"
+        android:layout_width="@dimen/margin_10"
+        android:layout_height="@dimen/margin_10"
+        android:background="@drawable/starred_white"
+        android:tint="@color/colorPrimary"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/ts"
+        app:layout_constraintRight_toLeftOf="@+id/ts"
+        app:layout_constraintTop_toTopOf="@+id/ts" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/clock"
+        android:layout_width="@dimen/margin_7"
+        android:layout_height="@dimen/margin_7"
+        android:layout_marginTop="14dp"
+
+
+        android:background="@drawable/clock"
+        android:visibility="visible"
+
+        app:layout_constraintRight_toRightOf="@+id/sbDuration"
+        app:layout_constraintTop_toBottomOf="@+id/sbDuration" />
+
+
+    <com.github.lzyzsd.circleprogress.DonutProgress
+        android:id="@+id/pbUpload"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="@dimen/margin_40"
+        android:layout_gravity="center"
+        app:donut_finished_stroke_width="@dimen/margin_5"
+        app:donut_text_color="@color/white"
+        app:donut_text_size="10sp"
+        app:donut_unfinished_stroke_width="@dimen/margin_3"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_play_icon"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_play_icon"
+        app:layout_constraintRight_toRightOf="@+id/iv_play_icon"
+        app:layout_constraintTop_toTopOf="@+id/iv_play_icon" />
+
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/record_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/margin_2"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:padding="@dimen/margin_4"
+        android:src="@drawable/personprofile"
+        android:visibility="gone"
+        app:layout_constraintRight_toLeftOf="@+id/iv_play_icon"
+        app:layout_constraintTop_toTopOf="@+id/background_view" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/record_icon"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="@dimen/margin_30"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:layout_marginRight="@dimen/margin_5"
+        android:src="@drawable/record_usericon_blue"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="@+id/record_image"
+        app:layout_constraintTop_toTopOf="@+id/record_image" />
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/audiotrack_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="headset,duration,audio_track_bg" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/audio_track_bg"
+        android:layout_width="@dimen/margin_40"
+        android:layout_height="@dimen/margin_40"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_marginEnd="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:padding="@dimen/margin_3"
+        android:src="@drawable/receviebutton"
+        app:layout_constraintRight_toLeftOf="@+id/iv_play_icon"
+        app:layout_constraintTop_toTopOf="@+id/background_view" />
+
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/left_space"
+        android:layout_width="@dimen/margin_10"
+        android:layout_height="1dp"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="record_image,audio_track_bg,pbUpload" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/headset"
+        android:layout_width="@dimen/margin_20"
+        android:layout_height="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_5"
+        android:src="@drawable/headsetsent"
+        app:layout_constraintLeft_toLeftOf="@+id/audio_track_bg"
+        app:layout_constraintRight_toRightOf="@+id/audio_track_bg"
+        app:layout_constraintTop_toTopOf="@+id/audio_track_bg" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/duration"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_horizontal"
+        android:text="@string/_5_00pm"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/txt_size_small1"
+        app:layout_constraintLeft_toLeftOf="@+id/audio_track_bg"
+        app:layout_constraintRight_toRightOf="@+id/audio_track_bg"
+        app:layout_constraintTop_toBottomOf="@+id/headset" />
+
+
+    <androidx.legacy.widget.Space
+        android:id="@+id/bottom_space"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_5"
+        app:layout_constraintTop_toBottomOf="@+id/ts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

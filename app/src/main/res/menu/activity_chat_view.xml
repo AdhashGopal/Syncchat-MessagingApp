@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- <item
+         android:id="@+id/menuCall"
+         android:title="Call"
+         />-->
+
+    <item
+        android:id="@+id/menuSearch"
+        android:title="Search"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menuSecretChat"
+        android:title="Secret chat"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menuMute"
+        android:title="Mute"
+        />
+
+    <item
+        android:id="@+id/menuWallpaper"
+        android:title="Wallpaper"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menuMore"
+        android:title="More"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/menuBlock"
+        android:title="Block"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menuClearChat"
+        android:title="Clear Chat" />
+
+    <item
+        android:id="@+id/menuEmailChat"
+        android:title="Email Chat"
+        android:visible="false" />
+    <item
+        android:id="@+id/menuAddShortcut"
+        android:title="Add Shortcut"
+        android:visible="false" />
+
+
+    <item
+        android:id="@+id/menuChatLock"
+        android:title="Lock Chat"
+        android:visible="false" />
+
+</menu>

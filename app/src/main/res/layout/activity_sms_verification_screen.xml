@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main_button"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_screen">
+
+
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/bg_screen">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/back_button_actionbar" />
+
+                <RelativeLayout
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/clock_verify">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="15dp"
+                        android:text="05"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="17sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/mobile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="40dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/bg_shadow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/countryDropDownMain"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:background="@drawable/main_bg_shadow"
+
+                >
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:padding="10dp"
+                    android:text="@string/Verification_Code"
+                    android:textAlignment="center"
+                    android:textColor="#242424"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="25dp"
+            android:background="@drawable/bg_blueshadow"
+            >
+
+            <RelativeLayout
+
+                android:id="@+id/numberproviderlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/v1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Please Enter Verification code sent"
+                    android:textColor="@color/lblFromName"
+                    android:textSize="13sp" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subtitle"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="to 196875555"
+                    android:textColor="@color/lblFromName"
+                    android:textSize="13sp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView1"
+                    android:indeterminate="false"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="gone" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:hint="@string/sms_code_hint"
+                    android:inputType="number"
+                    android:textColorHint="@color/scrennname_txtcolor"
+                    android:padding="5dp"
+                    android:textColor="@color/unselect_color"
+                    android:textSize="15sp" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/textresend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:text="@string/Resend"
+                    android:textColor="@color/lblFromName"
+                    android:textSize="13sp" />
+
+
+                <ImageView
+                    android:id="@+id/okButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textresend"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounf_black_shadow"
+                    android:padding="15dp"
+                    android:src="@drawable/chatapp_send" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

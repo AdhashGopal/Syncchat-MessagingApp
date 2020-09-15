@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <!-- Camera Preview -->
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- /End Camera Preview -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvCallLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_margin="10dp"
+                android:text="NowLetsChat Video Call"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="45dp">
+
+        <RelativeLayout
+            android:id="@+id/disconnect_layout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/buttons_call_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/lets_chat_circle">
+
+            <ImageButton
+                android:id="@+id/button_call_disconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_call_end_black_24dp"
+                android:contentDescription="@string/disconnect_call" />
+        </RelativeLayout>
+
+    </FrameLayout>
+    <!-- Overlay -->
+    <LinearLayout
+        android:id="@+id/buttons_call_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/capture_format_slider_call"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/button_call_disconnect"-->
+        <!--android:background="@drawable/disconnect"-->
+        <!--android:contentDescription="@string/disconnect_call"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_width="48dp"-->
+        <!--android:layout_height="48dp"/>-->
+
+        <ImageView
+            android:id="@+id/ibToggleSpeaker_off"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/ic_specker_off"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ibToggleSpeaker"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:src="@drawable/ic_specker_on" />
+
+        <ImageView
+            android:id="@+id/button_call_switch_camera"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/switch_camera"
+            android:src="@drawable/rotate_camera" />
+
+        <ImageView
+            android:id="@+id/button_call_scaling_mode"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_action_return_from_full_screen"
+            android:contentDescription="@string/disconnect_call"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/button_call_toggle_mic"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/toggle_mic"
+            android:src="@drawable/lets_mic_icon" />
+    </LinearLayout>
+
+</RelativeLayout>

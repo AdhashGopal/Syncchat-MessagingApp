@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/editGroupName"
+        android:icon="@drawable/ic_name_edit"
+        android:title="Edit Group"
+        app:showAsAction="always"
+    />
+    <item
+        android:id="@+id/changeGroupDp"
+        android:icon="@drawable/ic_white_camera"
+        android:title="Change Icon"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/addNewMember"
+        android:icon="@drawable/ic_add_user"
+        android:title="Add to group"
+        app:showAsAction="never"
+    />
+</menu>

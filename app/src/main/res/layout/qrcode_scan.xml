@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/texthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:padding="7dp"
+        android:text="@string/scan_code"
+        android:textColor="#242424"
+        android:textSize="16sp" />
+
+
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/texthead" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/texthead">
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/cameraqr_bg"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+</RelativeLayout>
+

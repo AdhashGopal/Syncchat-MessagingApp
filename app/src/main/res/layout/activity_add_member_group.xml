@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/tabFourColor"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="#ffffff"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        >
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arrow_left"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+        />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AddParticipant"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/tvNoContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_contacts"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+</LinearLayout>

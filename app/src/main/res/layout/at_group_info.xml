@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/ivUserDp"
+            android:layout_width="42dp"
+            android:layout_height="42dp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_margin="1dp"
+            android:gravity="center|left"
+            android:layout_toLeftOf="@+id/tvAdmin"
+            android:layout_toRightOf="@id/ivUserDp"
+            android:paddingLeft="10dp"
+            android:text="asfasdfasdf"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/admin_text_border"
+            android:padding="3dp"
+            android:text="@string/Group_Admin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_margin="1dp"
+            android:visibility="gone"
+            android:layout_toEndOf="@id/ivUserDp"
+            android:layout_toRightOf="@id/ivUserDp"
+            android:paddingLeft="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@+id/ivUserDp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/ivUserDp"
+            android:background="@color/common_action_bar_splitter"
+            android:padding="3dp"
+            android:paddingTop="4dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

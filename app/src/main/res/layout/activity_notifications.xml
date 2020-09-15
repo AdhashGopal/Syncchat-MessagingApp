@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp"
+        >
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_left"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/notification_actionbar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/Notifications"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/Relative_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <RelativeLayout
+                android:id="@+id/notification_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff">
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/r12_txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Conversation tones"
+                    android:textColor="#242424"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/r12_txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/r12_txt1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/notification_tone"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/AppTheme"
+                    android:layout_marginRight="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/message_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notification_rl2"
+                android:background="#ffffff">
+
+                <RelativeLayout
+                    android:id="@+id/Relative_tone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/rl2_txt31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/Message_notification"
+                        android:textColor="#1EC4FA"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/notify_tone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Relative_tone">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/r12_txt4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/Notification_tone"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/r12_txt5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r12_txt4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Default_ringtone"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/notify_tone"
+                    android:layout_marginTop="10dp"
+                    android:background="#E4E4E4" />
+
+                <RelativeLayout
+                    android:id="@+id/notification_rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seperator"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffffff">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/r14_txt1_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Vibrate"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/r14_txt2_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r14_txt1_notification"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Off"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/notification_rl4"
+                    android:layout_marginTop="10dp"
+                    android:background="#E4E4E4" />
+
+                <RelativeLayout
+                    android:id="@+id/notification_rl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seperator2"
+                    android:visibility="gone"
+                    android:background="#ffffff">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/r15_txt1_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Popup_notification"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/r15_txt2_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r15_txt1_notification"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="No popup"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/notification_rl5"
+                    android:layout_marginTop="10dp"
+                    android:background="#E4E4E4"
+                    android:visibility="gone"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/notification_rl6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seperator3"
+                    android:background="#ffffff">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/r16_txt1_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Notification_background"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/r16_txt2_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r16_txt1_notification"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Red"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_notification"
+                android:background="#ffffff">
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/text_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Group_notification"
+                    android:textColor="#1EC4FA"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/notify_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_group">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/r12_txt4group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/Notification_tone"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/r12_txt5group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/r12_txt4group"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Default_ringtone"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperator4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/notify_group"
+                    android:layout_marginTop="10dp"
+                    android:background="#E4E4E4" />
+
+                <RelativeLayout
+
+                    android:id="@+id/notification_vibrate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seperator4"
+                    android:layout_marginTop="5dp">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/vibrate1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Vibrate"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/vibrate2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/vibrate1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Off"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperator5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/notification_vibrate"
+                    android:layout_marginTop="10dp"
+                    android:background="#E4E4E4"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/notification_gpopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seperator5"
+                    android:visibility="gone"
+                    android:background="#ffffff">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/popup_notify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Popup_notification"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/text_popup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/popup_notify"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/No_popup"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seperator6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/notification_gpopup"
+                    android:layout_marginTop="10dp"
+                    android:background="#E4E4E4" />
+
+                <RelativeLayout
+                    android:id="@+id/grouplight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seperator6"
+                    android:background="#ffffff">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/group_light"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Notification_background"
+                        android:textColor="#242424"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/group_light2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/group_light"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/Red"
+                        android:textColor="#808080"
+                        android:textSize="13sp" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

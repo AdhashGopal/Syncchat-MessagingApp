@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/chatscreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/media_lineralayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/medialayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    android:id="@+id/media"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/Media"
+                    android:textColor="#242424"
+                    android:textSize="@dimen/medium_txt_size2" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/mediacount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/arrow_image"
+                    android:text="Media"
+                    android:textColor="@color/lblFromName"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/arrow_image"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/arrow" />
+            </RelativeLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMedia"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:background="#fff" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mute_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/mute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@+id/swMute"
+                android:layout_toLeftOf="@+id/swMute"
+                android:text="Mute notifications"
+                android:textColor="#242424"
+                android:textSize="@dimen/medium_txt_size2" />
+
+            <com.kyleduo.switchbutton.SwitchButton
+                android:id="@+id/swMute"
+                style="@style/SwitchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerLine"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/custom_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/custom_notification"
+                android:textColor="#242424"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dividerLine"
+            android:visibility="gone" />
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tvEncryptTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/encryption"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEncryptTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:padding="5dp"
+                android:text="@string/encrypt_msg"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:drawableRight="@drawable/ic_lock"
+                android:drawableEnd="@drawable/ic_lock"
+                android:gravity="center_vertical"
+                android:drawablePadding="10dp"
+            />
+        </RelativeLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/dividerLine" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white">
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/tvParticipantTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/tvMembersCount"
+                android:layout_toLeftOf="@+id/tvMembersCount"
+                android:text="@string/participants"
+                android:textColor="#242424"
+                android:textSize="@dimen/medium_txt_size2" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/groupempty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toStartOf="@+id/tvMembersCount"
+                android:layout_toLeftOf="@+id/tvMembersCount"
+                android:text="@string/group_empty"
+                android:textColor="#01a9e5"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:id="@+id/searchMember"
+                android:layout_width="@dimen/margin_20"
+                android:layout_height="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginEnd="@dimen/margin_10"
+                android:layout_below="@+id/tvMembersCount"
+                android:layout_toStartOf="@+id/tvMembersCount"
+                android:src="@drawable/search_icon" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvMembersCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/tvAddMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvParticipantTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableStart="@drawable/add_participant"
+                android:drawableLeft="@drawable/add_participant"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="@string/add_participants"
+                android:textColor="#242424"
+                android:textSize="11sp"
+                android:visibility="gone"
+               />
+
+
+            <View
+                android:id="@+id/dividerline"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/tvAddMember"
+                android:layout_marginBottom="2dp"
+                android:background="@color/dividerLine"
+                android:visibility="gone" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvGroupMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerline" />
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/pbHeaderProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerline"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+
+        </RelativeLayout>
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            android:id="@+id/btnExitGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_exit_new"
+            android:drawableLeft="@drawable/ic_exit_new"
+            android:drawablePadding="22dp"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="@string/exit_group"
+            android:textColor="#fc0606"
+            android:textSize="11sp"
+            android:visibility="visible" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            android:id="@+id/btnDeleteGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_exit_new"
+            android:drawableLeft="@drawable/ic_exit_new"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="@string/Delete_Group"
+            android:textColor="#fc0606"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

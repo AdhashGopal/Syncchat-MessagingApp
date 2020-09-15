@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dialog_border">
+
+
+<!--
+    <RelativeLayout
+        android:id="@+id/R1_chat__lock"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_navigator"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cancel_normal" />
+
+        <com.zochat.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/headingChatlock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/image_contacts_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/setChatpwd"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+
+            />
+    </RelativeLayout>
+-->
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="3dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/newPAssword_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp"
+        android:padding="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/newPasswordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#242424"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+            android:id="@+id/newPassword_Et"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/newPasswordLabel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/hint_newPwd"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="11sp" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_below="@+id/newPassword_Et"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#E4E4E4" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirmPAssword_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newPAssword_RL"
+        android:padding="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/confirmPasswordLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#242424"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+            android:id="@+id/confirmPassword_Et"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/confirmPasswordLabel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/hint_confirmPwd"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="11dp" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="match_parent"
+            android:layout_height="0.75dp"
+            android:layout_below="@+id/confirmPassword_Et"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#E4E4E4" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/forgotChatpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPAssword_RL"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:text="@string/forgotChatpwd"
+        android:padding="3dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18dp"
+
+        />
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegButton
+        android:id="@+id/button_setPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/forgotChatpwd"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/numberproviderbutton"
+        android:text="@string/set_pwd"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llActions"
+            android:background="#8bdefc"
+            android:scaleType="centerCrop"
+            />
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="#cfedf7"
+            android:textSize="18sp"
+            android:alpha=".5"
+            android:background="#06769c"
+            android:paddingLeft="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/llActions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/profile_info_bottom_border"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:id="@+id/flChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="50">
+
+                <ImageButton
+                    android:id="@+id/ibChat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/chat_contact_icon_profile" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/flInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="50">
+
+                <ImageButton
+                    android:id="@+id/ibInfo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_info_blue" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

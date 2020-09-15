@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/archivemainlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backarrow_archive"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arrow_left" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/headingarchive"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/backarrow_archive"
+            android:gravity="center_vertical"
+            android:text="@string/Archived_chats"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+
+            />
+        <ImageView
+            android:id="@+id/archivelist_overflow"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/overflowmenu"
+            android:padding="@dimen/margin_15"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/archivelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/archivemainlayout">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/archive_list_RCYLR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:paddingRight="10dp"
+            android:scrollbarStyle="outsideInset"/>
+    </RelativeLayout>
+
+</RelativeLayout>

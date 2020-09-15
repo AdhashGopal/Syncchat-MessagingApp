@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/tabFourColor"
+        app:theme="@style/ToolbarColoredBackArrow" >
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Selectcountry"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+        android:id="@+id/country_picker_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableLeft="@mipmap/search_icon"
+        android:hint="@string/Search"
+        android:layout_below="@id/toolbar"
+        />
+
+    <ListView
+        android:id="@+id/chooseCountryLv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_picker_search"
+        android:layout_margin="10dp"
+        android:background="#ffffff"/>
+
+</RelativeLayout>

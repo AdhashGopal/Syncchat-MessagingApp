@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog_border"
+    android:padding="8dp"
+    >
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Mute Chat for..."
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+    <RadioGroup
+        android:layout_below="@+id/tvTitle"
+        android:id="@+id/radiogroupmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:drawablePadding="10dp"
+            android:text="@string/hours_8"
+            android:padding="4dp"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:padding="4dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:drawablePadding="10dp"
+            android:text="@string/one_week"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:drawablePadding="10dp"
+            android:text="@string/year_one"
+            android:padding="4dp"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/check1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroupmain"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:button="@drawable/checkbox"
+        android:padding="7dp"
+        android:text="@string/mute_nptification_txt"
+        android:textSize="13sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_50"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:layout_below="@+id/check1"
+    >
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/cancel"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+
+
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="@string/cancel"
+        android:textColor="#1EC4FA"
+        android:textSize="11sp" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/ok"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="@string/ok"
+        android:textColor="#1EC4FA"
+        android:textSize="11sp" />
+</LinearLayout>
+</RelativeLayout>

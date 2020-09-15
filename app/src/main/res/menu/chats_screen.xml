@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chatsceen_chatIcon"
+        android:icon="@mipmap/chat_contact_icon_off"
+        android:orderInCategory="3"
+        android:title="New Chat"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/chatsc_searchIcon"
+        android:icon="@mipmap/chats_search_icon_off"
+        android:orderInCategory="2"
+        android:title="Chat item"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/select_groupchat"
+        android:icon="@mipmap/chat_contact_icon_off"
+        android:title="New Group" />
+
+
+    <item
+        android:id="@+id/select_brodcast"
+        android:visible="false"
+        android:title="New Broadcast" />
+
+    <item
+        android:id="@+id/view_brodcast"
+        android:visible="false"
+        android:title="View Broadcast" />
+
+    <item
+        android:id="@+id/myprofile"
+        android:title="My Profile" />
+
+
+    <!--<item-->
+        <!--android:id="@+id/select_contact"-->
+        <!--android:icon="@mipmap/chat_contact_icon_off"-->
+        <!--android:visible="false"-->
+        <!--android:title="New Chat" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/select_secret_chat_contact"-->
+        <!--android:title="Secret Chat"-->
+        <!--android:visible="false"/>-->
+
+    <!--<item-->
+        <!--android:id="@+id/chatapp_web"-->
+        <!--android:title="@string/menu_web_title"-->
+        <!--android:visible="false"/>-->
+    <item
+        android:id="@+id/starred"
+        android:title="Starred Messages"
+        android:visible="true"/>
+
+    <!--<item-->
+        <!--android:id="@+id/chats_status"-->
+        <!--android:title="Status"-->
+        <!--android:visible="false"/>-->
+
+    <item
+    android:id="@+id/chats_notifications"
+    android:title="Notifications"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/chats_settings"
+        android:title="@string/action_settings" />
+
+    <item
+        android:id="@+id/chats_help"
+        android:title="Help" />
+
+    <!--<item-->
+        <!--android:id="@+id/logout"-->
+        <!--android:title="Web Logout"-->
+        <!--android:visible="false"/>-->
+
+</menu>
+
+<!--new group-->
+<!--myprofile, notifications, settings , help-->

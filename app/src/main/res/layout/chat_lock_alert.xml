@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog_border"
+    android:padding="8dp">
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/tvNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toLeftOf="@+id/tvPositive"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textAllCaps="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/cancle"
+        android:layout_marginRight="35dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/tvPositive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvTitle"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:padding="5dp"
+        android:text="@string/ok"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imageviewOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:src="@drawable/ic_ok"
+        android:visibility="visible"/>
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text=""
+        android:visibility="visible" />
+
+
+
+
+
+
+</RelativeLayout>

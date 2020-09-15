@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        android:id="@+id/btnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Tap to call screen"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCalls"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            android:id="@+id/tvNoCalls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:minLines="3"
+            android:text="@string/no_call_msg"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/ibNewCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_margin="15dp"
+            android:background="@drawable/circle_color_primary"
+            android:src="@drawable/ic_new_call" />
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

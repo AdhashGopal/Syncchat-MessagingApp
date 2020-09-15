@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContactReceived"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp">
+
+    <RelativeLayout
+        android:id="@+id/stardetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp">
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/userprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/fromname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/userprofile"
+            android:text="name"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fromname"
+            android:src="@drawable/audio_play" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/toname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/indicator"
+            android:text="you"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/datelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"
+            android:text="Today"
+            android:textColor="@color/lblFromName"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stardetail">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/receivecornerindicator"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_message"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/receiverbutton">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/lblMsgFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="@color/Sendername"
+                android:textSize="12sp"
+                android:visibility="gone"
+
+                />
+
+
+            <!--we have to put a view here to show contact details-->
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/contactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblMsgFrom"
+                android:layout_toEndOf="@+id/contactImage"
+                android:layout_toRightOf="@+id/contactImage"
+                android:paddingTop="15dp"
+                android:text="hfgfkjhg"
+                android:textColor="#01688B"
+                android:textSize="12sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/contactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/contactImage"
+                android:layout_toRightOf="@+id/contactImage"
+                android:text="dfkjghdfkjh"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/starredindicator_below"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/contactName"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/starred"
+                android:visibility="gone" />
+
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/ts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactName"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="5dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/lblFromName"
+                android:textSize="10sp" />
+
+
+            <com.chatapp.android.app.widget.CircleImageView
+                android:id="@+id/contactImage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/lblMsgFrom"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:padding="3dp"
+                android:src="@mipmap/contact_off"
+
+                />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/ts"
+                android:background="#f6f6f6" />
+
+            <LinearLayout
+                android:id="@+id/contact_add_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v1"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="100">
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/invite_1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Invite"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/message_1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Message"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+
+                <View
+                    android:id="@+id/v2"
+                    android:layout_width="0.5dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/v1"
+                    android:background="#f6f6f6"/>
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/add_1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="50"
+                    android:gravity="center"
+                    android:text="Add Contact"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v1">
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Invite"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="Add Contact"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

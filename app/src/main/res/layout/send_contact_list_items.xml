@@ -1,0 +1,55 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/seperator"
+    android:id="@+id/mobile_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageview_contact"
+        android:src="@drawable/send_chat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/contact_save_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="7708730827" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_save_number"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:text="Mobile"
+        android:textSize="10dp" />
+
+
+    <CheckBox
+        android:id="@+id/checkContact_elmts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:button="@drawable/checkbox"
+        android:padding="10dp"
+        android:checked="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#242424"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/seperator1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/detail"
+        android:layout_marginTop="10dp"
+        android:background="#f6f6f6" />
+</RelativeLayout>

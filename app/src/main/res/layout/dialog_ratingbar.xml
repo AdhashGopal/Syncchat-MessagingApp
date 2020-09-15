@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dialog_border"
+   >
+
+    <ImageView
+        android:id="@+id/smiley_ic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/smileylikedit" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smiley_ic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_rateing"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="3dp"
+        android:padding="5dp"
+        android:text="@string/commands"
+        android:textSize="13sp" />
+
+    <SeekBar
+        android:id="@+id/sbDuration"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:theme="@style/Ratingbar"
+        android:progressDrawable="@drawable/seekbar_progress_re"
+        android:thumb="@mipmap/thumb" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_rel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sbDuration"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/hated"
+            android:layout_width="0dp"
+            android:text="@string/rating_txt_hate"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/unselect_color"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/likeit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="@string/rating_txt_like"
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/main_rel"
+        android:orientation="horizontal"
+
+        android:weightSum="2.0">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/notnow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/rating_notnow_bg"
+            android:textColor="@color/white"
+            android:text="@string/notnow"
+           />
+
+
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/submit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/rating_bg"
+            android:textColor="@color/white"
+            android:text="@string/submit"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

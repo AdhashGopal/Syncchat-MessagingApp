@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    android:padding="3dp">
+    <RelativeLayout
+        android:id="@+id/stardetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/userprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/fromname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/userprofile"
+            android:text="you"
+            android:textStyle="bold"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fromname"
+            android:src="@drawable/audio_play" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/toname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/indicator"
+            android:text="name"
+            android:textStyle="bold"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/datelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"
+            android:text="Today"
+            android:textColor="@color/lblFromName"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/stardetail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:src="@drawable/starred_corner" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/stardetail"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/background_message"
+        android:padding="2dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_image"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="1dp"
+            android:layout_marginRight="1dp"
+
+            >
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/lblMsgFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:visibility="gone"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgshow"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:transitionName="image" />
+
+            <RelativeLayout
+                android:id="@+id/ts_abovecaption_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                >
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/ts_abovecaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="20"
+                    android:text="10:00AM"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/starredindicator_above"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toLeftOf="@+id/ts_abovecaption"
+                    android:background="@drawable/ic_starred"
+                    android:visibility="visible"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMsgStatus_above"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/single_tick_green_above"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@mipmap/ic_single_tick"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/double_tick_green_above"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@mipmap/ic_double_tick"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/double_tick_blue_above"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/message_deliver_tick"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/clock_above"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/clock"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:visibility="visible"
+            android:layout_below="@+id/relativelayout_image">
+            <RelativeLayout
+                android:id="@+id/caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/captiontext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/time"
+                android:layout_below="@id/caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                >
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="20"
+                    android:text="10:00AM"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:textStyle="italic"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/starredindicator_below"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_toLeftOf="@+id/ts"
+                    android:background="@drawable/ic_starred"
+                    android:visibility="visible"
+
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMsgStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/caption"
+
+                >
+
+                <ImageView
+                    android:id="@+id/single_tick_green"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@mipmap/ic_single_tick"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/double_tick_green"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@mipmap/ic_double_tick"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/double_tick_blue"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/message_deliver_tick"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/clock"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/clock"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/v3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/relative_layout_message"
+        android:layout_height="0.5dp"
+        android:background="#E3E3E3" />
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

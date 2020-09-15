@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog_border">
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:text="@string/Vibrate"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+
+        android:id="@+id/text4"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radiogroup"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="30dp"
+        android:gravity="end"
+        android:paddingTop="8dp"
+        android:textAllCaps="true"
+        android:text="@string/cancel"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11sp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/text"
+        android:padding="3dp">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:drawablePadding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Off" />
+
+        <RadioButton
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Default" />
+
+        <RadioButton
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Short" />
+
+        <RadioButton
+            android:id="@+id/r4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:button="@null"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/radiobutton"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Long" />
+    </RadioGroup>
+
+
+</RelativeLayout>

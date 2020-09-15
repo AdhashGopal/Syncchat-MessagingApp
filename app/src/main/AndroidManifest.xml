@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.chatapp.android">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.nowletschat.android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+
+    <!-- Apex -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+
+    <!-- Solid -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+
+    <!-- Huawei -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <!-- MAP Permission -->
+    <permission
+        android:name="com.chatapp.android.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+
+    <application
+        android:name="com.chatapp.android.core.CoreController"
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.chatapp.android"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+
+        </provider>
+        <!-- <provider
+             android:name="android.support.v4.content.FileProvider"
+             android:authorities="com.chatapp.android"
+             android:exported="false"
+             android:grantUriPermissions="true">
+
+             <meta-data
+                 android:name="android.support.FILE_PROVIDER_PATHS"
+                 android:resource="@xml/file_provider_paths" />
+
+         </provider>-->
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+        <activity
+            android:name="com.chatapp.android.app.ADFSWebViewActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.IntialLoaderActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.VerifyPhoneScreen"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <receiver android:name="com.chatapp.android.core.connectivity.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".core.socket.AlarmService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.chatapp.android.app.GoogleMapView"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.MemberContactSearch"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.RegisterActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.chatapp.android.app.ChooseCountryScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.EmailVerifyPendingActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.Savecontact"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ImagecaptionActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Networkusage"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Emailchat_Activitypage"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ImageZoom"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.MediaAcitivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppMediaTheme" />
+        <activity
+            android:name="com.chatapp.android.app.ChatappSmsVScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.PinEnterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chatapp.android.app.ChatappProfileInfoScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.HomeScreen"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.chatapp.android.app.WelcomeScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.StatusEditActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChatappSettings"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChangeNameScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.BlockContactList"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.SingleMessageInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.GroupMessageInfoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Status"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.chatapp.android.app.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.StatusNewScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity
+            android:name="com.chatapp.android.app.SettingContact"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.ChatappProfileScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.StarredItemList"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.DeleteAccount"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChangeNumber"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Security"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChatappPrivacy"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Archivelist"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.SelectPeopleForBlock"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.contactlist.SearchPeopleForGroupChat"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.contactlist.ContactSearchActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.chatapp.android.app.AboutHelp"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.chatapp.android.app.ChatappSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.SelectPeopleForGroupChat"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChatappNewPageAbout"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChangeNumber_sub"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.NotificationSettings"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.ChatSettings"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChatHistory"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Systemstatus"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ContactSettings"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.DataUsage"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.chatapp.android.app.HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.GroupCreation"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.SendContact"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Account_main_list"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.chatapp.android.app.ChatappSettings"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="support.PARENT_ACTIVITY"
+                android:value=".app.HomeScreen" />
+        </activity>
+        <activity
+            android:name="com.chatapp.android.app.ChatViewActivity"
+            android:configChanges="orientation|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.android.message" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chatapp.android.app.AddContactScreen"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ChatLockActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.EmailSettings"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.PasswordEmailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.About_contactus"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--<activity
+            android:name="com.chatapp.android.app.QRCodeScan"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.chatapp.android.app.GroupInfo"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.ChangeGroupName"
+            android:configChanges="orientation|screenSize"
+            android:label="Enter new subject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.AddMemberToGroup"
+            android:configChanges="orientation|screenSize"
+            android:label="Add Participants"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.UserProfile"
+            android:configChanges="orientation|screenSize"
+            android:label="Profile Photo"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.ATTACH_DATA" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chatapp.android.app.AudioFilesListActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Audio Files"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ForwardContact"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.Forward_avater"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.ShareFromThirdPartyAppActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.WallpaperColor"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.UserInfo"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name="in.myinnos.awesomeimagepicker.activities.AlbumSelectActivity" />
+        <activity
+            android:name="com.chatapp.android.app.DeleteAccount2Activity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.android.app.calls.IncomingCallActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.calls.CallsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.calls.CallPrepareScreen"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.android.video_call" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chatapp.android.app.calls.CallsContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chatapp.android.app.calls.CallInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBar" />
+
+        <service android:name="com.chatapp.android.app.ChatappContactsService" />
+        <service
+            android:name="com.chatapp.android.core.socket.MessageService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false" />
+
+        <receiver android:name="com.chatapp.android.app.utils.ServiceKillReceiver">
+            <intent-filter>
+                <action android:name="SERVICE_KILLED" />
+            </intent-filter>
+        </receiver>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <service android:name="com.chatapp.android.core.service.ContactsSync" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
+            android:name="net.hockeyapp.android.appIdentifier"
+            android:value="f26cd8c9d9604d96a26ffdfde1752711" />
+        -->
+
+        <receiver android:name="com.chatapp.android.app.utils.DateChangeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_TICK" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.chatapp.android.app.DeviceBootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.chatapp.android.account.AccountAuthenticatorService"
+            android:exported="true"
+            android:process=":auth">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+        <service
+            android:name="com.chatapp.android.account.ContactsSyncAdapterService"
+            android:exported="true"
+            android:process=":contacts">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_contacts" />
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts" />
+        </service>
+
+        <receiver android:name="com.chatapp.android.app.utils.AccountCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.chatapp.android.account_complete" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Handy Script Activities -->
+
+        <activity
+            android:name=".app.calls.FakeOutgoingcall_Activity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_fake_outgoingcall_"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.chatapp.android.app.BroadcastListActivity" />
+        <activity
+            android:name=".core.DownloadManagerActivity"
+            android:theme="@style/SplashTheme" />
+
+        <activity
+            android:name=".app.ReLoadingActivityNew"
+            android:autoVerify="true"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+                        <intent-filter>
+                            <action android:name="android.intent.action.VIEW" />
+
+                            <category android:name="android.intent.category.DEFAULT" />
+                            <category android:name="android.intent.category.BROWSABLE" />
+
+
+                            &lt;!&ndash; <data
+                                 android:host="ec2-18-191-168-190.us-east-2.compute.amazonaws.com"
+                                 android:path="/linkfile.html"
+                                 android:port="3010"
+                                 android:scheme="http" />&ndash;&gt;
+
+                             &lt;!&ndash;<data
+                                 android:host="103.88.129.42"
+                                 android:path="/linkfile.html"
+                                 android:port="4400"
+                                 android:scheme="http" />&ndash;&gt;
+                           &lt;!&ndash; <data
+                                android:port="4400"
+                                android:host="104.211.181.142"
+                                android:path="/linkfile.html"
+                                android:scheme="http" />&ndash;&gt;
+
+                            <data
+                              android:host="achat.adani.com"
+                              android:path="/linkfile.html"
+                              android:pathPattern="/app"
+                              android:scheme="https" />
+
+                            &lt;!&ndash;<data
+                                android:host="52.172.4.166"
+                                android:path="/linkfile.html"
+                                android:port="4400"
+                                android:scheme="http" />&ndash;&gt;
+                            &lt;!&ndash; <data
+                                 android:host="syncchat.in"
+                                 android:path="/linkfile.html"
+                                 android:pathPattern="/app"
+                                 android:scheme="https" />&ndash;&gt;
+
+                            &lt;!&ndash; <data
+                                 android:host="syncchat.in"
+                                 android:path="/linkfile.html"
+                                 android:scheme="https"
+                                 android:pathPattern="/app"/>&ndash;&gt;
+
+
+                            &lt;!&ndash; <data &ndash;&gt;
+                            &lt;!&ndash; android:host="v71.sdnsbox.com" &ndash;&gt;
+                            &lt;!&ndash; android:path="/linkfile.html" &ndash;&gt;
+                            &lt;!&ndash; android:scheme="http" /> &ndash;&gt;
+                        </intent-filter>
+            -->
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.VIEW" /> -->
+            <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            <!-- <category android:name="android.intent.category.BROWSABLE" /> -->
+
+
+            <!-- &lt;!&ndash; <data &ndash;&gt; -->
+            <!-- &lt;!&ndash; android:scheme="http" &ndash;&gt; -->
+            <!-- &lt;!&ndash; android:host="www.chatapp.com" &ndash;&gt; -->
+            <!-- &lt;!&ndash; android:pathPattern="/app" /> &ndash;&gt; -->
+            <!-- <data -->
+            <!-- android:host="synctag.com" -->
+            <!-- android:pathPrefix="/" -->
+            <!-- android:scheme="http" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.chatapp.android.app.ChangePinActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+
+        <service
+            android:name="com.chatapp.android.app.RefreshDatabaseService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.chatapp.android.app.FileDownloadService"
+            android:enabled="true"
+            android:exported="true" />
+
+
+        <!-- <service android:enabled="true" android:name=".app.RefreshDatabaseIntentService" /> -->
+        <!-- <meta-data
+             android:name="io.fabric.ApiKey"
+             android:value="38e8b4fe6561bbd3d4d82feda2f4784c899470ba" />-->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2676c3ae182051dc3971f78f8c5ec16c42c4165c" />
+        <receiver
+            android:name="com.chatapp.android.app.Receiver.WakeReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:priority="99999">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="com.chatapp.android.RestartSensor" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

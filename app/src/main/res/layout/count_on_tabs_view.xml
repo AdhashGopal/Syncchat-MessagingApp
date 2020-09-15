@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_margin="1dp"
+        android:layout_toLeftOf="@+id/tvCount"
+        android:layout_toStartOf="@+id/tvCount"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/txt_size_small4"
+    />
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/tvCount"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textSize="@dimen/txt_size_small2"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/ic_msg_count_title"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:visibility="gone"
+    />
+</RelativeLayout>

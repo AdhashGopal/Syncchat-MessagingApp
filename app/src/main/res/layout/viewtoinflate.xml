@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/chat_attachment_profile_default_image_frame"/>
+
+    <ImageView
+        android:id="@+id/removeicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icn_user_remove"
+        android:layout_below="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="-15dp"
+        />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/selectedmembername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="7sp"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="2dp"/>
+
+
+</RelativeLayout>

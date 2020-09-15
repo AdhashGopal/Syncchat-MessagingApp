@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#372577</color>
+    <color name="colorPrimaryDark">#372577</color>
+    <color name="colorAccent">#372577</color>
+    <color name="chatscreen">#f0f0f0</color>
+    <color name="loader_screen_text">#2E394B</color>
+    <color name="unread_txt_color">#B3B3B3</color>
+    <color name="ts_color">#8FA281</color>
+    <color name="date_lbl_textcolor">#636260</color>
+    <color name="whatsapp_green_background">#DCF8C6</color>
+    <color name="reply_titles_color">#4e4e4e</color>
+
+    <color name="colorSecondary">#76229f</color>
+    <!--*83afaa  #054d44* 95e99f-->
+    <color name="tabFourColor">#372577</color>
+    <color name="maxTextSize">#D5D5D5</color>
+    <color name="ripple_dark_grey">#BDBDBD</color>
+    <color name="ripple_light_grey">#EEEEEE</color>
+    <color name="lblFromName">#777777</color>
+    <color name="scrennname_txtcolor">#C4C4C6</color>
+    <color name="Sendername">#372577</color>
+    <color name="white">@android:color/white</color>
+    <color name="title">#434343</color>
+    <color name="textcolor">#38ACEC</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="appthemecolour">#372577</color>
+    <color name="dividerLine">#F2F2F2</color>
+    <color name="Statusbar">#372577</color>
+    <color name="chatlist_messagecolor">#808080</color>
+    <color name="common_action_bar_splitter">#d2d2d2</color>
+    <color name="numberpic_divdercolor">#E4E4E4</color>
+    <!-- notification colors -->
+    <color name="transparent1">#ffffff</color>
+    <color name="red">#B22222</color>
+    <color name="yellow">#FFC300</color>
+    <color name="green">#008000</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#ffaa66cc</color>
+    <color name="black">#000000</color>
+    <color name="dialog_title_text">#242424</color>
+    <color name="dialog_msg_text">#242424</color>
+    <color name="dialog_negative_text">#372577</color>
+    <color name="background_message">#372577</color>
+    <color name="secret_chat_theme">#333333</color>
+    <color name="secret_title">#555555</color>
+    <color name="selected_chat">#C5E5FA</color>
+    <color name="color_primary_secret">#343437</color>
+    <color name="delete_ac_btn_bg">#FF0000</color>
+    <color name="notnow_rating_bg">#3DC7F8</color>
+    <color name="submit_rating_bg">#01AAE5</color>
+    <color name="unselect_color">#BDBDBD</color>
+    <color name="draw">#82E2F1</color>
+    <color name="action_bar_hint">#E4E4E4</color>
+
+    <color name="screen_cendercolor">#22CCE6</color>
+
+    <color name="divider">#dcdcdc</color>
+    <color name="chat_list_header">#3F3F3F</color>
+    <color name="secret_chat_list_color">#00A100</color>
+    <color name="replyMsgBg">#F3F2F2</color>
+    <color name="replyFrom">#94DBF4</color>
+    <color name="replyReceivedMsg">#F0F8FF</color>
+
+    <color name="search_hint">#80ffffff</color>
+    <color name="blocked_user_bg">#b4b6ba</color>
+
+
+    <!-- Handy Script Color Code -->
+
+    <color name="transparent_color">#00000000</color>
+    <color name="transparent_caption">#23ffffff</color>
+    <!--App Main Color-->
+    <!--<color name="app_color_pink">#FF4546</color>
+    <color name="app_color_light_pink">#E63A4A</color>
+    <color name="app_color_red">#DB4336</color>-->
+    <!--PkDialog Color-->
+
+    <!--Chat Page Color-->
+    <color name="gray">@android:color/darker_gray</color>
+
+    <color name="gray_list_selection">#F2F2F2</color>
+
+    <!-- map Fragment Page Color-->
+
+    <color name="status_gray">#88bababa</color>
+    <color name="status_reply_gray">#F7F7F7</color>
+    <color name="status_reply_text_gray">#8C8C8C</color>
+    <color name="status_privacy_gray">#3e3e3e</color>
+    <color name="status_red">#f03d12</color>
+    <color name="status_green">#20c65a</color>
+
+    <color name="status_reply_title_color">#8C398D</color>
+</resources>

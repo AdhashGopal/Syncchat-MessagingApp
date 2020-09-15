@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/custom_dialog_border">
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="15dp"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:text="@string/Notification_tone"
+        android:textSize="16sp"
+        />
+
+
+
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+
+        android:textColor="@color/colorPrimary"
+        android:gravity="right"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingTop="8dp"
+        android:id="@+id/text4"
+        android:text="CANCEL"
+        android:textSize="11sp"
+        android:layout_below="@+id/radiogrouptone"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        />
+    <RadioGroup
+        android:id="@+id/radiogrouptone"
+        android:layout_below="@+id/text"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:id="@+id/radiotone1"
+            android:paddingTop="2dp"
+            android:textSize="13sp"
+            android:text="None"
+            android:padding="10dp"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:layout_marginTop="5dp"
+            android:id="@+id/radiotone2"
+            android:button="@null"
+            android:drawableLeft="@drawable/radiobutton"
+            android:drawablePadding="10dp"
+            android:textSize="13sp"
+            android:paddingTop="2dp"
+            android:text="@string/Beep_Once"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

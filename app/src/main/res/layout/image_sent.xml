@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_sent_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp">
+
+    <!--Date label starts-->
+    <include
+        android:id="@+id/dayLblLayout"
+        layout="@layout/day_label_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayLblLayout">
+
+
+        <ImageView
+            android:id="@+id/forward_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+
+            android:visibility="gone"
+            android:layout_marginStart="40dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/sendcornerindicator"
+            android:visibility="visible"
+            android:layout_marginEnd="-2dp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background_message"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="10dp">
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_image"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp">
+
+
+                <ImageView
+                    android:id="@+id/imgshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rlDownload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:padding="45dp"
+                    android:background="@drawable/image_download_bg"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true">
+
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                        android:id="@+id/tvImageSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginStart="5dp"
+                        android:visibility="gone"
+                         />
+                </RelativeLayout>
+
+                <com.github.lzyzsd.circleprogress.DonutProgress
+                    android:id="@+id/pbUpload"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerInParent="true"
+                    android:indeterminate="true"
+                    app:donut_finished_stroke_width="8dp"
+                    app:donut_text_color="@color/white"
+                    app:donut_text_size="10sp"
+                    app:donut_unfinished_stroke_width="3dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/ts_abovecaption_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="20dp"
+                    android:visibility="visible"
+
+
+                    android:layout_marginEnd="20dp">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/ts_abovecaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:shadowColor="@color/white"
+                        android:shadowRadius="20"
+                        android:text="10:00AM"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ts_color"
+                        android:textSize="11sp"
+                        android:textStyle="italic"
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:id="@+id/starredindicator_above"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toLeftOf="@+id/ts_abovecaption"
+                        android:background="@drawable/ic_starred"
+                        android:visibility="visible"
+
+                        android:layout_toStartOf="@+id/ts_abovecaption" />
+
+                </RelativeLayout>
+                <com.chatapp.android.app.widget.CircleImageView
+                    android:id="@+id/pause_resume_icon"
+                    android:layout_width="@dimen/margin_35"
+                    android:layout_height="@dimen/margin_35"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_pause"
+                    android:alpha="0.7"
+                    android:visibility="gone"
+                    android:padding="@dimen/margin_3"
+                    android:tint="@color/white"
+                    app:civ_fill_color="@color/white"
+                    app:civ_border_color="@color/white"
+                    android:layout_margin="@dimen/margin_5"
+                    app:civ_circle_background_color="@color/black"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rlMsgStatus_above"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="visible"
+
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/single_tick_green_above"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@mipmap/ic_single_tick"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:id="@+id/double_tick_green_above"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@mipmap/ic_double_tick"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:id="@+id/double_tick_blue_above"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/message_deliver_tick"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/clock_above"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/clock"
+                        android:visibility="visible"
+                        android:layout_marginEnd="3dp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlTsCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativelayout_image"
+                android:padding="3dp"
+                android:visibility="visible">
+
+
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/captiontext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="sahtya"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp" />
+
+                <RelativeLayout
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/captiontext"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="2dp"
+                    android:visibility="visible">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                        android:id="@+id/ts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:shadowColor="@color/white"
+                        android:shadowRadius="20"
+                        android:text="10:00AM"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ts_color"
+                        android:textSize="11sp"
+
+                        android:layout_alignParentEnd="true" />
+
+                    <ImageView
+                        android:id="@+id/starredindicator_below"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toLeftOf="@+id/ts"
+                        android:background="@drawable/ic_starred"
+                        android:visibility="visible"
+
+                        android:layout_toStartOf="@+id/ts" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMsgStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/captiontext"
+                    android:layout_marginRight="5dp"
+                    android:paddingBottom="3dp"
+                    android:visibility="visible"
+                    android:layout_marginEnd="5dp">
+
+                    <ImageView
+                        android:id="@+id/single_tick_green"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@mipmap/ic_single_tick"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:id="@+id/double_tick_green"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@mipmap/ic_double_tick"
+                        android:visibility="gone" />
+
+
+                    <ImageView
+                        android:id="@+id/double_tick_blue"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:background="@drawable/message_deliver_tick"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/clock"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/clock"
+                        android:visibility="visible"
+                        android:layout_marginEnd="3dp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

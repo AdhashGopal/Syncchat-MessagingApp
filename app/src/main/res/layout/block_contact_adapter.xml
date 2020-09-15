@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/blockList"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/block_user_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/chat_attachment_profile_default_image_frame" />
+    <ImageView
+        android:id="@+id/ivSecretIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/spyblack" />
+
+    <RelativeLayout
+        android:id="@+id/rlChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/block_user_image"
+        android:layout_toRightOf="@+id/block_user_image">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/BlockUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:text="UserName"
+            android:textColor="#3f3f3f"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/blockUserNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/BlockUserName"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:text=""
+
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:background="#e1e1e1" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

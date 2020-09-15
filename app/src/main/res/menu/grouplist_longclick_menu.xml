@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/addchatshortcut_menu"
+        android:title="Add chat shortcut"
+        android:visible="false"
+
+        />
+    <item
+        android:id="@+id/Groupinfo"
+        android:title="Group info "
+        />
+    <item
+        android:id="@+id/unmute_menu"
+        android:title="Unmute"
+        />
+    <item
+        android:id="@+id/Exitgroup"
+        android:title="Exit Group"
+        />
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        />
+    <item
+        android:id="@+id/mute_menu"
+        android:title="Mute"
+        />
+    <item
+        android:id="@+id/archive_menu"
+        android:title="Archive"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/markasunread_menu"
+        android:title="Mark as unread"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/markread_menu"
+        android:title="Mark read"
+        android:visible="false"
+        />
+</menu>

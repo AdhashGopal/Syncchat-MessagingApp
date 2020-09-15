@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="10dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+            <ImageView
+                android:id="@+id/editbutton"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="@dimen/nameEdit"
+                android:background="@drawable/ic_name_edit" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_send"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                        android:id="@+id/tvName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom|left"
+                        android:layout_margin="0dp"
+                        android:text="John Doe"
+                        android:textColor="#30c9e8"
+                        android:textSize="20sp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/mediaBack"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:capitalize="words"
+                            android:text="Media History"
+                            android:textColor="#30c9e8"
+                            android:textSize="18sp" />
+
+                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            android:id="@+id/textviewCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="15"
+                            android:textSize="15sp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#e1e1e1" />
+
+
+                <Gallery
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_below="@+id/mediaBack"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <!--  <RelativeLayout
+                      android:id="@+id/mediadownline"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content">
+
+                  <View
+                      android:id="@+id/firstline"
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:layout_alignParentTop="true"
+                      android:background="#e1e1e1"/>
+
+
+                  <View
+                      android:id="@+id/secondline"
+                      android:layout_width="match_parent"
+                      android:layout_height="10dp"
+                     android:layout_below="@+id/firstline"
+                      android:background="#55e7e7e7"/>
+
+
+                  <View
+                      android:layout_width="match_parent"
+                      android:layout_height="1dp"
+
+                      android:background="#e1e1e1"/>
+                  </RelativeLayout>-->
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayoutforsinglechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gallery"
+                    android:background="@color/white"
+
+                    android:orientation="vertical">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/phonetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Phone and Status"
+                        android:textColor="#30c9e8"
+                        android:textSize="16.33sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/phonetext"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp">
+
+                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            android:id="@+id/tvPhoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone Status"
+                            android:textColor="#252525"
+                            android:textSize="16.67sp"
+
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/messageSender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@mipmap/contacts_info_add_contacts_icon_off"
+                            android:tint="#30c9e8" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="12dp"
+                            android:layout_toLeftOf="@+id/messageSender"
+                            android:background="#BDBDBD" />
+
+
+                        <ImageView
+                            android:id="@+id/callSender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/messageSender"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="-6dp"
+                            android:layout_toLeftOf="@+id/messageSender"
+                            android:src="@mipmap/contacts_info_call_icon_off"
+                            android:tint="#30c9e8" />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/phoneNumber"
+
+                        android:layout_marginLeft="10dp"
+                        android:background="#e1e1e1" />
+
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:text="Phone Status"
+                        android:textColor="#252525"
+                        android:textSize="16.67sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayoutforgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gallery"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            android:id="@+id/numberofparticipents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Participants"
+                            android:textColor="@color/appthemecolour"
+                            android:textSize="16.33sp" />
+
+                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            android:id="@+id/numberofUser"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/appthemecolour"
+                            android:textSize="16.33sp" />
+                    </RelativeLayout>
+
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/Addparticipatent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Add Participants..."
+                        android:textColor="#30c9e8"
+                        android:textSize="16.33sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#cccccc"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/groupmemberList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            android:id="@+id/exitgroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Exit Group"
+                            android:textColor="#FF0000"
+                            android:textSize="16.33sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+                    android:id="@+id/btAddToContacts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mediaBack"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Add to Contacts"
+                    android:visibility="gone"/>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

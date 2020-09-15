@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/custom_dialog_border">
+
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/texthead"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:paddingTop="10dp"
+            android:text="@string/When_Using_Mobile_Data"
+            android:textColor="#242424"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/R2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/R1">
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox"
+            android:padding="10dp"
+            android:text="@string/Photo"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/R3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/R2">
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox"
+            android:padding="10dp"
+            android:text="@string/Audio"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/R4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/R3">
+
+        <CheckBox
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox"
+            android:padding="10dp"
+            android:text="@string/Video"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/R5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/R4">
+
+        <CheckBox
+            android:id="@+id/check4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox"
+            android:padding="10dp"
+            android:text="@string/Document"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/R5"
+        android:weightSum="2">
+
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="70dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="@string/cancle"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

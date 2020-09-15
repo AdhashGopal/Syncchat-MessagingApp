@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addatatusmainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/llTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        >
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_button_actionbar"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+        />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Add_new_name"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="17dp"
+        android:layout_toLeftOf="@+id/happyFace"
+        android:layout_below="@id/llTitleBar"
+        app:counterEnabled="true"
+        app:counterMaxLength="24"
+        >
+    <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/editText_addStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences|textNoSuggestions"
+        android:selectAllOnFocus="true"
+        android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
+        android:singleLine="true"
+        android:maxLength="24"
+        />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            android:id="@+id/cancleAddNewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/cancle"
+            android:textAllCaps="false"
+            android:background="@color/transparent"
+            android:textColor="@color/colorPrimary" />
+
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            android:id="@+id/okAddNewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/transparent"
+            android:text="@string/ok"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/happyFace"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/til_name"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@drawable/smile"
+        android:background="@color/transparent"
+        android:contentDescription="@string/happy_face" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/textSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/happyFace"
+        android:layout_alignRight="@+id/til_name"
+        android:layout_marginRight="10dp"
+        android:text="139"
+        android:textColor="@color/maxTextSize"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/emojicons"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"
+        android:visibility="gone" />
+
+</RelativeLayout>

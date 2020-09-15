@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainReceived"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_3"
+    tools:ignore="ContentDescription">
+
+    <TextView
+        android:id="@+id/tvSecretLbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/secret_title"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/margin_8"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_size_small4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDateLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/info_msg_border"
+        android:paddingBottom="@dimen/margin_4"
+        android:paddingLeft="@dimen/margin_8"
+        android:paddingRight="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_3"
+        android:textAllCaps="true"
+        android:textColor="@color/date_lbl_textcolor"
+        android:textSize="@dimen/txt_size_small4"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecretLbl" />
+
+
+    <View
+        android:id="@+id/selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_3"
+        app:layout_constraintBottom_toBottomOf="@+id/relative_layout_message"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/margin_15"
+        android:layout_height="@dimen/margin_9"
+        android:src="@drawable/receivecornerindicator"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+    <View
+        android:id="@+id/left_space"
+        android:layout_width="@dimen/margin_10"
+        android:layout_height="@dimen/margin_9"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="@dimen/chat_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiverbutton"
+        android:backgroundTint="#FEFEFE"
+        android:padding="@dimen/margin_5"
+        app:layout_constraintLeft_toRightOf="@+id/left_space"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateLbl"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/lblMsgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/txt_size_small2"
+            android:visibility="gone"
+
+            />
+
+        <!--Web link starts-->
+        <View
+            android:id="@+id/rlWebLink"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50"
+            android:background="@drawable/weblink_background"
+            app:layout_constraintTop_toBottomOf="@+id/lblMsgFrom" />
+
+        <ImageView
+            android:id="@+id/ivWebLink"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_50"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/margin_2"
+            android:layout_marginRight="5dp"
+            app:layout_constraintLeft_toLeftOf="@+id/rlWebLink"
+            app:layout_constraintTop_toTopOf="@+id/rlWebLink" />
+
+        <TextView
+            android:id="@+id/tvWebTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@+id/ivWebLink"
+            app:layout_constraintRight_toRightOf="@+id/rlWebLink"
+            app:layout_constraintTop_toTopOf="@+id/rlWebLink" />
+
+        <TextView
+            android:id="@+id/tvWebLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:minLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_small3"
+            app:layout_constraintLeft_toRightOf="@+id/ivWebLink"
+            app:layout_constraintRight_toRightOf="@+id/rlWebLink"
+            app:layout_constraintTop_toBottomOf="@+id/tvWebTitle" />
+
+        <TextView
+            android:id="@+id/tvWebLinkDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/txt_size_small2"
+            app:layout_constraintLeft_toRightOf="@+id/ivWebLink"
+            app:layout_constraintRight_toRightOf="@+id/rlWebLink"
+            app:layout_constraintTop_toBottomOf="@+id/tvWebLink" />
+        <!--Web link ends-->
+
+
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/margin_2"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorLink="@color/blue"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rlWebLink" />
+
+
+        <TextView
+            android:id="@+id/ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5_00pm"
+            android:textAllCaps="true"
+            android:textColor="@color/lblFromName"
+            android:textSize="@dimen/txt_size_small3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMsg" />
+
+        <ImageView
+            android:id="@+id/starredindicator"
+            android:layout_width="@dimen/margin_10"
+            android:layout_height="@dimen/margin_10"
+            android:layout_below="@+id/txtMsg"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@drawable/starred"
+
+            android:visibility="gone"
+            app:layout_constraintRight_toLeftOf="@+id/ts"
+            app:layout_constraintTop_toTopOf="@+id/ts"
+            android:layout_marginEnd="@dimen/margin_5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvInfoMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/info_msg_border"
+        android:padding="@dimen/margin_5"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

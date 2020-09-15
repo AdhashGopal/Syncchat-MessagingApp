@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_contact_layout">
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/add_contact_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/chat_attachment_profile_default_image_frame"
+            android:layout_alignParentStart="true" />
+
+        <com.chatapp.android.app.widget.CustomDemiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="New Contact"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:textColor="#3f3f3f"
+            android:layout_toRightOf="@+id/add_contact_image"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/add_contact_layout"
+        android:visibility="gone"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/view"
+        android:background="@color/ripple_dark_grey"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/create_group_layout">
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/create_group_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/group_chat_attachment_profile_icon"
+            android:layout_alignParentStart="true" />
+
+        <com.chatapp.android.app.widget.CustomDemiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="New Group"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:textColor="#3f3f3f"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/create_group_image"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/create_group_layout"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/view1"
+        android:visibility="gone"
+        android:background="@color/ripple_dark_grey"/>
+
+</RelativeLayout>

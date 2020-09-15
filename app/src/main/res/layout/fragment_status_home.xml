@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_7">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/my_status_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.chatapp.android.app.utils.WhatsappStatusCircle
+                    android:id="@+id/whatsapp_status_circle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_add_status"
+                    app:layout_constraintLeft_toLeftOf="@+id/iv_add_status"
+                    app:layout_constraintRight_toRightOf="@+id/iv_add_status"
+                    app:layout_constraintTop_toTopOf="@+id/iv_add_status" />
+
+                <com.chatapp.android.app.widget.CircleImageView
+                    android:id="@+id/iv_add_status"
+                    android:layout_width="@dimen/margin_70"
+                    android:layout_height="@dimen/margin_70"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_7"
+                    android:paddingRight="@dimen/margin_7"
+                    android:src="@drawable/personprofile"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="1dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/iv_add_icon_small"
+                    android:layout_width="@dimen/margin_20"
+                    android:layout_height="@dimen/margin_20"
+                    android:layout_margin="@dimen/margin_5"
+                    android:src="@drawable/status_add_blue_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_add_status"
+                    app:layout_constraintRight_toRightOf="@+id/iv_add_status" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    android:id="@+id/tv_my_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/my_status"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/medium_txt_size2"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_my_status_details"
+                    app:layout_constraintStart_toEndOf="@+id/iv_add_status"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    android:id="@+id/tv_my_status_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:padding="@dimen/margin_5"
+                    android:text="@string/tap_to_add_status_update"
+                    android:textColor="@color/lblFromName"
+                    android:textSize="@dimen/txt_size_small3"
+                    app:layout_constraintEnd_toStartOf="@id/iv_my_status_details"
+                    app:layout_constraintStart_toEndOf="@+id/iv_add_status"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_my_status" />
+
+
+                <ImageView
+                    android:id="@+id/iv_my_status_details"
+                    android:layout_width="@dimen/margin_70"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    android:src="@drawable/three_dots"
+                    android:visibility="gone"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_13"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    android:id="@+id/search_empty_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="@color/status_privacy_gray"
+                    android:textSize="@dimen/medium_txt_size3"
+                    android:visibility="gone" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    android:id="@+id/tv_recent_updates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/status_gray"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/recent_updates"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_status_recent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    android:id="@+id/tv_viewed_updates"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/status_gray"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/viewed_updates"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_status_viewed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    android:id="@+id/tv_muted_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:background="@color/status_gray"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/margin_10"
+                    android:text="@string/muted_updates"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_status_mute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_status"
+        android:layout_width="@dimen/margin_70"
+        android:layout_height="@dimen/margin_70"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/transparent"
+        android:padding="@dimen/margin_20"
+        android:src="@drawable/add_status_camera"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:borderWidth="0dp"
+        app:elevation="@dimen/margin_5"
+        app:fabSize="normal" />
+
+</RelativeLayout>

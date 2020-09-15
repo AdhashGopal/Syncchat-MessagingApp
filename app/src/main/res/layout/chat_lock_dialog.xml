@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_lock_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerChatlock"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/chatLockclose"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:src="@mipmap/arrow_left" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/text_action_title"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/backnavigate"
+            android:gravity="center_vertical"
+            android:text="@string/updateEmailLabel"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/headerChatlock">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ChatLock_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/emailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textColor="#242424"
+                    android:text="@string/chatEmailLabel" />
+
+
+                <ImageView
+                    android:id="@+id/imageEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/emailLabel"
+                    android:padding="10dp"
+                    android:src="@drawable/send_mail" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                    android:id="@+id/email_Et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailLabel"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/imageEmail"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/enter_mailid_label"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:id="@+id/view_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.75dp"
+                    android:layout_below="@+id/email_Et"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@+id/imageEmail"
+                    android:background="#E4E4E4" />
+
+
+                <ImageView
+                    android:id="@+id/okIconEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/emailLabel"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_ok" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ChatLock_Recoveryemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChatLock_email"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/recoveryemailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textColor="#242424"
+                    android:text="@string/recoveryEmail" />
+
+
+                <ImageView
+                    android:id="@+id/imageEmail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/recoveryemailLabel"
+                    android:padding="10dp"
+                    android:src="@drawable/send_mail" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                    android:id="@+id/recoveryMail_Et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recoveryemailLabel"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/imageEmail2"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/enterRecoverymail"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:textSize="13sp" />
+
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.75dp"
+                    android:layout_below="@+id/recoveryMail_Et"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@+id/imageEmail2"
+                    android:background="#E4E4E4" />
+
+
+                <ImageView
+                    android:id="@+id/okIconRecoveryEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/recoveryemailLabel"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_ok" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ChatLock_Recoveryphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChatLock_Recoveryemail"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/recoveryphoneLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:textSize="15sp"
+                    android:textColor="#242424"
+                    android:text="@string/recovery_Phone" />
+
+
+                <ImageView
+                    android:id="@+id/imagerecoveryPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/recoveryphoneLabel"
+                    android:padding="10dp"
+                    android:src="@drawable/recovery_call" />
+
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                    android:id="@+id/recoveryphone_Et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recoveryphoneLabel"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/imagerecoveryPhone"
+                    android:background="@drawable/edittext_background"
+                    android:hint="@string/recoveryPhone"
+                    android:imeOptions="actionNext"
+                    android:digits="1234567890"
+                    android:inputType="phone"
+                    android:textColor="@color/black"
+                    android:maxLength="15"
+                    android:padding="10dp"
+                    android:textSize="14sp" />
+
+
+                <View
+                    android:id="@+id/view_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.75dp"
+                    android:layout_below="@+id/recoveryphone_Et"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@+id/imagerecoveryPhone"
+                    android:background="#E4E4E4" />
+
+
+                <ImageView
+                    android:id="@+id/okIconRecoveryPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/recoveryphoneLabel"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_ok" />
+
+            </RelativeLayout>
+
+
+            <CheckBox
+                android:id="@+id/checkBox_chatLock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ChatLock_Recoveryphone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:button="@drawable/checkbox"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/lockMailverification"
+                android:textColor="#242424"
+                android:textSize="13sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+                android:id="@+id/button_ok"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/checkBox_chatLock"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/numberproviderbutton"
+                android:text="@string/Next"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

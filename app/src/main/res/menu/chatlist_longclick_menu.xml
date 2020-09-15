@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <item
+        android:id="@+id/addchatshortcut_menu"
+        android:title="Add chat shortcut"
+        android:visible="false"
+
+        />
+
+    <item
+        android:id="@+id/viewcontact_menu"
+        android:title="View contact"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/adddcontact_menu"
+        android:title="Add contact"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/markasunread_menu"
+        android:title="Mark as unread"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/markread_menu"
+        android:title="Mark read"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/delete_menu"
+        android:title="Delete"
+        />
+    <item
+        android:id="@+id/mute_menu"
+        android:title="Mute"
+        />
+    <item
+        android:id="@+id/unmute_menu"
+        android:title="Unmute"
+        />
+    <item
+        android:id="@+id/archive_menu"
+        android:title="Archive"
+        android:visible="false"
+        />
+</menu>

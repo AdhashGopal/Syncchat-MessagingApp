@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/main_button"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <RelativeLayout
+                android:id="@+id/image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/splashscreen" />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/mobile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="40dp"
+                    android:alpha="0.3"
+                    android:background="@drawable/bg_shadow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/countryDropDownMain"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/image_layout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/main_bg_shadow"
+                android:visibility="gone">
+
+                <!--<com.nowletschat.android.app.widget.AvnNextLTProDemiTextView-->
+                <!--android:id="@+id/selectCountry"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:gravity="left"-->
+                <!--android:padding="10dp"-->
+                <!--android:text=""-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#242424"-->
+                <!--android:textSize="16sp" />-->
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_blueshadow"
+            android:paddingBottom="25dp">
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFF" />
+
+            <LinearLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@id/v1"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/code_fetch_layout"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="70dp"-->
+                <!--android:layout_weight="0.8">-->
+                <!--<ImageView-->
+                <!--android:id="@+id/scroll_country"-->
+                <!--android:layout_width="15dp"-->
+                <!--android:layout_height="15dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="7dp"-->
+                <!--android:src="@drawable/icon_down_arrow_expand"/>-->
+
+                <!--<com.chatapp.android.app.widget.AvnNextLTProDemiTextView-->
+                <!--android:id="@+id/selectCountry"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:gravity="left"-->
+                <!--android:hint="Code"-->
+                <!--android:text=""-->
+                <!--android:textAlignment="center"-->
+                <!--android:textColor="#242424"-->
+                <!--android:textColorHint="@color/scrennname_txtcolor"-->
+                <!--android:textSize="14sp" />-->
+
+                <!--<View-->
+                <!--android:layout_width="1px"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@color/scrennname_txtcolor" />-->
+                <!--</RelativeLayout>-->
+
+                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/v1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:hint="@string/device_id"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/scrennname_txtcolor"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!--<com.nowletschat.android.app.widget.AvnNextLTProDemiEditText-->
+            <!--android:id="@+id/phoneNumber"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:layout_below="@id/v1"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="left|center"-->
+            <!--android:hint="@string/phoneno_hint"-->
+            <!--android:inputType="number"-->
+            <!--android:padding="10dp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textColorHint="@color/scrennname_txtcolor"-->
+            <!--android:textSize="16sp" -->
+            <!--android:visibility="gone"/>-->
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/phone_layout"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="20dp"
+                android:background="#E8E8E8" />
+
+            <!--<com.chatapp.android.app.widget.AvnNextLTProDemiTextView-->
+            <!--android:id="@+id/send_message"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/v2"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:text="@string/send_message"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--<com.chatapp.android.app.widget.AvnNextLTProDemiTextView-->
+            <!--android:id="@+id/charge"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/send_message"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="@string/charge"-->
+            <!--android:textColor="#666666"-->
+            <!--android:textSize="12sp" />-->
+
+            <CheckBox
+                android:id="@+id/tvTermsAndConditions_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accept"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+
+                android:button="@drawable/checkbox"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/accept"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="Accept the Terms and Condition to continue"
+                android:layout_below="@+id/v2"/>
+
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/tvTermsAndConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTermsAndConditions_checkbox"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:text="@string/TERMS"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/okButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTermsAndConditions"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounf_black_shadow"
+                android:padding="15dp"
+                android:src="@drawable/chatapp_send" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

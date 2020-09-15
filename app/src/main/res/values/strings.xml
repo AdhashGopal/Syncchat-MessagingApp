@@ -1,0 +1,838 @@
+<resources>
+
+    <string name="video_call_appname">aChat</string>
+    <string name="file_provider">.file.provider</string>
+    <string name="unmute_dialog_text1">"New status updates from "</string>
+    <string name="unmute_dialog_text2">" Will appear at the top of the status list"</string>
+    <string name="mute_dialog_text1">"New status updates from "</string>
+    <string name="mute_dialog_text2">" won\'t appear at the top of the status list anymore"</string>
+    <string name="lbl_audio">Audio</string>
+    <string name="app_name">aChat</string>
+    <string name="notification_camera_icon" translatable="false">📷</string>
+    <string name="notification_audio_icon" translatable="false">🎧</string>
+    <string name="notification_video_icon" translatable="false">🎥</string>
+    <string name="notification_document_icon" translatable="false">☰</string>
+    <string name="notification_location_icon" translatable="false">🗺</string>
+    <string name="notification_text_icon" translatable="false">✉</string>
+    <string name="device_id">Enter your IMEI number</string>
+
+    <string name="enter_current_pin">Enter Current PIN</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="enter_new_pin">Enter New PIN</string>
+
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="wrong_pin">Incorrect PIN</string>
+    <string name="search">Search&#8230;</string>
+
+
+    <string name="splash_text">aChat ? would like to access your friends contacts in order to find your friends whoever using this application so you can enjoy wats Message experience as quickly as possible</string>
+    <string name="verify_phone_text">aChat Messenger will send a one time SMS message to verify your phone number Carrier SMS charges may apply</string>
+    <string name="verify_confirm_text">Please confirm your country code and enter your phone number</string>
+    <string name="no_chat_msg">No Chats</string>
+    <string name="no_call_msg">No Calls</string>
+    <string name="default_user_status">Hey there! I am using aChat</string>
+    <string name="btn_agree_txt">Agree</string>
+    <string name="btn_reject_txt">Reject</string>
+    <string name="verify_phone_number_txt">Verify Phone Number</string>
+    <string name="enter_valid_no_txt">Enter valid number</string>
+    <string name="pls_accept_terms_txt">Please Accept Terms and Conditions</string>
+    <string name="edit_txt">Edit</string>
+    <string name="waiting4sms">Waiting to automatically detect an SMS sent to</string>
+    <string name="sms_verification_text">Sms verification</string>
+    <string name="appSetting">App Setting</string>
+    <string name="reGrantPermissionMsg">You have denied the required permission(s). Please, grant to proceed further.</string>
+    <string name="check_internet_connection">Please check your internet connection and try again!</string>
+    <string name="login_failed">Login failed !</string>
+    <string name="profile_pic">Please provide your name and \n an optional profile photo</string>
+    <string name="profile_info">Profile info</string>
+    <string name="welcome_title">Welcome</string>
+    <string name="Next">Next</string>
+    <string name="Continue">Continue</string>
+    <string name="cancle">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="retry">Retry</string>
+    <string name="happy_face">Happy face</string>
+    <string name="scan_code"></string>
+    <string name="current_status">Your current status</string>
+    <string name="select_status">Select your new status</string>
+    <string name="menu_web_title">aChat Web</string>
+
+    <string name="name_and_status">Name &amp; Status</string>
+
+
+    <string name="txt_calling">To start calling who have aChat, Tap on calling Button on The Top Of The Screen</string>
+
+    <string name="pref_videocodec_key">videocodec_preference</string>
+    <string name="pref_videocodec_title">Default video codec.</string>
+    <string name="pref_videocodec_dlg">Select default video codec.</string>
+    <string name="pref_videocodec_default">VP8</string>
+    <string name="aboutnew_messager">aChat Messenger</string>
+    <string name="aboutnew_Inc"> \u00a9 2017 aChat Inc</string>
+    <string name="pref_audiocodec_key">audiocodec_preference</string>
+    <string name="pref_audiocodec_title">Default audio codec.</string>
+    <string name="pref_audiocodec_dlg">Select default audio codec.</string>
+    <string name="pref_audiocodec_default">OPUS</string>
+
+    <string name="pref_hwcodec_key">hwcodec_preference</string>
+    <string name="pref_hwcodec_title">Video codec hardware acceleration.</string>
+    <string name="pref_hwcodec_dlg">Use hardware accelerated video codec (if available).</string>
+    <string name="pref_hwcodec_default">true</string>
+
+
+    <string name="pref_capturetotexture_key">capturetotexture_preference</string>
+    <string name="pref_capturetotexture_title">Video capture to surface texture.</string>
+    <string name="pref_capturetotexture_dlg">Capture video to textures (if available).</string>
+    <string name="pref_capturetotexture_default">false</string>
+
+
+    <string name="pref_noaudioprocessing_key">audioprocessing_preference</string>
+    <string name="pref_noaudioprocessing_title">Disable audio processing.</string>
+    <string name="pref_noaudioprocessing_dlg">Disable audio processing pipeline.</string>
+    <string name="pref_noaudioprocessing_default">false</string>
+
+
+    <string name="pref_aecdump_key">aecdump_preference</string>
+    <string name="pref_aecdump_title">Create aecdump.</string>
+    <string name="pref_aecdump_dlg">Enable diagnostic audio recordings.</string>
+    <string name="pref_aecdump_default">false</string>
+
+
+    <string name="pref_opensles_key">opensles_preference</string>
+    <string name="pref_opensles_title">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_dlg">Use OpenSL ES for audio playback.</string>
+    <string name="pref_opensles_default">false</string>
+
+
+    <string name="pref_resolution_key">resolution_preference</string>
+    <string name="pref_resolution_title">Video resolution.</string>
+    <string name="pref_resolution_dlg">Enter AppRTC local video resolution.</string>
+    <string name="pref_resolution_default">Default</string>
+
+    <string name="pref_fps_key">fps_preference</string>
+    <string name="pref_fps_title">Camera fps.</string>
+    <string name="pref_fps_dlg">Enter local camera fps.</string>
+    <string name="pref_fps_default">Default</string>
+
+
+    <string name="pref_capturequalityslider_key">capturequalityslider_preference</string>
+    <string name="pref_capturequalityslider_title">Capture quality slider.</string>
+    <string name="pref_capturequalityslider_dlg">Enable slider for changing capture quality.</string>
+    <string name="pref_capturequalityslider_default">false</string>
+
+
+    <string name="pref_startvideobitrate_key">startvideobitrate_preference</string>
+    <string name="pref_startvideobitrate_title">Start video bitrate setting.</string>
+    <string name="pref_startvideobitrate_dlg">Start video bitrate setting.</string>
+    <string name="pref_startvideobitrate_default">Default</string>
+
+
+    <string name="pref_startvideobitratevalue_key">startvideobitratevalue_preference</string>
+    <string name="pref_startvideobitratevalue_title">Video encoder start bitrate.</string>
+    <string name="pref_startvideobitratevalue_dlg">Enter video encoder start bitrate in kbps.</string>
+    <string name="pref_startvideobitratevalue_default">1000</string>
+
+
+    <string name="pref_startaudiobitrate_key">startaudiobitrate_preference</string>
+    <string name="pref_startaudiobitrate_title">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_dlg">Audio bitrate setting.</string>
+    <string name="pref_startaudiobitrate_default">Default</string>
+
+
+    <string name="pref_startaudiobitratevalue_key">startaudiobitratevalue_preference</string>
+    <string name="pref_startaudiobitratevalue_title">Audio codec bitrate.</string>
+    <string name="pref_startaudiobitratevalue_dlg">Enter audio codec bitrate in kbps.</string>
+    <string name="pref_startaudiobitratevalue_default">32</string>
+
+    <string name="pref_displayhud_key">displayhud_preference</string>
+    <string name="pref_displayhud_title">Display call statistics.</string>
+    <string name="pref_displayhud_dlg">Display call statistics.</string>
+    <string name="pref_displayhud_default" translatable="false">false</string>
+
+    <string name="pref_tracing_key">tracing_preference</string>
+    <string name="pref_tracing_title">Debug performance tracing.</string>
+    <string name="pref_tracing_dlg">Debug performance tracing.</string>
+    <string name="pref_tracing_default" translatable="false">false</string>
+
+
+    <string name="pref_room_server_url_key">room_server_url_preference</string>
+    <string name="pref_room_server_url_title">Room server URL.</string>
+    <string name="pref_room_server_url_dlg">Enter a room server URL.</string>
+    <!--<string name="pref_room_server_url_default" translatable="false">https://apprtc.appspot.com</string>-->
+   <!--<string name="pref_room_server_url_default" translatable="false">http://103.88.129.42:4400</string>-->
+<!--    <string name="pref_room_server_url_default" translatable="false">http://104.211.181.142:4400</string>-->
+<!--    <string name="pref_room_server_url_default" translatable="false">http://164.52.196.78</string>-->
+    <string name="pref_room_server_url_default" translatable="false">https://achat.adani.com/</string>
+
+<!--
+    <string name="pref_room_server_url_default" translatable="false">https://syncchat.in/</string>
+-->
+
+
+   <!-- <string name="pref_room_server_url_default" translatable="false">https://syncchat.in</string>-->
+
+    <string name="pref_miscsettings_key">misc_settings_key</string>
+    <string name="pref_miscsettings_title">Miscellaneous settings.</string>
+
+    <string name="pref_audiosettings_key">audio_settings_key</string>
+    <string name="pref_audiosettings_title">WebRTC audio settings.</string>
+
+
+    <string name="pref_videosettings_key">video_settings_key</string>
+    <string name="pref_videosettings_title">WebRTC video settings.</string>
+
+
+    <string name="pref_videocall_key">videocall_preference</string>
+    <string name="pref_videocall_title">Video call.</string>
+    <string name="pref_videocall_dlg">Enable video in a call.</string>
+    <string name="pref_videocall_default">true</string>
+
+
+    <string name="missing_url">FATAL ERROR: Missing URL to connect to.</string>
+    <string name="connecting_to">Connecting to: %1$s</string>
+    <string name="search_hint">Search..</string>
+    <string name="action_settings">Settings</string>
+    <string name="notification_title">aChat</string>
+    <string name="no_contacts">No Contacts</string>
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="search_match_other">Matches Other Field</string>
+    <string name="nav_drawer_item_home">Home</string>
+    <string name="nav_drawer_item_explore">Explore</string>
+    <string name="nav_drawer_help_and_feedback"><![CDATA[Help & feedback]]></string>
+    <string name="nav_drawer_about">About</string>
+    <string name="navigation_drawer_opened">The navigation drawer is opened</string>
+    <string name="navigation_drawer_closed">The navigation drawer is closed</string>
+    <string name="tag_nav_drawer_main_entry">nav_drawer_main_entry</string>
+    <string name="tag_nav_drawer_special_entry">nav_drawer_special_entry</string>
+    <string name="tools_text_account_information_username">Username</string>
+    <string name="tools_text_account_information_email">user@mail.com</string>
+    <string name="changenumer_1p">Changing your phone number will migrate your account info,groups and settings</string>
+    <string name="changenumber_2p">Before proceeding,Please Confirm that you are able to receive SMS or calls at your new number </string>
+    <string name="changenumber_3p">If you have both a new phone and a new number,First change your number on your old phone</string>
+    <string name="Deleteaccount_txt1">Delete Your Account from aChat</string>
+    <string name="Deleteaccount_txt2">Erase Your Message History</string>
+    <string name="Deleteaccount_txt3">Delete you from all of your aChat groups</string>
+    <string name="Deleteaccount_txt4">To delete your account confirm your \n country code and enter your phone number</string>
+    <string name="call_settings">Lower the amount of data used during
+                               \n  a aChat call</string>
+    <string name="privacy_message">     If you dont share Last seen,you wont \n be able to see other peoples last seen</string>
+    <string name="block_message">List of contacts that you have blocked</string>
+    <string name="read_receipts">If you turn off read receipts,you wont be \n able to see read receipts from other people.\n Read receipts are
+    always sent for group \n chat</string>
+    <string name="security_text1">When possible, the messages you send and \n your calls are secured with end-to-end \n encryption, which means aChat and Third \n Parties cant read or listen to them</string>
+    <string name="security_text2">Learn More About aChat Security</string>
+    <string name="security_text3">Turn on the settings to receive notifications \n when a contact security code has \n changed.your Calls and the messages you \n send are
+    encrypted regardless of this \n settings.When possible</string>
+    <string name="notification_tone">Play sounds for incoming and outgoing messages.</string>
+    <string name="notification_tone2">No Longer available.Set custom\n notifications by tapping the name at the\n top of a chat</string>
+    <string name="service_message">aChat Service is operating normally</string>
+    <string name="dialog_clearchats">Are you sure you want to clear messages in all chats?</string>
+    <string name="dialoge_clearchats2">Keep starred messages</string>
+    <string name="method">showstatus()</string>
+
+    <string name="exit_group">Exit Group</string>
+    <string name="mute">Mute</string>
+    <string name="custom_notification">Custom Notification</string>
+    <string name="encryption">Encryption</string>
+    <string name="encrypt_msg">Your message securely encrypted.</string>
+    <string name="participants">Participants</string>
+    <string name="group_empty">You are no longer a participant in this group</string>
+    <string name="participant_not">You can\'t send messages to this group because you\'re no longer a participant</string>
+    <string name="add_participants">Add Participants</string>
+    <string name="clearmessage">Are you sure you want to clear messages in this chat?</string>
+    <string name="clear_started">Keep starred messages</string>
+    <string name="Emailchat">Attaching media will generate a large email message.</string>
+    <string name="new_exitcontact">Create a new contact or add to an existing contact?</string>
+    <string name="chatbackup">Back up your messages and media to google drive. You can restore them when you reinstall aChat. Your messages and media will also backup to your phones internal storage. Media and messages you back up are not protected by aChat end to end encryption while in google drive.</string>
+    <string name="user_profile">This is not your user name or pin. This name will be visible to your aChat contacts.</string>
+    <string name="common_groups">Groups in Common</string>
+    <string name="status_phone">Status and Phone</string>
+    <string name="logout_confirmation">Do you really want to logout?</string>
+    <string name="mutehead">Mute chat for..</string>
+    <string name="notifydata">Set to default</string>
+    <string name="sendernotinlist">The Sender is not in your contact list</string>
+    <string name="rspam">Report spam</string>
+    <string name="block_contacts">block</string>
+    <string name="addcontact">Add to contact</string>
+    <string name="block_title_label">Block List</string>
+    <string name="block_contact_label">Blocked Contacts:</string>
+    <string name="groupMessageinfo">Group Message Info</string>
+    <string name="textsample">1\n2\n3\n</string>
+    <string name="invite_contacts">Invite</string>
+    <string name="add_contact_label">Add Contact</string>
+    <string name="add">Add</string>
+
+    <string name="delete_ac_2_msg">We hate to see you go! Why are you leaving? (Feedback is optional)</string>
+    <string name="delete_ac_2_improve_hint">Tell us how we can improve</string>
+    <string name="delete_ac_warn_msg">Proceed to delete your account? It is impossible to reverse this action! If you reactivate your aChat account in the future, your data will not be recovered.</string>
+
+    <array name="delete_ac_reasons">
+        <item>Select Reason</item>
+        <item>I am changing my device</item>
+        <item>I am changing my phone number</item>
+        <item>I am deleting my account temporarily</item>
+        <item>aChat is missing a feature</item>
+        <item>aChat not working</item>
+        <item>Other</item>
+    </array>
+
+    <string name="time_5sec">5 seconds</string>
+    <string name="time_10sec">10 seconds</string>
+    <string name="time_30sec">30 seconds</string>
+    <string name="time_1min">1 minute</string>
+    <string name="time_1hr">1 hour</string>
+    <string name="time_1day">1 day</string>
+    <string name="time_1week">1 week</string>
+    <string name="newPasswordLabel">New Password</string>
+    <string name="confirmPasswordLabel">Confirm Password</string>
+    <string name="hint_newPwd">Enter new password</string>
+    <string name="hint_confirmPwd">Enter confirm password</string>
+    <string name="set_pwd">Set Password</string>
+    <string name="user_info_media_lbl">Media</string>
+    <string name="enter_your_pwd_label">Enter your password</string>
+    <string name="setpassWordlabel">Set Chat Password</string>
+    <string name="enter_mailid_label">Enter your email id</string>
+    <string name="email_label">Email</string>
+    <string name="verify_emailID">Verify email id</string>
+    <string name="updateEmailLabel">Update Email Settings</string>
+    <string name="chatEmailLabel">Your email is used to reach you incase you accidentally get locked out.</string>
+    <string name="recoveryEmail">Your recovery email is used to reach you incase we detect unusual activity in your account or you accidentally get locked out.</string>
+    <string name="enterRecoverymail">Enter your recovery email</string>
+    <string name="recoveryPhone">Recovery phone</string>
+    <string name="recovery_Phone">Your recovery phone is used to reach you incase we detect unusual activity in your account or you accidentally get locked out.</string>
+    <string name="setChatpwd">Set Chat Password</string>
+    <string name="emailSettingsLabel">Email Settings</string>
+    <string name="changeEmailLabel">Change Email</string>
+    <string name="chngrecEmail">Change Recovery Email</string>
+    <string name="chngrecPhn">Change Recovery Phone</string>
+    <string name="lockMailverification">To verify your email settings, all you have to do is click the link sent to you in the email.</string>
+
+    <string name="chat_restore_msg">Restore your chat history from Google Drive. If you don\'t restore now, you won\'t be able to restore later.</string>
+
+    <string name="forgotChatpwd">Forgot Password</string>
+
+    <string name="app_rateing">Do you like the app?</string>
+    <string name="commands">Use the slider to tell it in the \n \t \t language of Emoji\'s</string>
+    <string name="notnow">Not now</string>
+    <string name="submit">Submit</string>
+    <string name="rating_txt_like">Liked it</string>
+    <string name="rating_txt_hate">I hated it</string>
+    <string name="rating_txtit_was_ok">It was ok</string>
+    <string name="rating_txt_dont_like">Didn\'t like it</string>
+    <string name="rating_txt_love">Love it</string>
+    <string name="status_available">Available on aChat</string>
+    <string name="status_not_available">Not Available on aChat</string>
+
+    <string name="about_contactus_title">Please describe your problem</string>
+    <string name="about_contactus_button">HAVE YOU READ OUR FAQ YET?</string>
+    <string name="about_contactus_screenshots">Add screenshots (optional):</string>
+    <string name="NEXT">NEXT</string>
+    <string name="Contactus">Contact us</string>
+
+
+    <string name="about_help_name">About &amp; Help</string>
+
+    <string name="delete_account_title">Delete my account</string>
+    <string name="delete_step_title">DELETING YOUR ACCOUNT WILL:</string>
+    <string name="Choose_Account">Choose Account</string>
+
+    <string name="All_rights_reserved">All rights reserved</string>
+
+    <string name="Privacy">Privacy</string>
+    <string name="Account">Account</string>
+    <string name="AddParticipant">Add Participant</string>
+    <string name="Enter_New_Subject">Enter New Subject</string>
+    <string name="Add_new_name">Add new name</string>
+    <string name="Changenumber">Change number</string>
+    <string name="gmail_id">gmail-id</string>
+    <string name="backup_time">backup-time</string>
+    <string name="size">size</string>
+    <string name="Skip">Skip</string>
+    <string name="Chat_Lock">Chat Lock</string>
+
+    <string name="Selectcountry">Select country</string>
+    <string name="Search">Search</string>
+    <string name="Data_Usage">Data Usage</string>
+    <string name="Network_Usage">Network Usage</string>
+    <string name="Media_auto_download">Media auto-download</string>
+
+    <string name="When_using_mobile_data">When using mobile data</string>
+    <string name="No_media">No media</string>
+    <string name="When_connected_on_WiFi">When connected on WiFi</string>
+    <string name="When_roaming">When roaming</string>
+    <string name="data_usage_note">NOTE:Voice messages are always automatically downloaded for the best communication experience</string>
+
+    <string name="Media">Media</string>
+    <string name="Delete_Group">Delete Group</string>
+
+    <string name="EveryOne">Everyone</string>
+    <string name="My_Contacts">My contacts</string>
+    <string name="Nobody">Nobody</string>
+
+
+    <string name="Conversation_tones">Conversation tones</string>
+    <string name="Message_notification">Message notifications</string>
+    <string name="Notification_tone">Notification tone</string>
+    <string name="Default_ringtone">Default ringtone (Beep Once)</string>
+    <string name="Beep_Once">Beep Once</string>
+    <string name="Vibrate">Vibrate</string>
+    <string name="Off">Off</string>
+    <string name="Popup_notification">Popup notification</string>
+    <string name="No_popup">No popup</string>
+    <string name="Notification_background">Notification background</string>
+    <string name="Red">Red</string>
+    <string name="Group_notification">Group notifications</string>
+    <string name="Notifications">Notifications</string>
+
+    <string name="privacy_title">Who can see my personal info</string>
+    <string name="Last_Seen">Last Seen</string>
+    <string name="Status">Status</string>
+    <string name="Messaging">Messaging</string>
+    <string name="Profile_Photo">Profile Photo</string>
+    <string name="Read_Receipts">Read Receipts</string>
+    <string name="Read_recept_note">If you turn off read receipts, you won\'t be  able to see read receipts from other people. Read receipts are always sent for group chat</string>
+
+    <string name="name_hint">Type your name here</string>
+
+    <string name="Security">Security</string>
+    <string name="Show_Security_Notifications">Show Security Notifications</string>
+
+    <string name="Resend_SMS">Resend SMS</string>
+    <string name="System_Status">System Status</string>
+    <string name="Phone_no">Phone no</string>
+
+    <string name="India">India</string>
+    <string name="accepted">I Accept Terms and Conditions</string>
+
+    <string name="Group_Name_here">Group Name here</string>
+
+    <string name="Members_Name_here">Members Name here</string>
+
+    <string name="Group_Admin">Group Admin</string>
+    <string name="Delivered">Delivered</string>
+    <string name="Read">Read</string>
+    <string name="name">Name</string>
+    <string name="phone_number">phone number</string>
+    <string name="save">Save</string>
+
+    <string name="Archived_chats">Archived chats</string>
+    <string name="Archived">Archived</string>
+
+    <string name="country_code_old">Please enter your old country code and phone number:</string>
+    <string name="add_countrycode_phnoeno">Please enter your new country code and phone number:</string>
+
+    <string name="Chat_Backup">Chat backup</string>
+    <string name="Last_backup">Last Backup</string>
+    <string name="Local">Local:</string>
+    <string name="size_chat_backup">Size:</string>
+    <string name="Google_Drive">Google Drive:</string>
+    <string name="back_up">back up</string>
+    <string name="google_drive_settings">Google Drive settings</string>
+    <string name="Back_up_to_google_Drive">Back up to Google Drive</string>
+    <string name="Back_up_over">Back up over</string>
+
+    <string name="Chat_history">Chat history</string>
+    <string name="Email_chat">Email chat</string>
+    <string name="Archive_all_chats">Archive all chats</string>
+    <string name="Clear_all_chats">Clear all chats</string>
+    <string name="Unarchive_all_chats">Unarchive all chats</string>
+    <string name="Message_Info">Message Info</string>
+    <string name="Read_by">Read by</string>
+
+
+    <string name="type_message">Type a message...</string>
+
+    <string name="messages">Messages</string>
+    <string name="other_contacts">Other Contacts</string>
+    <string name="chats">Chats</string>
+    <string name="Chat_Settings">Chat settings</string>
+    <string name="Enter_is_send">Enter is send</string>
+    <string name="enter_to_newline">Enter key will add a new line</string>
+    <string name="enter_to_send">Enter key will send your message</string>
+    <string name="Font_Size">Font size:</string>
+    <string name="Font_size_for_chat_screen">Font size for chat screen</string>
+    <string name="Wallpaper">Wallpaper</string>
+
+
+    <string name="Contacts">Contacts</string>
+    <string name="Invite_friend">Invite a friend</string>
+    <string name="Show_contacts">Show all contacts</string>
+    <string name="enable_contact">Enable to also use hidden contacts</string>
+
+    <string name="Loading">Loading...</string>
+    <string name="No_Contact_Available_to_chat"> No Contact Available to chat</string>
+
+    <string name="MOBILE">MOBILE</string>
+    <string name="Select_Contact">Select Contact</string>
+
+    <string name="Backup_to_google_drive">Backup to google drive</string>
+    <string name="Never">Never</string>
+    <string name="Only_when_i_tap_backup">Only when i tap backup</string>
+    <string name="Daily">Daily</string>
+    <string name="Weekly">Weekly</string>
+    <string name="Monthly">Monthly</string>
+
+    <string name="Default">Default</string>
+    <string name="Short">Short</string>
+    <string name="Long">Long</string>
+
+    <string name="Gallery">Gallery</string>
+    <string name="Document">Document</string>
+    <string name="Video">Video</string>
+    <string name="Audio">Audio</string>
+    <string name="Location">Location</string>
+    <string name="Contact">Contact</string>
+
+    <string name="Camera">Camera</string>
+
+    <string name="Solid_color">Solid color</string>
+    <string name="No_wallpaper">No wallpaper</string>
+
+
+    <string name="Small">Small</string>
+    <string name="Medium">Medium</string>
+    <string name="Large">Large</string>
+
+    <string name="Unarchive">Unarchive</string>
+    <string name="Delete">Delete</string>
+    <string name="Mark_as_unread">Mark as unread</string>
+    <string name="Mark_as_read">Mark as read</string>
+    <string name="Unmute">Unmute</string>
+    <string name="Add_to_shortcut">Add to shortcut</string>
+    <string name="View_contact">View contact</string>
+    <string name="Exit_Group">Exit Group</string>
+
+    <string name="wifi">Wifi</string>
+    <string name="Wifi_or_Cellular">Wifi or Cellular</string>
+
+    <string name="When_Using_Mobile_Data">When Using Mobile Data</string>
+    <string name="Photo">Photo</string>
+
+    <string name="send_message">We will send you a one time SMS message.</string>
+    <string name="charge">Carrier charges may apply.</string>
+    <string name="TERMS"><u>Terms &amp; Conditions</u></string>
+    <string name="text_name">Please provide your name and \n\t an optional profile photo</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_email">Change Email</string>
+
+    <string name="Your_Name">Your Name</string>
+    <string name="Verification_Code">Verification Code</string>
+    <string name="txt_smsverification">Please Enter Verification code sent</string>
+    <string name="sms_code_hint">Enter Mobile number OTP</string>
+    <string name="email_code_hint">Enter Email-Id OTP</string>
+    <string name="Resend">RESEND</string>
+    <string name="phoneno_hint">Your Phone Number</string>
+    <string name="email_hint">Your Email Id</string>
+    <string name="Backup_Over">Backup Over</string>
+
+    <string name="chatapp">Chatapp</string>
+    <string name="adani">Adani</string>
+
+    <string name="hours_8">8 hours</string>
+    <string name="one_week">1 week</string>
+    <string name="year_one">1 year</string>
+    <string name="mute_nptification_txt">Show notifications</string>
+
+
+    <string name="Chat_expiration_time">Chat expiration time</string>
+    <string name="Verification_Successful">Verification Successful</string>
+    <string name="start_chat">You can start the chat</string>
+    <string name="enter_chat">ENTER CHAT</string>
+
+
+    <!--<string name="google_api_key">AIzaSyBhYNAG8VbxeN4R-WV5Y4dYuNfr1EJdnoY</string>   &lt;!&ndash;Release Key&ndash;&gt;-->
+    <!--<string name="google_api_key">AIzaSyC5t8VkrxTcGqwADdy-F8hgJuz_YBVx_sE</string>   &lt;!&ndash;Debug Key&ndash;&gt;-->
+    <string name="google_api_key">AIzaSyCxCprNGQpecOfQN0pCu2nxzUmBoMSA8no</string>
+    <!--<string name="google_api_key">AIzaSyBqKxk_mDTZ1aigUfDq8h2mvcPv3dK2ISA</string>-->
+
+
+    <string name="app_legal_info">aChat Legal Information</string>
+    <string name="Basic_Updates">Basic Updates</string>
+    <string name="bascic_update_parah">For us, your privacy is the priority and we have that embedded into our blood,
+        which is how we work for you. Right from the moment,
+        we have created aChat we made sure that our privacy terms and conditions are strong enough.
+        We have recently updated it for you, here they are:</string>
+    <string name="Understandable_terms_and_conditions">Understandable terms and conditions</string>
+    <string name="Understandable_terms_and_conditions_parah">The terms and conditions which we have updated are understandable to
+        any person who has come across this particular app. With the new update,
+        there a few new features which we have introduced in the app like aChat Web.</string>
+    <string name="Security_Features">Security Features</string>
+    <string name="Security_Features_features_parah">Whatever message you send and receive from your friends and family is always yours;
+        there is no access for us to fetch the details of the messages which you have exchanged.
+        Your privacy is our priority, that is why we have secured all your messages and they belong one and only to you but no one else,
+        so you do not need to worry about your privacy.</string>
+    <string name="Free_of_Advertisements">Free of Advertisements</string>
+    <string name="Free_of_Advertisements_parah">In general,
+        you would have come across applications which have advertisements flashing now and then very often and it is an annoying factor.
+        We have taken this aspect into our account and have designed the app free from any kind of advertisements.</string>
+    <string name="About_our_Services">About our Services</string>
+    <string name="Registration">Registration</string>
+    <string name="Registration_parah">In order to enroll with our services it is essential for
+        you to give us authentic information, and for that purpose you need to provide your personal contact information.
+        In case of any changes in your contact number on aChat, you can update the number with the change number option on the app.
+        From our third-party providers, you can receive the text messages and phone calls.
+        With the aid of the codes, you can register to use our services in an efficient manner.</string>
+    <string name="Address_Book">Address Book</string>
+    <string name="Address_Book_parah">It is not only your contact information which you would be sharing with us.
+        If there are any of your friends or family members who are using our service then by default
+        the contact numbers will be added to contact list of the app from the phone book of your device. </string>
+    <string name="Age_Limit">Age Limit</string>
+    <string name="Age_Limit_parah">The minimum age requirement to use our services is a minimum of 13 year old.
+        In case of violating the age bar limit for the user, there will be no problem in that particular aspect.
+        It is better that, the person has the guidance
+        of their parents or guardian to watch over when they are using the app in their presence.</string>
+    <string name="Devices_and_Software">Devices and Software</string>
+    <string name="Devices_and_Software_parah">In order to use our service, you need to have specific
+        devices along with the required software and the operating system.
+        Only if you possess the requirements you will be able to use our aChat application on your device.
+        Once you have downloaded and installed our app on your device by default
+        it will have an update available whenever the updated version of the app is available. </string>
+    <string name="Fees_and_Taxes">Fees and Taxes</string>
+    <string name="Fees_and_Taxes_parah">You will be able to use the application only
+        if there is an internet connection available as the app works based on the network connection.
+        You are responsible for the payments and taxes which you pay for your network service provider for using our services.
+        Apart from that, there are possibilities where we will be charging you along with the taxes for our services specifically.
+        There will be no refunds done for the payments which you have done towards our services. </string>
+    <string name="Privacy_Policy_and_User_Data">Privacy Policy and User Data</string>
+    <string name="Privacy_Policy_and_User_Data_parah">You are accepting to the privacy policy as you will be sharing the information
+        which you send and receive messages.
+        Under the policy, we have also mentioned about the ways in which the information will be collected and transferred to other devices.
+        This information sharing is done regardless of the location from where
+        you are using our service along with the facilities and network service providers.
+        You need to agree to all the rules and regulations which are practiced in the respective countries across the world.  </string>
+    <string name="Details_we_collect">Details we collect</string>
+    <string name="Details_we_collect_parah">We need certain information for us to activate your account on the app so you can use it.
+        These will include the information in regards to the installation of the app,
+        access to the app and the services which we provide. </string>
+    <string name="Details_you_provide">Details you provide</string>
+
+    <string name="Youre_Account_Information">You\'re Account Information</string>
+    <string name="your_account_inform_parah">Mobile number is a requirement for you to create an account on the aChat app. Once you have created the account by default you will be sharing the contact information of the people who use our service. In order to use the app, there is a verification code sent to your message inbox on your device only after the verification you will be able to use the service. Apart from this,
+        you have an option to update your username, profile picture, and the status as well. </string>
+    <string name="your_message">You\'re Message </string>
+    <string name="your_message_parah">While we are offering you our service we do not read any of your messages (including your share location information, chats, voice, video messages, photos, and files). The messages you\'ve sent is deleted from our server the moment when it is delivered to the recipient. The messages that you send are only stored on your mobile device. In case if the messages that you have sent is not delivered to the intended recipient, we keep it on our server for 30 days and try to deliver the message and after 30 days the message will be deleted from our server as well.
+        We might retain a content on our server for a long time only when we deliver media messages. </string>
+    <string name="Your_Connection">You\'re Connection </string>
+    <string name="Your_Connection_parah">To efficiently communicate with others, we may create a special favorites list of the contacts, so you can either join,
+        broadcast lists and even get added to various groups. And the lists and groups are associated with the account information. </string>
+    <string name="Customer_Support">Customer Support </string>
+    <string name="Customer_Support_parah">We can provide you customer support regarding the use of our service, so you can send us the information on how to contact you, even include copies of your text messages.
+        For example, you can mail us regarding our app performance or any other concern.</string>
+    <string name="Automatically_Collected_Information">Automatically Collected Information</string>
+    <string name="Usage_and_Log_Information">Usage and Log Information</string>
+    <string name="Usage_and_Log_Information_parah">We collect information pertaining to the service, performance and diagnostic and it includes information about your activity (like how you communicate with others using our app service and how you access our service),
+        websites, crash, log files, performance logs, diagnostic and reports. </string>
+    <string name="Device_and_Connection_information">Device and Connection information</string>
+    <string name="Device_and_Connection_information_parah">We collect information relating to the device when you install,
+        use or access our services. And the information we collect is related to the operating system, the hardware model, IP address, browser, mobile network details including the device identifier and mobile phone number. We also collect device location information, if you use the location feature from our service, like when you view the locations which has been shared, and when you wish to share your location with your contacts,
+        for troubleshooting or diagnostics when you encounter issues with our app location. </string>
+    <string name="Cookies">Cookies</string>
+    <string name="Cookies_parah">We use cookies to provide and operate our service including the web-based services, customize the service, enhance your experience and understanding of how our service is being used. For instance, we use the cookies to offer our service for the web-based, web and desktop service. We also use it to understand which of the FAQs from our service is popular and provide relevant content to our service.
+        We even use the cookies to recall your preferences in language and to customize the service to your wish.</string>
+    <string name="Status_information">Status information </string>
+    <string name="Status_information_parah">We gather information about your status message, online presence on our service like the recent status updates,
+        the online status, and when you have last accessed our service.</string>
+    <string name="Third_party_Information">Third-party Information</string>
+    <string name="Third_party_Information_parah">Your friends or family members who use our services may provide your contact number from their contact list instantly available on their mobile phones. They can also send you a message, and send messages to the groups to which you belong.
+        At the same time, you can also provide their information. </string>
+    <string name="Third_Party_Providers">Third-Party Providers</string>
+    <string name="Third_Party_Providers_parah">We work with the several third party providers in order to disseminate our applications, provide a complete infrastructure, delivery, and market our services.
+        The app store and play store helps us to analyze and fix the service issues by producing a list of statements. </string>
+    <string name="Third_party_Services">Third-party Services</string>
+    <string name="Third_party_Services_parah">You can also communicate with the third party with the help of our services. With the aid of the Share option, you can share a review which can be broadcasted to the contacts or groups. When you use the third-party services,
+        their terms and conditions will take control of your use of that concerned services.  </string>
+    <string name="Information_You_and_We_Share">Information You and We Share</string>
+    <string name="Account_Information">Account Information</string>
+    <string name="Account_Information_parah">The account information which includes a phone number, profile name, and photo, online status, last seen status and status message are visible to anyone who uses our services or the user can customize it according to their wish, with whom they would like to share their information.
+        It can be made visible to everyone, just your contacts on no one apart from yourself. </string>
+    <string name="Your_contact_and_others">Your contact and others</string>
+    <string name="Your_contact_and_others_parah">Your friends or family members with whom you interact may store, reshare the data like contact number or messages with third-parties. The settings of our service provide you with a block feature which will help you
+        to avoid unknown people and keep them at bay and make your chat experience as a good one.</string>
+    <string name="Third_Party_Providers_account">Third-Party Providers</string>
+    <string name="Third_Party_Providers_account_parah">Once the data is shared with the third-party providers, we instruct them not to use the information provided to them in any misleading ways.
+        It is important for them to keep it safe and secure without any breach in it. </string>
+    <string name="Third_party_Services_account">When we share information with the third parties by default we will be sharing the information of the user. If the user wants to create a backup of the chat they will be able to use the third-party service such as Google or iCloud. This means that you are sharing your information with the third-party by direct means. You need to note that the service from the third party will have its own privacy policies and terms and conditions.
+        The user is liable to any kind of information which has been shared out of the aChat app. </string>
+    <string name="Updates_to_Our_Policy">Updates to Our Policy</string>
+    <string name="Updates_to_Our_Policy_parah">We are bound to revise or update our Privacy Policy and we will provide you with the notice of the revision of the policies and update the last modified date as well. When you access the service after the amendment of the Privacy Policy, we will confirm your acceptance of the policy update.
+        If you deny the revised Privacy Policy you must stop using our service. Frequently review our Privacy Policy.</string>
+    <string name="no_contact_block_label">Tap + at the top of your screen to select a contact to block. \n Blocked contacts will no longer be able to call you or send you messages</string>
+
+    <string name="empty_profile_name_alert">Name can\'t be empty</string>
+    <string name="account_type">com.chatapp.android.account</string>
+
+
+    <!-- Handy Script String Files -->
+
+
+    <!-- Estimate Price Activity -->
+
+
+    <!--Xmpp Notification Message-->
+
+
+    <!-- Login Page -->
+
+    <!-- Register Page -->
+
+
+    <!-- OTP Page -->
+
+    <!-- Forgot Password Page -->
+
+    <!-- Reset Password Page -->
+
+
+    <!-- City Selection Page -->
+
+    <!-- Navigation Drawer Layout -->
+    <string name="navigation_label_home">Home</string>
+    <string name="navigation_label_myOrders">My Orders</string>
+    <string name="navigation_label_money">My Money</string>
+    <string name="navigation_label_chat">Chat</string>
+    <string name="navigation_label_invite">Invite Friends</string>
+    <string name="navigation_label_report_issue">Report Issues</string>
+    <string name="navigation_label_aboutUs">About Us</string>
+    <string name="navigation_label_logout">Log Out</string>
+
+    <!-- Home Page Layout -->
+
+
+    <!--Emergency Contact-->
+
+    <!-- Invite And Earn -->
+    <!--<string name="facebook_app_id">1294268777311773</string>-->
+
+
+    <!--Maidac Money-->
+
+    <!--Maidac Money WebView-->
+
+    <!--Maidac Money Transaction-->
+
+
+    <!--Appointment Page-->
+
+    <!--Appointment Page Timer Dialog-->
+
+    <!--Appointment Page More Address Dialog-->
+
+    <!--Add Address Page-->
+
+    <!--Appointment Confirmation Page-->
+
+
+    <!--My Jobs Page-->
+
+
+    <!--Navigation Item-->
+
+    <string name="navigation_label_transactions1">Transactions</string>
+    <string name="navigation_label_review1">Reviews</string>
+    <string name="navigation_label_notification1">Notification</string>
+
+    <!--My Jobs Detail Page-->
+
+
+    <!--Cancel Job Page -->
+
+    <!--Profile Page -->
+
+    <!--ChangePassword Activity-->
+
+
+    <!--View Profile Page -->
+
+
+    <!--Make Payment Page -->
+    <!--Make Payment WebView -->
+
+    <!--Rating Page -->
+
+
+    <!--Chat Page -->
+
+
+    <!--Chat List Page -->
+
+
+    <!--providerslist-->
+
+    <!--Chat screen-->
+
+
+    <!-- Map_Home_page-->
+
+    <string name="no_internet_connection">No Internet Connection</string>
+
+
+    <!--Appointment Page-->
+
+    <!-- Transaction Detail Page-->
+
+    <!-- Tasker Availability-->
+
+    <!-- Running Page-->
+
+    <!--Event-->
+
+    <string name="data">data</string>
+    <string name="title_activity_fake_outgoingcall_">FakeOutgoingcall_Activity</string>
+    <string name="your_status_updates_will_disappear_after_24_hours">Your status updates will disappear after 24 hours</string>
+    <string name="reply">REPLY</string>
+    <string name="status">Status</string>
+    <string name="add_caption">Add Caption...</string>
+    <string name="tap_to_add_status_update">Tap to add status update</string>
+    <string name="max_upload_limit_msg">Sorry! Maximum upload files limit is 30</string>
+
+
+    <string name="edit">Edit</string>
+
+
+    <string name="delete_forme">Delete for me</string>
+    <string name="delete_everyone">Delete for everyone</string>
+    <string name="you_deleted_text">You deleted this message</string>
+    <string name="other_deleted_text">This message was deleted</string>
+    <string name="viewed_updates">Viewed Updates</string>
+    <string name="recent_updates">Recent Updates</string>
+    <string name="position">position</string>
+    <string name="muted_updates">Muted Updates</string>
+    <string name="my_status">My Status</string>
+    <string name="status_privacy">Status Privacy</string>
+    <string name="who_can_see_your_status_updates">Who can see your status updates</string>
+    <string name="my_contacts">My Contacts</string>
+    <string name="my_contacts_except">My Contacts except...</string>
+    <string name="only_share_with">Only share with...</string>
+    <string name="hide_status_from">Hide status from...</string>
+    <string name="video">Video</string>
+    <string name="photo">Photo</string>
+
+    <!--New Texts-->
+    <string name="reset_request"><u>Reset pin?</u></string>
+
+    <string name="nolongerparticipant">You cant send message to this group because you\'re no longer a participant</string>
+    <string name="_5_00pm">5:00PM</string>
+    <string name="sample_group_content">you added 123456798</string>
+    <string name="sample_duration">5.00</string>
+    <string name="audio_duration">00:00</string>
+
+
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="organisation">Organisation</string>
+    <string name="non_organisation">Non Organisation</string>
+    <string name="id_number">Employee ID</string>
+    <string name="designation">Designation</string>
+    <string name="department_name">Department</string>
+    <string name="already_loged_in">Already have an Organisation account? <u>click here</u></string>
+    <string name="report_emailID">Reporting email id</string>
+    <string name="emailID">Email</string>
+    <string name="reference_emailID">Reference Person Email</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="aChat_reg">aChat Registration</string>
+
+    <string name="aChat_reg_desc">Click Organisation, if you are a part of Adani Group.</string>
+
+
+
+</resources>

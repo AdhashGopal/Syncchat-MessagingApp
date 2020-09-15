@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_border"
+    android:padding="10dp"
+    >
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:text="@string/Backup_to_google_drive"
+        android:textColor="#242424"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup_chatbackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/r1_chatbackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="Never"
+            android:textColor="#242424"
+            android:textSize="13sp"
+
+            />
+
+        <RadioButton
+            android:id="@+id/r2_chatbackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Only_when_i_tap_backup"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/r3_chatbackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Daily"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/r4_chatbackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Weekly"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/r5_chatbackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/radiobutton"
+            android:padding="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/Monthly"
+            android:textColor="#242424"
+            android:textSize="13sp" />
+    </RadioGroup>
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+
+        android:id="@+id/cancel_chatbackup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup_chatbackup"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="15dp"
+        />
+
+
+</RelativeLayout>

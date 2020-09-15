@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/status_main_r1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/backarrow_status"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/arrow_left"
+            android:padding="5dp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/Status_actionbar_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/backarrow_status"
+            android:layout_centerVertical="true"
+            android:text="Status"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:text="EDIT"
+            android:id="@+id/status_edit_text"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/statusInfo_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_main_r1"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/currentStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/current_status"
+            android:textColor="@color/appthemecolour"
+            android:textSize="14sp" />
+
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/currentStatus"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/imageView1"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/editStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/currentStatus"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_status" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/currentStatus"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/editStatus"
+            android:src="@mipmap/sms_verification_line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/selectNewStatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/statusInfo_rl"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/selectStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_status"
+            android:textColor="@color/appthemecolour"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/viewLine2"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_below="@id/selectStatus"
+            android:layout_marginTop="2dp"
+            android:background="#757575" />
+
+        <ListView
+            android:id="@+id/listViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/viewLine2"
+            android:minHeight="80dp"></ListView>
+    </RelativeLayout>
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectNewStatus"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/appthemecolour"
+        android:text="update The Status" />
+
+</RelativeLayout>

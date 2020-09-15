@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:background="@drawable/about_bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        >
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="15dp"
+            android:id="@+id/back_arrow"
+            android:src="@drawable/back_arrow" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:text="@string/aboutnew_messager"
+            android:textStyle="bold" />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView1"
+            android:textColor="@color/ripple_light_grey"
+            android:text="2.6"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/tvVersion"
+            android:src="@mipmap/chatapp_newlogo" />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/imageView1"
+            android:text="@string/aboutnew_Inc"
+            android:textSize="15sp"
+            android:textColor="@color/ripple_light_grey"
+            android:layout_centerHorizontal="true"/>
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:text="@string/All_rights_reserved"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/ripple_light_grey"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

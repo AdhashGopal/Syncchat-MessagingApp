@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+   >
+
+
+
+    <!--Date label starts-->
+    <include
+        android:id="@+id/dayLblLayout"
+        layout="@layout/day_label_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dayLblLayout"
+        android:id="@+id/selection_layout"
+        android:layout_marginTop="3dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="-2dp"
+        android:layout_marginTop="-4dp"
+        android:visibility="gone"
+        android:src="@drawable/sendcornerindicator" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_message"
+        android:paddingBottom="6dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/lblMsgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text=""
+            />
+
+
+        <ImageView
+            android:id="@+id/ivMap"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:transitionName="image"/>
+        <ProgressBar
+            android:id="@+id/pbUpload"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp"
+            android:indeterminate="true" />
+        <ImageView
+            android:id="@+id/starredindicator_below"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toLeftOf="@+id/ts"
+            android:background="@drawable/starred_white"
+            android:visibility="visible"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:shadowColor="@color/lblFromName"
+            android:shadowRadius="20"
+            android:text="10:00AM"
+            android:textColor="@color/ts_color"
+            android:textSize="11sp"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            android:layout_toLeftOf="@+id/rlMsgStatus"
+            android:layout_toStartOf="@+id/rlMsgStatus"
+            android:layout_alignParentBottom="true"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rlMsgStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:id="@+id/single_tick_green"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@mipmap/ic_single_tick"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/double_tick_green"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@mipmap/ic_double_tick"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/double_tick_blue"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/message_deliver_tick"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/clock"
+                android:visibility="visible" />
+        </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

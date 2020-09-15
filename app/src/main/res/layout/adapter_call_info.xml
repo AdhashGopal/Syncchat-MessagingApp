@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:text="Today"
+    />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/divider"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        >
+        <ImageView
+            android:id="@+id/ivCallType"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/ic_in_call_missed"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvCallType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Outgoing call"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@+id/tvCallStatus"
+            android:layout_toStartOf="@+id/tvCallStatus"
+            android:layout_toRightOf="@id/ivCallType"
+            android:layout_toEndOf="@id/ivCallType"
+            />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvCallStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="cancelled"
+            android:textColor="@color/chatlist_messagecolor"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Outgoing call"
+            android:textColor="@color/chatlist_messagecolor"
+            android:textSize="13sp"
+            android:layout_below="@id/tvCallStatus"
+            android:layout_toRightOf="@id/ivCallType"
+            android:layout_toEndOf="@id/ivCallType"
+            android:layout_marginTop="10dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:orientation="vertical">
+
+    <!--Date label starts-->
+    <include
+        android:id="@+id/dayLblLayout"
+        layout="@layout/day_label_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/selection_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayLblLayout">
+
+        <ImageView
+            android:id="@+id/forward_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_toEndOf="@+id/layout_received_image"
+            android:layout_toRightOf="@+id/layout_received_image"
+            android:background="@drawable/ic_forward_grey"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/receivecornerindicator"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/layout_received_image"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/receiverbutton">
+
+            <RelativeLayout
+                android:id="@+id/relative_layout_message"
+                android:layout_width="220dp"
+                android:layout_height="200dp"
+                android:padding="3dp"
+                android:paddingBottom="1dp">
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/lblMsgFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text=""
+                    android:textColor="@color/Sendername"
+                    android:textSize="13sp"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:id="@+id/imgshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/lblMsgFrom"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/abovecaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone">
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/ts_abovecaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="5dp"
+                        android:text="5:30am"
+                        android:textAllCaps="true"
+                        android:textColor="@color/lblFromName"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/starredindicator_above"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toLeftOf="@+id/ts_abovecaption"
+                        android:layout_toStartOf="@+id/ts_abovecaption"
+                        android:background="@drawable/starred"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:alpha="0.6"
+                    android:background="@drawable/image_download_bg"
+                    android:padding="20dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/download_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/down"
+                        android:visibility="visible" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                        android:id="@+id/imagesize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/download_icon"
+                        android:layout_toRightOf="@+id/download_icon"
+                        android:text="5kb"
+                        android:textColor="@color/white"
+                        android:textSize="11dp" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbUpload"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true" />
+
+
+            </RelativeLayout>
+
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/captiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_layout_message"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text=""
+                android:clickable="true"
+                android:textColor="#242424"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlTs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/captiontext"
+                android:visibility="gone">
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                    android:id="@+id/ts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+
+                    android:text="5:30am"
+                    android:textAllCaps="true"
+                    android:textColor="@color/lblFromName"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/starredindicator_below"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toLeftOf="@+id/ts"
+                    android:layout_toStartOf="@+id/ts"
+                    android:background="@drawable/starred"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

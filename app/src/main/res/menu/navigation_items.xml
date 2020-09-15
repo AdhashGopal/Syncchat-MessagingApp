@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/acc"-->
+            <!--android:title="Account"-->
+            <!--android:textSize="40sp"-->
+        <!--android:icon="@drawable/ic_account"/>-->
+        <item
+            android:id="@+id/chat"
+            android:title="Chats"
+            android:textSize="40sp"
+            android:icon="@drawable/ic_chat"/>
+        <item
+            android:id="@+id/notify"
+            android:title="Notifications"
+            android:icon="@drawable/ic_notify"/>
+        <!--<item-->
+            <!--android:id="@+id/datause"-->
+            <!--android:title="Data Usage"-->
+            <!--android:icon="@drawable/ic_data_usage"/>-->
+        <item
+            android:id="@+id/contact"
+            android:title="Contacts"
+            android:icon="@drawable/ic_contact"/>
+        <item
+            android:id="@+id/abt"
+            android:title="About and Help"
+            android:icon="@drawable/ic_help"/>
+
+
+
+    </group>
+
+</menu>

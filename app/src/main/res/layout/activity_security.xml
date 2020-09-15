@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/securityaccount_r1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/backarrow_security_account"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/arrow_left"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/text_actionbar_1"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@+id/backarrow_security_account"
+                android:gravity="center_vertical"
+                android:text="@string/Security"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/securityaccount_1"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/securityaccount_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/security_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="70dp"
+                    android:src="@drawable/security"
+
+                    />
+
+                <TextView
+                    android:id="@+id/security_text1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/security_image"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/security_text1"
+                    android:textColor="#a1a2a2"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/security_text4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/security_text1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/security_text2"
+                    android:textColor="@color/textcolor"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/seperator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@+id/securityaccount_1"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="#C0C0C0" />
+
+            <RelativeLayout
+                android:id="@+id/securityaccount_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/securityaccount_1"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/security_text3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/Show_Security_Notifications"
+                    android:textColor="#242424"
+                    android:textSize="13sp" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/security_text3">
+
+                    <TextView
+                        android:id="@+id/security_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/security_text3"
+                        android:textColor="#a1a2a2"
+                        android:textSize="11sp" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch1"
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/relativeLayout2"
+                    android:layout_toRightOf="@+id/relativeLayout2"
+                    android:switchMinWidth="60dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".app.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.010" />
+
+    <TextView
+        android:id="@+id/headerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/non_organisation"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/left_guideline1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideline1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/margin_25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideline1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/margin_25" />
+
+   <!-- <ScrollView
+        android:id="@+id/scroll_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout"
+        app:layout_constraintLeft_toRightOf="@+id/left_guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/right_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/headerTxt"
+        tools:ignore="MissingConstraints">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numberLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                app:layout_constraintTop_toBottomOf="@+id/headerTxt"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintLeft_toRightOf="@+id/left_guideline"
+                app:layout_constraintRight_toLeftOf="@+id/right_guideline">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM "
+                    android:hint="@string/id_number"
+                    android:imeOptions="actionNext"
+                    android:maxLength="20"
+                    android:nextFocusForward="@+id/edt_name"
+                    android:singleLine="true"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/txt_size_15" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintLeft_toRightOf="@+id/left_guideline"
+                app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/numberLay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:hint="@string/first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="60"
+                    android:nextFocusForward="@+id/edt_designation"
+                    android:singleLine="true"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/txt_size_15" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/lastNameLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintLeft_toRightOf="@+id/left_guideline"
+                app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/nameLay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM"
+                    android:hint="@string/last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="60"
+                    android:nextFocusForward="@+id/edt_designation"
+                    android:singleLine="true"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/txt_size_15" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/designLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintLeft_toRightOf="@+id/left_guideline"
+                app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/lastNameLay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/designation"
+                    android:imeOptions="actionNext"
+                    android:maxLength="20"
+                    android:nextFocusForward="@+id/edt_department"
+                    android:singleLine="true"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/txt_size_15" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/departLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintLeft_toRightOf="@+id/left_guideline"
+                app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/designLay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/department_name"
+                    android:imeOptions="actionNext"
+                    android:maxLength="20"
+                    android:nextFocusForward="@+id/edt_email"
+                    android:singleLine="true"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/medium_txt_size2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailLay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                app:hintTextAppearance="@style/HintText"
+                app:layout_constraintLeft_toRightOf="@+id/left_guideline"
+                app:layout_constraintRight_toLeftOf="@+id/right_guideline"
+                app:layout_constraintTop_toBottomOf="@+id/departLay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/emailID"
+                    android:imeOptions="actionDone"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="120"
+                    android:singleLine="true"
+                    android:textColor="@color/title"
+                    android:textSize="@dimen/txt_size_15" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/left_guideline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/margin_25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/right_guideline"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/margin_25" />
+   <!--     </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/bottom_layout"
+        android:background="@drawable/ic_login_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt_organisation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/already_loged_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_small4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <com.andexert.library.RippleView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:visibility="visible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_organisation">
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/txt_nonorganisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_background_new"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/sign_up"
+                android:textColor="@color/white"
+                android:textSize="@dimen/medium_txt_size2" />
+        </com.andexert.library.RippleView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

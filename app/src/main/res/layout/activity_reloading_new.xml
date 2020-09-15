@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/achat_splash_bg">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/img_logo_one"
+        android:src="@drawable/achat_logo"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.agrawalsuneet.dotsloader.loaders.TashieLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dot_loader"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo_one"
+        app:tashieloader_animDelay="200"
+        app:tashieloader_animDur="1000"
+        app:tashieloader_dotsColor="@color/white"
+        app:tashieloader_dotsDist="5dp"
+        app:tashieloader_dotsRadius="4dp"
+        app:tashieloader_interpolator="@android:anim/accelerate_interpolator"
+        app:tashieloader_noOfDots="6" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/img_logo_two"
+        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        android:id="@+id/txt_organisation_desc"
+        app:layout_constraintBottom_toTopOf="@+id/org_ripple_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.andexert.library.RippleView
+        android:visibility="gone"
+        android:id="@+id/org_ripple_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintVertical_bias="0.94"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/nonorg_ripple_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btn_organisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/organisation"
+            android:padding="10dp"
+            android:background="@drawable/login_background_new" />
+    </com.andexert.library.RippleView>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/nonorg_ripple_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        app:layout_constraintVertical_bias="0.94"
+        app:layout_constraintLeft_toRightOf="@+id/org_ripple_view"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/btn_nonorganisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/non_organisation"
+            android:padding="10dp"
+            android:background="@drawable/login_background_new" />
+    </com.andexert.library.RippleView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

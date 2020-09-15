@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/changenumber_r1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/backarrow_changenumber"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/arrow_left" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/changenumber_actionbar_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="right"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@+id/backarrow_changenumber"
+                android:gravity="center_vertical"
+                android:text="@string/Changenumber"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+
+                />
+
+            <View
+                android:id="@+id/v1"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="55dp"
+                android:layout_toRightOf="@+id/changenumber_actionbar_1"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/right_changenumber"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/v1"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_white_tick_single" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/next_changenumber"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/right_changenumber"
+                android:gravity="center"
+                android:text="@string/NEXT"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/changenumber_r1"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/phoneimg_changenumber"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_change_number" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/changenumber_1sttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phoneimg_changenumber"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/changenumer_1p"
+                android:textColor="#a1a2a2"
+                android:textSize="13sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/changenumber_2ndtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/changenumber_1sttext"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/changenumber_2p"
+                android:textColor="#a1a2a2"
+                android:textSize="13sp" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/changenumber_3rdtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/changenumber_2ndtext"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/changenumber_3p"
+                android:textColor="#a1a2a2"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

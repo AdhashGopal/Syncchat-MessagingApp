@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+
+    <RelativeLayout
+        android:id="@+id/stardetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/userprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/fromname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/userprofile"
+            android:text="name"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fromname"
+            android:src="@drawable/audio_play" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/toname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/indicator"
+            android:text="you"
+            android:textColor="@color/lblFromName"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/datelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"
+            android:text="Today"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/stardetail"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="-3.4dp"
+        android:src="@drawable/starred_corner"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/stardetail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/button"
+
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_message"
+            android:layout_width="250dp"
+
+            android:layout_height="200dp"
+            android:background="@drawable/background_message"
+
+
+            >
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/lblMsgFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone"
+
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/fl"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/lblMsgFrom"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:paddingTop="2dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/vidshow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/videoabove_layout"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/video_abovecaption"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/video_camera" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/duration_above"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/video_abovecaption"
+                        android:text="5:1"
+                        android:textColor="@color/black"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/starredindicator_above"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/ts_abovecaption"
+                        android:background="@drawable/starred_white"
+                        android:visibility="gone" />
+
+                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        android:id="@+id/ts_abovecaption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="20dp"
+                        android:text="5:30AM"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/satus_layout_above"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:id="@+id/clock_above"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@drawable/clock"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/single_tick_green_above"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@mipmap/ic_single_tick"
+                            android:visibility="gone" />
+
+
+                        <ImageView
+                            android:id="@+id/double_tick_green_above"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@mipmap/ic_double_tick"
+                            android:visibility="gone" />
+
+
+                        <ImageView
+                            android:id="@+id/double_tick_blue_above"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/message_deliver_tick"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivPlay"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_play_circle_outline_white_48dp"
+                    android:visibility="visible" />
+
+                <com.github.lzyzsd.circleprogress.DonutProgress
+                    android:id="@+id/pbUpload"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    app:donut_finished_stroke_width="5dp"
+                    app:donut_text_color="@color/white"
+                    app:donut_text_size="10sp"
+                    app:donut_unfinished_stroke_width="3dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout_message"
+            android:padding="3dp"
+            android:visibility="gone">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/captiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text=""
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_belowlayout"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caption"
+            android:layout_marginBottom="2dp">
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/video_camera" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/video"
+                android:text="5:1"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/starredindicator_below"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ts"
+                android:background="@drawable/starred_white"
+                android:visibility="visible" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/ts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="20dp"
+                android:text="5:30AM"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:id="@+id/satus_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/clock"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/clock"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/single_tick_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/ic_single_tick"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/double_tick_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/ic_double_tick"
+                    android:visibility="gone" />
+
+
+                <ImageView
+                    android:id="@+id/double_tick_blue"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/message_deliver_tick"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/r1"
+        android:layout_marginTop="10dp"
+        android:background="#E3E3E3" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

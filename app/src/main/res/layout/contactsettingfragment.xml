@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact1_RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:id="@+id/contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Friends"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/friends_count"
+            android:textColor="@color/textcolor"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:paddingRight="3dp"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        android:layout_below="@+id/friends_count"/>
+
+    <Button
+        android:id="@+id/newGroup"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/addnewgroup"
+        android:textColor="@color/white"
+
+        />
+
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/contact_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=" No Contact Available to chat"
+        android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleInverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+</RelativeLayout>

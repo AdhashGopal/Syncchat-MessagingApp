@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contactlist_item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/layout_inflater_contacts_items_userPhoto_contacts"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/chat_attachment_profile_default_image_frame" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@+id/layout_inflater_contacts_items_userPhoto_contacts"
+        android:layout_toRightOf="@+id/layout_inflater_contacts_items_userPhoto_contacts"
+        android:paddingLeft="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/layout_inflater_contacts_items_uNameTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:maxLength="15"
+            android:ellipsize="end"
+            android:text="username"
+            android:textColor="#3f3f3f"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/layout_inflater_contacts_items_devstatusTXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_inflater_contacts_items_uNameTXT"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:text="mobile"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            />
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="3dp"
+        android:background="#cccccc"/>
+
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_video_list_call"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/layout_inflater_contacts_items_videocallIMG"
+        android:layout_marginRight="15dp"/>
+
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:id="@+id/layout_inflater_contacts_items_callIMG"
+        android:src="@drawable/ic_audio_list_call"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/layout_inflater_contacts_items_videocallIMG"
+        android:layout_marginRight="35dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

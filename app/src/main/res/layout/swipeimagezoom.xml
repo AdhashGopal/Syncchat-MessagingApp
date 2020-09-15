@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/imagezoom_r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imagezoom">
+
+        <com.chatapp.android.app.widget.ZoomImageView
+            android:id="@+id/imagezoom_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:id="@+id/captiontext"
+        android:textSize="18sp"
+        android:autoLink="all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

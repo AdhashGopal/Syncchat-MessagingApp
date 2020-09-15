@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dialog_border">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_legal_info"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Basic_Updates"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/bascic_update_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Understandable_terms_and_conditions"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Understandable_terms_and_conditions_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Security_Features"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Security_Features_features_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt7"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Free_of_Advertisements"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt8"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Free_of_Advertisements_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt10"
+            android:layout_below="@+id/txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/About_our_Services"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt10"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Registration"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt11"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Registration_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt12"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Address_Book"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt13"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Address_Book_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt14"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Age_Limit"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt15"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Age_Limit_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt16"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Devices_and_Software"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt17"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Devices_and_Software_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt18"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Fees_and_Taxes"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt19"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Fees_and_Taxes_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt20"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Privacy_Policy_and_User_Data"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt21"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Privacy_Policy_and_User_Data_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt22"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Details_we_collect"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt23"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Details_we_collect_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt25"
+            android:layout_below="@+id/txt24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Details_you_provide"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt25"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Youre_Account_Information"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt26"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/your_account_inform_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt27"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/your_message"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt28"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/your_message_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt29"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Your_Connection"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt30"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Your_Connection_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt31"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Customer_Support"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt32"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Customer_Support_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt34"
+            android:layout_below="@+id/txt33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Automatically_Collected_Information"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt34"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Usage_and_Log_Information"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt35"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Usage_and_Log_Information_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt36"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Device_and_Connection_information"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt37"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Device_and_Connection_information_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt38"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Cookies"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt39"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Cookies_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt40"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Status_information"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt41"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Status_information_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt42"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_party_Information"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt43"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_party_Information_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt44"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_Party_Providers"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt45"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_Party_Providers_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt46"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_party_Services"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt47"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_party_Services_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt49"
+            android:layout_below="@+id/txt48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Information_You_and_We_Share"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt49"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Account_Information"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt50"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Account_Information_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt51"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Your_contact_and_others"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt52"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Your_contact_and_others_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt53"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_Party_Providers_account"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt54"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_Party_Providers_account_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt55"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_party_Services"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt56"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Third_party_Services_account"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/txt58"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt57"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Updates_to_Our_Policy"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/txt59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt58"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/Updates_to_Our_Policy_parah"
+            android:textColor="@color/lblFromName"
+            android:textSize="13sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/disagree"
+            android:layout_toLeftOf="@+id/agreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt59"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Disagree"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/agreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt59"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Agree"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

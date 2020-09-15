@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ondroid="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/MineCustomTabText">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Last Contacted" />
+
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Search Contact" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Search Groups" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+    </LinearLayout>
+
+
+    <!--<android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendlayout"
+        android:layout_below="@+id/tablayout"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/contact1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:id="@+id/tvFrequentLbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Frequently Contacted"
+                android:textColor="@color/colorPrimary"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvFreqContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="@color/white"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:scrollbarStyle="outsideInset" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/shawod" />
+
+
+            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Other Contacts"
+                android:textColor="@color/colorPrimary" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="@color/white"
+                android:paddingRight="10dp"
+                android:scrollbarStyle="outsideInset" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendlayout"
+        android:layout_below="@+id/tablayout"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/frequent_contact_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFreqContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="@color/white"
+                android:paddingRight="10dp"
+                android:scrollbarStyle="outsideInset" />
+
+            <TextView
+                android:id="@+id/frequent_contact_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="No Frequent Contacts"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contact_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:id="@+id/selectgroupmember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/maincontainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout
+                    android:id="@+id/swipyrefreshlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srl_direction="bottom">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/listContacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/selectgroupmember"
+                        android:layout_marginTop="50dp"
+                        android:clickable="true"
+                        android:divider="@color/white"
+                        android:paddingRight="10dp"
+                        android:scrollbarStyle="outsideInset" />
+                </com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+                <TextView
+                    android:id="@+id/contact_search_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="Search Contacts"
+                    android:textColor="@color/colorPrimary" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listGroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:divider="@color/white"
+                android:paddingRight="10dp"
+                android:scrollbarStyle="outsideInset" />
+
+            <TextView
+                android:id="@+id/group_search_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="No Groups"
+                android:textColor="@color/colorPrimary" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sendlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.8"
+        android:animateLayoutChanges="true"
+        android:background="@color/black"
+        android:visibility="gone">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/chat_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/emojiButton"
+            android:layout_toRightOf="@id/emojiButton"
+            android:background="@null"
+            android:ellipsize="marquee"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:scrollbars="vertical"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/overlapImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sendlayout"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="-20dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/send"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlChatSeen"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/tabFourColor"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iBtnBack"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@mipmap/arrow_left"
+        android:visibility="visible" />
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/profileImageChatScreen"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iBtnBack"
+        android:layout_toRightOf="@+id/iBtnBack"
+        android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+    <RelativeLayout
+        android:id="@+id/nameMAincontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/profileImageChatScreen"
+        android:layout_toLeftOf="@+id/ivVideoCall"
+        android:layout_toRightOf="@+id/profileImageChatScreen"
+        android:layout_toStartOf="@+id/ivVideoCall"
+        android:orientation="vertical">
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/usernamechatsceen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:marqueeRepeatLimit="1"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/statuschatsceen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamechatsceen"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvTyping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernamechatsceen"
+            android:layout_marginEnd="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxEms="25"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="typing..."
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/overflow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/overflow64"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivVideoCall"
+        android:layout_width="22dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/ivVoiceCall"
+        android:layout_toStartOf="@+id/ivVoiceCall"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/lets_video"
+        android:visibility="visible" />
+    <com.andexert.library.RippleView
+        android:id="@+id/Ripple_Video"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="13dp"
+        android:layout_toLeftOf="@+id/ivVoiceCall"
+        android:layout_toStartOf="@+id/ivVoiceCall"
+        app:rv_centered="false"
+        app:rv_color="#FFF"
+        app:rv_rippleDuration="380"
+        app:rv_type="rectangle"
+        >
+
+
+    </com.andexert.library.RippleView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivVoiceCall"
+        android:layout_width="22dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/lets_call_icon"
+        android:visibility="visible"
+        />
+
+    <com.andexert.library.RippleView
+        android:id="@+id/Ripple_call"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="1dp"
+        app:rv_centered="false"
+        app:rv_color="#FFF"
+        app:rv_rippleDuration="380"
+        app:rv_type="rectangle"
+        >
+
+    </com.andexert.library.RippleView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/attachment"
+        android:layout_width="22dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/overflow"
+        android:layout_toStartOf="@+id/overflow"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/lets_attachment_icon"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/popup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white" />
+
+</RelativeLayout>

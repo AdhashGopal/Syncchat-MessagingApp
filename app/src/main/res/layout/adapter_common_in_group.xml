@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@android:color/white"
+    >
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/ivGroupDp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@mipmap/chat_attachment_profile_default_image_frame"
+        android:layout_centerVertical="true"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/groupname_layout"
+        android:layout_toRightOf="@id/ivGroupDp"
+        android:layout_toEndOf="@id/ivGroupDp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        >
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="@string/Group_Name_here"
+        />
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/tvGroupContacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Members Name here"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

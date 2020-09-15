@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/enter_pin_gradient"
+    tools:context="com.chatapp.android.app.PinEnterActivity">
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:id="@+id/back_arrow"
+        android:src="@drawable/back_arrow"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="aChat"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/chatapp_text"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_pin"
+        android:id="@+id/enter_pintext"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/chatapp_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <me.philio.pinentry.PinEntryView
+        android:id="@+id/pin_entry_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_pintext"
+        android:layout_marginTop="20dp"
+        app:digitTextColor="@color/white"
+        app:pinAccentColor="@color/white"
+        app:digitTextSize="20sp"
+        android:layout_centerHorizontal="true"
+        app:pinInputType="number"
+        app:accentType="all"
+        app:digitElevation="10dp" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/reset_lay"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_below="@+id/pin_entry_simple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_reset_pin"
+            android:clickable="true"
+            android:textColor="@color/white"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:text="@string/reset_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/otpeditlayout"
+        android:visibility="gone"
+        android:layout_below="@+id/pin_entry_simple">
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:id="@+id/otpedit"/>
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/otpedit"
+            android:id="@+id/otpedit1"/>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/otpedit1"
+            android:id="@+id/otpedit2"/>
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/otpedit2"
+            android:id="@+id/otpedit3"/>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#00000000"-->
+    <!--android:focusableInTouchMode="true"-->
+    <!--android:clickable="true"-->
+    <!--android:focusable="true"></RelativeLayout>-->
+
+
+
+
+
+</RelativeLayout>

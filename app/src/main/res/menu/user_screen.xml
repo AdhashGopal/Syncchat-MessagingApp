@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        app:showAsAction="never"
+        android:visible="false"
+
+        />
+    <item
+        android:id="@+id/edit"
+        android:title="Edit"
+        app:showAsAction="never"
+        android:visible="false"
+
+        />
+    <item
+        android:id="@+id/view"
+        android:title="View in address book"
+        app:showAsAction="never"
+        android:visible="false"
+
+        />
+    <item
+        android:id="@+id/verify"
+        android:title="Verify security code"
+        app:showAsAction="never"
+        android:visible="false"
+        />
+    <item
+        android:id="@+id/add_contact"
+        android:title="Add to Contacts"
+        app:showAsAction="never"
+        android:visible="false"
+
+        />
+    <item
+        android:id="@+id/add_existing_contact"
+        android:title="Add to existing Contact"
+        app:showAsAction="never"
+        android:visible="false"
+
+        />
+
+
+</menu>

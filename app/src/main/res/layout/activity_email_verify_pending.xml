@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <ProgressBar
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:progressDrawable="@drawable/color_primary_progress_dialog"
+    />
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email verification pending!"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+    <RelativeLayout
+        android:id="@+id/activity_call_contacts_listview_headerLAY"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/activity_call_contacts_listview_backIMG"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arrow_left"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/activity_call_contacts_listview_backIMG_search"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arrow_left"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/activity_call_contacts_listview_headerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/activity_call_contacts_listview_backIMG"
+            android:gravity="center_vertical"
+            android:text="@string/Select_Contact"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/activity_call_contacts_listview_searchIMG"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/activity_call_contacts_listview_contactCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/activity_call_contacts_listview_headerName"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_toLeftOf="@+id/activity_call_contacts_listview_searchIMG"
+            android:layout_toRightOf="@+id/activity_call_contacts_listview_backIMG"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/activity_call_contacts_listview_searchIMG"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_search"
+            android:visibility="visible"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentRight="true" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+            android:id="@+id/activity_call_contacts_listview_etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/activity_call_contacts_listview_backIMG_search"
+            android:backgroundTint="#ffffff"
+            android:focusable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:focusableInTouchMode="true"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/search_hint"
+            android:visibility="gone"
+            android:padding="6dp"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+             />
+
+    </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_call_contacts_Viewitems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_below="@+id/toolbar"
+        android:paddingRight="3dp"
+        android:scrollbars="vertical"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

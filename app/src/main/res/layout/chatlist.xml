@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Chat1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/userMessagechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="3"
+        android:minLines="3"
+        android:text="@string/no_chat_msg"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/archive_relativelayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:drawSelectorOnTop="true"
+        android:paddingRight="10dp"
+        android:scrollbarStyle="outsideInset"
+        android:splitMotionEvents="false"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/archive_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/archive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="archive" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/ibNewChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/circle_color_primary"
+        android:src="@mipmap/chat_contact_icon_off"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/noDatafoundTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/chatlist"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.chatapp.android.app.widget.CircleImageView
+        android:id="@+id/storeImage"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@mipmap/chat_attachment_profile_default_image_frame" />
+
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:paddingTop="25dp"
+        android:src="@drawable/check"
+        android:visibility="gone" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/storeImage"
+        android:layout_toRightOf="@+id/storeImage"
+        android:text="UserName"
+        android:maxLines="1"
+        android:maxLength="20"
+        android:ellipsize="end"
+        android:textColor="#3f3f3f"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/newMessageDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Date"
+        android:textColor="#7a7979"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/archived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/newMessageDate"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/Archived"
+
+        />
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/newMessage"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="15.67sp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:textColor="#7a7979"-->
+    <!--android:maxLines="1"-->
+    <!--android:maxLength="25"-->
+    <!--android:ellipsize="end"-->
+    <!--android:visibility="visible"-->
+
+    <!--android:text="hey"-->
+    <!--android:layout_alignBottom="@+id/storeImage"-->
+    <!--android:layout_alignLeft="@+id/storeName"-->
+    <!--android:layout_alignStart="@+id/storeName" />-->
+
+
+    <ImageView
+        android:id="@+id/ivMsgType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/storeName"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/storeImage"
+        android:layout_toRightOf="@+id/storeImage"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_img_msg"
+        android:visibility="gone" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/newMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/storeName"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/ivMsgType"
+        android:layout_toLeftOf="@+id/newMessageTime"
+        android:layout_toRightOf="@+id/ivMsgType"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:text="Message Here"
+        android:textColor="#808080"
+        android:textSize="11sp"
+        android:visibility="visible" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/newMessageCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newMessageDate"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/archived"
+        android:background="@drawable/ic_msg_count"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/mute_chatlist"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/newMessageDate"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/newMessageCount"
+        android:src="@drawable/mute"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="85dp"
+        android:background="#e1e1e1" />
+
+
+</RelativeLayout>
+

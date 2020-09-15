@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:padding="3dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/stardetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/userprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/fromname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/userprofile"
+            android:text="name"
+            android:textStyle="bold"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fromname"
+            android:src="@drawable/audio_play" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/toname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/indicator"
+            android:text="you"
+            android:textStyle="bold"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/datelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"
+            android:text="Today"
+            android:textColor="@color/lblFromName"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:layout_below="@+id/stardetail"
+        android:src="@drawable/starred_corner" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stardetail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:padding="3dp">
+
+        <RelativeLayout
+            android:id="@+id/relative_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imagelayout">
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/lblMsgFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:visibility="gone"
+
+                />
+            <!--we have to put a view here to show audio details-->
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/lblMsgFrom"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/audio_playsent"
+                android:tag="0" />
+
+            <SeekBar
+                android:id="@+id/sbDuration"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblMsgFrom"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/imageView26"
+                android:layout_toRightOf="@id/imageView26"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/whiteseekbarthum" />
+
+            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                android:id="@+id/ts"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sbDuration"
+                android:layout_marginLeft="125dp"
+                android:text="5:30pm"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="11sp" />
+            <ImageView
+                android:id="@+id/starredindicator"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/sbDuration"
+                android:layout_marginLeft="110dp"
+                android:background="@drawable/starred_white"
+                android:visibility="visible"
+
+
+                />
+
+
+            <ImageView
+                android:id="@+id/single_tick_green"
+                android:layout_marginTop="10dp"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@+id/sbDuration"
+                android:layout_toEndOf="@+id/ts"
+                android:layout_toRightOf="@+id/ts"
+                android:background="@mipmap/ic_single_tick"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/double_tick_green"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@+id/sbDuration"
+                android:layout_toEndOf="@+id/ts"
+                android:layout_toRightOf="@+id/ts"
+                android:background="@mipmap/ic_double_tick"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/double_tick_blue"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@+id/sbDuration"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ts"
+                android:layout_toRightOf="@+id/ts"
+                android:background="@drawable/message_deliver_tick"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="7dp"
+                android:layout_marginTop="13dp"
+                android:layout_height="7dp"
+                android:layout_below="@+id/sbDuration"
+                android:layout_toEndOf="@+id/ts"
+                android:layout_toRightOf="@+id/ts"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/clock"
+                android:visibility="visible" />
+
+
+            <com.github.lzyzsd.circleprogress.DonutProgress
+                android:id="@+id/pbUpload"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:donut_finished_stroke_width="5dp"
+                app:donut_text_size="14sp"
+                app:donut_unfinished_stroke_width="3dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/imagelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_marginRight="5dp"
+            android:background="@drawable/receviebutton">
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/headset"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/headsetsent" />
+
+                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/headset"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="04:49"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="8dp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:id="@+id/v3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/relative_layout_message"
+        android:layout_height="0.5dp"
+        android:background="#E3E3E3" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

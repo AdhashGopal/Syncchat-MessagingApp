@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/tabFourColor"
+        android:visibility="gone"
+        app:titleTextColor="#ffffff" />
+
+    <RelativeLayout
+        android:id="@+id/r1contact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backarrow_contactsetting"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@mipmap/arrow_left"
+            android:visibility="gone"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backarrow"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/arrow_left"
+            android:visibility="gone" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/selectcontact"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/backarrow_contactsetting"
+            android:gravity="center_vertical"
+            android:text="New Group"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/selectcontactmember"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/selectcontact"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/backarrow_contactsetting"
+
+            android:text="Add Participant"
+            android:textColor="#ffffff"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/chats_search_icon_off"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="100dp"
+            android:hint="Search..."
+            android:inputType="text"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/action_bar_hint"
+            android:textCursorDrawable="@drawable/cursor_white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/selectgroupmember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/maincontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal" />
+    </HorizontalScrollView>
+
+    <com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/swipyrefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/selectgroupmember"
+        android:layout_marginTop="4dp"
+        app:srl_direction="bottom">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listContactsgroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/selectgroupmember"
+            android:divider="@color/white"
+            android:paddingRight="3dp"
+            android:scrollbars="vertical" />
+    </com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/no_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Participants"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/doneButton"
+        android:layout_width="74dp"
+        android:layout_height="84dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@mipmap/btn_arrow_done"
+        android:textColor="@color/white" />
+
+    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        android:id="@+id/contact_empty_selectgroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=" No Contact Available to Form Group"
+        android:visibility="gone" />
+
+</RelativeLayout>

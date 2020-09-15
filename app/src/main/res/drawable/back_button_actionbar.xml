@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:left="2dp"
+            android:right="2dp"
+            >
+        <bitmap android:src="@mipmap/arrow_left"
+                />
+        <!-- this is your desired image -->
+    </item>
+
+</layer-list>

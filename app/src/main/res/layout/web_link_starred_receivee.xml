@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/mainReceived"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:id="@+id/stardetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/userprofile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/chat_attachment_profile_default_image_frame" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/fromname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/userprofile"
+            android:text="name"
+            android:textStyle="bold"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toRightOf="@+id/fromname"
+            android:src="@drawable/audio_play" />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/toname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/indicator"
+            android:text="you"
+            android:textStyle="bold"
+            android:textColor="@color/lblFromName"
+            android:textSize="14sp"
+            />
+
+        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            android:id="@+id/datelbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="7dp"
+            android:text="Today"
+            android:textColor="@color/lblFromName"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/stardetail"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="0dp"
+        android:visibility="visible"
+        android:src="@drawable/receivecornerindicator" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/receiverbutton"
+        android:backgroundTint="#FEFEFE"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/stardetail"
+        >
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/lblMsgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/lblFromName"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlWebLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/web_link_border"
+            android:layout_margin="3dp"
+            android:layout_below="@id/lblMsgFrom"
+            >
+            <ImageView
+                android:id="@+id/ivWebLink"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:layout_margin="3dp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/tvWebTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:minLines="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/ivWebLink"
+                android:layout_toEndOf="@id/ivWebLink"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                />
+            <TextView
+                android:id="@+id/tvWebLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:minLines="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/ivWebLink"
+                android:layout_toEndOf="@id/ivWebLink"
+                android:layout_below="@id/tvWebTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                />
+            <TextView
+                android:id="@+id/tvWebLinkDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:minLines="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_toRightOf="@id/ivWebLink"
+                android:layout_toEndOf="@id/ivWebLink"
+                android:layout_below="@id/tvWebLink"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginStart="3dp"
+                />
+        </RelativeLayout>
+        <!--Web link ends-->
+
+
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:autoLink="all"
+            android:textColorLink="#242424"
+            android:layout_marginLeft="10dp"
+            android:textColor="#242424"
+            android:layout_below="@id/rlWebLink"
+            />
+
+
+        <TextView
+            android:id="@+id/ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#242424"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="true"
+            android:text="5:00pm"
+            android:layout_below="@+id/txtMsg"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/starredindicator"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_below="@+id/txtMsg"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+
+
+            android:background="@drawable/starred"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvInfoMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/info_msg_border"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

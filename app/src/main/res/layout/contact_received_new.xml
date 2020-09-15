@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlContactReceived"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_marginBottom="3dp"
+    >
+
+    <!--Date label starts-->
+    <include
+        android:id="@+id/dayLblLayout"
+        layout="@layout/day_label_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayLblLayout"
+        android:id="@+id/selection_layout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-4dp"
+        android:visibility="gone"
+        android:src="@drawable/receivecornerindicator"
+        android:layout_marginStart="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/receiverbutton"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:id="@+id/lblMsgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/Sendername"
+            android:text=""
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:visibility="gone"
+
+            android:layout_marginStart="5dp" />
+
+
+        <!--we have to put a view here to show contact details-->
+        <TextView
+            android:id="@+id/contactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#01688B"
+            android:text="adfasdsdfaf"
+            android:layout_toRightOf="@+id/contactImage"
+            android:layout_toEndOf="@+id/contactImage"
+            android:paddingTop="15dp"
+            android:layout_below="@+id/lblMsgFrom"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/contactNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/contactImage"
+            android:layout_toEndOf="@+id/contactImage"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/contactName"
+            android:visibility="gone"
+            android:layout_marginStart="5dp" />
+        <ImageView
+            android:id="@+id/starredindicator_below"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="53dp"
+            android:layout_below="@+id/contactName"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/starred"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="53dp" />
+
+
+        <TextView
+            android:id="@+id/ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+            android:layout_below="@+id/contactName"
+            android:layout_marginBottom="5dp"
+            android:text=""
+            android:textAllCaps="true"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/lblFromName"
+            android:textSize="10sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp" />
+
+
+        <com.chatapp.android.app.widget.CircleImageView
+            android:id="@+id/contactImage"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="3dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_below="@+id/lblMsgFrom"
+            android:src="@mipmap/contact_off"
+
+            />
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/ts"
+            android:background="#f6f6f6" />
+        <LinearLayout
+            android:id="@+id/contact_add_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/v1"
+            android:weightSum="100"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/invite_1"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Invite"
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:visibility="gone"
+                />
+
+
+            <View
+                android:id="@+id/v2"
+                android:layout_width="0.5dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/v1"
+                android:background="#f6f6f6" />
+
+            <TextView
+                android:id="@+id/add_1"
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Add Contact"
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_below="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/invite"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Invite"
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:visibility="gone"
+               />
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Add Contact"
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/message_1"
+                android:layout_width="match_parent"
+                android:layout_weight="50"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="Message"
+                android:textColor="@color/lblFromName"
+                android:textSize="12sp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/location_main"
+    android:layout_marginBottom="3dp"
+  >
+
+    <!--Date label starts-->
+    <include
+        android:id="@+id/dayLblLayout"
+        layout="@layout/day_label_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dayLblLayout"
+        android:id="@+id/selection_layout">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-4dp"
+        android:visibility="visible"
+        android:src="@drawable/receivecornerindicator"
+        android:layout_marginStart="2dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_message"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:background="@drawable/receiverbutton"
+
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="10dp">
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            android:id="@+id/lblMsgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:textColor="@color/Sendername"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/ivMap"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/lblMsgFrom"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+
+            />
+
+
+
+
+        <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            android:id="@+id/ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lblFromName"
+            android:textSize="10sp"
+            android:text="5:30am"
+            android:layout_margin="5dp"
+            android:textAllCaps="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            />
+        <ImageView
+            android:id="@+id/starredindicator_below"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_toLeftOf="@+id/ts"
+            android:background="@drawable/starred"
+            android:visibility="visible"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/ts" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
