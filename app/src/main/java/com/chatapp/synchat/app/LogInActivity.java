@@ -129,10 +129,10 @@ public class LogInActivity extends AppCompatActivity {
 
             try {
                 JSONObject json = new JSONObject(response);
-                String status = json.getString("Status");
+                String status = json.getString("errNum");
 
 
-                if (status.equals("1")) {
+                if (status.equals("0")) {
                     try {
 
                         if (SCLoginModel == null)
