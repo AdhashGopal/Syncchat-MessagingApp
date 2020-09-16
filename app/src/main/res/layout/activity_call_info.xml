@@ -31,7 +31,7 @@
                 android:background="@android:color/transparent"
                 android:src="@mipmap/arrow_left" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_toEndOf="@+id/ibBack"
@@ -52,7 +52,7 @@
         android:background="@color/white"
         android:padding="5dp">
 
-        <com.chatapp.android.app.widget.CircleImageView
+        <com.chatapp.synchat.app.widget.CircleImageView
             android:id="@+id/ivProfilePic"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -60,7 +60,7 @@
             android:layout_margin="5dp"
             android:background="@drawable/personprofile" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

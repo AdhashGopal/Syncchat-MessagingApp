@@ -72,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                         android:id="@+id/tvName"
                         android:layout_width="wrap_content"
                         android:layout_height="0dp"
@@ -95,7 +95,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
 
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
                             android:textColor="#30c9e8"
                             android:textSize="18sp" />
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/textviewCount"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -171,7 +171,7 @@
 
                     android:orientation="vertical">
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/phonetext"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
                         android:layout_marginBottom="20dp"
                         android:layout_marginLeft="10dp">
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/tvPhoneNumber"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
                         android:background="#e1e1e1" />
 
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/tvStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -270,7 +270,7 @@
                         android:layout_height="wrap_content">
 
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/numberofparticipents"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -282,7 +282,7 @@
                             android:textColor="@color/appthemecolour"
                             android:textSize="16.33sp" />
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/numberofUser"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -296,7 +296,7 @@
                     </RelativeLayout>
 
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/Addparticipatent"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -324,7 +324,7 @@
                         android:layout_height="wrap_content">
 
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/exitgroup"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -341,7 +341,7 @@
                 </LinearLayout>
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
                     android:id="@+id/btAddToContacts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

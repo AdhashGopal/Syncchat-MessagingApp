@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="36dp">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/Archivedrelese"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
 
         android:layout_below="@+id/R6_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/deletearchive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R5_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/markasunread"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R1_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/Markasread"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R2_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/unmute"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R3_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/mute"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R4_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/Addtoshortcut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -155,7 +155,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R7_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/Viewcontact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
         android:visibility="gone"
         android:layout_below="@+id/R8_overflowarchivelist">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/Exitgroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

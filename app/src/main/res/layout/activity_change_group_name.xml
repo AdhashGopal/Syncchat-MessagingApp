@@ -19,7 +19,7 @@
             android:layout_gravity="center_vertical"
             android:padding="5dp"
         />
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:gravity="center_vertical"
@@ -47,7 +47,7 @@
         android:layout_toLeftOf="@+id/tvCount"
         android:imeOptions="actionDone"
         />
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/tvCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,7 +85,7 @@
         android:orientation="horizontal"
         android:weightSum="100">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/btnCancel"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
             android:layout_height="match_parent"
             android:background="@color/dividerLine" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/btnOk"
             android:layout_width="0dp"
             android:layout_height="match_parent"

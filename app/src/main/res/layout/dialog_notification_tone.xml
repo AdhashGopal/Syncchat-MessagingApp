@@ -3,7 +3,7 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:background="@drawable/custom_dialog_border">
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -18,7 +18,7 @@
 
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
         android:textColor="@color/colorPrimary"
         android:gravity="right"

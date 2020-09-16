@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/block_user_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -35,7 +35,7 @@
         android:layout_toEndOf="@+id/block_user_image"
         android:layout_toRightOf="@+id/block_user_image">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/BlockUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:textSize="13sp"
             android:textStyle="bold" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/blockUserNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

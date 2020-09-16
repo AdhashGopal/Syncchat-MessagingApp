@@ -207,10 +207,10 @@
 
 <!--    <string name="pref_room_server_url_default" translatable="false">http://103.88.129.42:4400</string>-->
 
+    <string name="pref_room_server_url_default" translatable="false">http://syncchat.in:4400</string>
 <!--    <string name="pref_room_server_url_default" translatable="false">http://104.211.181.142:4400</string>-->
-<!--    <string name="pref_room_server_url_default" translatable="false">http://104.211.181.142:4400</string>-->
-   <!-- <string name="pref_room_server_url_default" translatable="false">http://164.52.196.78</string>-->
-    <string name="pref_room_server_url_default" translatable="false">https://achat.adani.com/</string>
+<!--    <string name="pref_room_server_url_default" translatable="false">http://164.52.196.78</string>-->
+<!--    <string name="pref_room_server_url_default" translatable="false">https://achat.adani.com/</string>-->
     <!--
         <string name="pref_room_server_url_default" translatable="false">https://syncchat.in/</string>
     -->

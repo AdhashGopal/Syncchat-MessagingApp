@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/chatapp/android/app/PlaceJSONParser.html" title="class in com.chatapp.android.app"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/chatapp/android/app/RegisterActivity.html" title="class in com.chatapp.android.app"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/chatapp/android/app/PlaceJSONParser.html" title="class in com.chatapp.synchat.app"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/chatapp/android/app/RegisterActivity.html" title="class in com.chatapp.synchat.app"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/chatapp/android/app/RefreshDatabaseService.html" target="_top">Frames</a></li>
@@ -91,7 +91,7 @@ var activeTableTab = "activeTableTab";
 <!-- ========= END OF TOP NAVBAR ========= -->
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
-<div class="subTitle">com.chatapp.android.app</div>
+<div class="subTitle">com.chatapp.synchat.app</div>
 <h2 title="Class RefreshDatabaseService" class="title">Class RefreshDatabaseService</h2>
 </div>
 <div class="contentContainer">
@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 <li>android.app.Service</li>
 <li>
 <ul class="inheritance">
-<li>com.chatapp.android.app.RefreshDatabaseService</li>
+<li>com.chatapp.synchat.app.RefreshDatabaseService</li>
 </ul>
 </li>
 </ul>
@@ -152,7 +152,7 @@ extends android.app.Service</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#countDownTimers">countDownTimers</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>private <a href="../../../../com/chatapp/android/core/database/MessageDbController.html" title="class in com.chatapp.android.core.database">MessageDbController</a></code></td>
+<td class="colFirst"><code>private <a href="../../../../com/chatapp/android/core/database/MessageDbController.html" title="class in com.chatapp.synchat.core.database">MessageDbController</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#db">db</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -164,11 +164,11 @@ extends android.app.Service</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#MESSAGEITEM">MESSAGEITEM</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>(package private) <a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a></code></td>
+<td class="colFirst"><code>(package private) <a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#messageItemChat">messageItemChat</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>(package private) java.util.List&lt;<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a>&gt;</code></td>
+<td class="colFirst"><code>(package private) java.util.List&lt;<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#messageItemChats">messageItemChats</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -252,7 +252,7 @@ extends android.app.Service</pre>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>private void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#sendRefreshBroadcast-com.chatapp.android.core.model.MessageItemChat-">sendRefreshBroadcast</a></span>(<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a>&nbsp;messageItemChat1)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#sendRefreshBroadcast-com.chatapp.android.core.model.MessageItemChat-">sendRefreshBroadcast</a></span>(<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a>&nbsp;messageItemChat1)</code>
 <div class="block">send RefreshBroadcast</div>
 </td>
 </tr>
@@ -260,7 +260,7 @@ extends android.app.Service</pre>
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/chatapp/android/app/RefreshDatabaseService.html#startRefreshService-android.content.Context-long-com.chatapp.android.core.model.MessageItemChat-">startRefreshService</a></span>(android.content.Context&nbsp;context,
                    long&nbsp;time,
-                   <a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a>&nbsp;messageItemChat)</code>
+                   <a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a>&nbsp;messageItemChat)</code>
 <div class="block">start RefreshService</div>
 </td>
 </tr>
@@ -313,7 +313,7 @@ extends android.app.Service</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>db</h4>
-<pre>private&nbsp;<a href="../../../../com/chatapp/android/core/database/MessageDbController.html" title="class in com.chatapp.android.core.database">MessageDbController</a> db</pre>
+<pre>private&nbsp;<a href="../../../../com/chatapp/android/core/database/MessageDbController.html" title="class in com.chatapp.synchat.core.database">MessageDbController</a> db</pre>
 </li>
 </ul>
 <a name="timer">
@@ -357,7 +357,7 @@ extends android.app.Service</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>messageItemChat</h4>
-<pre><a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a> messageItemChat</pre>
+<pre><a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a> messageItemChat</pre>
 </li>
 </ul>
 <a name="countDownTimers">
@@ -375,7 +375,7 @@ extends android.app.Service</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>messageItemChats</h4>
-<pre>java.util.List&lt;<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a>&gt; messageItemChats</pre>
+<pre>java.util.List&lt;<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a>&gt; messageItemChats</pre>
 </li>
 </ul>
 </li>
@@ -464,7 +464,7 @@ extends android.app.Service</pre>
 </dl>
 </li>
 </ul>
-<a name="startRefreshService-android.content.Context-long-com.chatapp.android.core.model.MessageItemChat-">
+<a name="startRefreshService-android.content.Context-long-com.chatapp.synchat.core.model.MessageItemChat-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -472,7 +472,7 @@ extends android.app.Service</pre>
 <h4>startRefreshService</h4>
 <pre>public static&nbsp;void&nbsp;startRefreshService(android.content.Context&nbsp;context,
                                        long&nbsp;time,
-                                       <a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a>&nbsp;messageItemChat)</pre>
+                                       <a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a>&nbsp;messageItemChat)</pre>
 <div class="block">start RefreshService</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -482,13 +482,13 @@ extends android.app.Service</pre>
 </dl>
 </li>
 </ul>
-<a name="sendRefreshBroadcast-com.chatapp.android.core.model.MessageItemChat-">
+<a name="sendRefreshBroadcast-com.chatapp.synchat.core.model.MessageItemChat-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendRefreshBroadcast</h4>
-<pre>private&nbsp;void&nbsp;sendRefreshBroadcast(<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.android.core.model">MessageItemChat</a>&nbsp;messageItemChat1)</pre>
+<pre>private&nbsp;void&nbsp;sendRefreshBroadcast(<a href="../../../../com/chatapp/android/core/model/MessageItemChat.html" title="class in com.chatapp.synchat.core.model">MessageItemChat</a>&nbsp;messageItemChat1)</pre>
 <div class="block">send RefreshBroadcast</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -523,8 +523,8 @@ extends android.app.Service</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../com/chatapp/android/app/PlaceJSONParser.html" title="class in com.chatapp.android.app"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../com/chatapp/android/app/RegisterActivity.html" title="class in com.chatapp.android.app"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../com/chatapp/android/app/PlaceJSONParser.html" title="class in com.chatapp.synchat.app"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../com/chatapp/android/app/RegisterActivity.html" title="class in com.chatapp.synchat.app"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?com/chatapp/android/app/RefreshDatabaseService.html" target="_top">Frames</a></li>

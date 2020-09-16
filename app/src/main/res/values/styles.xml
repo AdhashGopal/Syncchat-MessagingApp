@@ -154,7 +154,7 @@
         <item name="colorControlHighlight">@android:color/transparent</item>
     </style>
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
-        <item name="android:windowBackground">@drawable/loading</item>
+        <item name="android:windowBackground">@drawable/launch_splash</item>
     </style>
     <style name="TabLayoutStyle" parent="TextAppearance.Design.Tab">
         <item name="android:textSize">16sp</item>

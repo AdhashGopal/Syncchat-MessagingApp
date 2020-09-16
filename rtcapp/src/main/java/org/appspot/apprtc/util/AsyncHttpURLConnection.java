@@ -26,9 +26,9 @@ public class AsyncHttpURLConnection {
 //          private static final String HTTP_ORIGIN = "http://52.172.4.166:4400";
 //      private static final String HTTP_ORIGIN = "http://103.88.129.42:4400";
 //    private static final String HTTP_ORIGIN = "http://104.211.181.142:4400";
-//    private static final String HTTP_ORIGIN = "http://104.211.181.142:5500";
-     // private static final String HTTP_ORIGIN = "http://164.52.196.78";
-      private static final String HTTP_ORIGIN = "https://achat.adani.com";
+    private static final String HTTP_ORIGIN = "http://syncchat.in:4400";
+//      private static final String HTTP_ORIGIN = "http://164.52.196.78";
+//      private static final String HTTP_ORIGIN = "https://achat.adani.com";
 
     private final String method;
     private final String url;

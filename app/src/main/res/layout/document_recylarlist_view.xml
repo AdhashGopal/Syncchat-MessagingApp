@@ -10,7 +10,7 @@
         android:layout_marginBottom="5dp"
         android:layout_width="60dp"
         android:layout_height="60dp" />
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/doc_name"
         android:layout_toRightOf="@+id/document_pic"
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:textColor="#000"
         android:textSize="16sp"
         android:text=""/>
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/doc_listname"
         android:layout_toRightOf="@+id/document_pic"
         android:layout_below="@+id/doc_name"

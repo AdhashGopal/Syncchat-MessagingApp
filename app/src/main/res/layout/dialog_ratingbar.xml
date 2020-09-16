@@ -13,7 +13,7 @@
         android:layout_marginTop="20dp"
         android:src="@mipmap/smileylikedit" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/sub_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
         android:orientation="horizontal"
         android:weightSum="2.0">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/hated"
             android:layout_width="0dp"
             android:text="@string/rating_txt_hate"
@@ -70,7 +70,7 @@
             android:layout_weight="1.0" />
 
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/likeit"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -91,7 +91,7 @@
 
         android:weightSum="2.0">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/notnow"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -105,7 +105,7 @@
 
 
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/submit"
             android:layout_width="0dp"
             android:layout_height="match_parent"

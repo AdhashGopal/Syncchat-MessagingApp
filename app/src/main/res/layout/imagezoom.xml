@@ -21,7 +21,7 @@
             android:paddingBottom="10dp"
             android:src="@mipmap/arrow_left" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/profile_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/imagezoom">
 
-        <com.chatapp.android.app.widget.ZoomImageView
+        <com.chatapp.synchat.app.widget.ZoomImageView
             android:id="@+id/imagezoom_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

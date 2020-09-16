@@ -22,7 +22,7 @@
             android:layout_gravity="center_vertical"
             android:padding="5dp"
         />
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Add_new_name"
@@ -65,7 +65,7 @@
         android:layout_marginBottom="20dp"
         android:gravity="center">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/cancleAddNewStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
             android:textColor="@color/colorPrimary" />
 
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/okAddNewStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
         android:background="@color/transparent"
         android:contentDescription="@string/happy_face" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/textSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

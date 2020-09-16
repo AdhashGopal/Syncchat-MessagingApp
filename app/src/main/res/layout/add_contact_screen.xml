@@ -3,14 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:hint="@string/name"
         android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
         android:id="@+id/phoneNumber"
         android:layout_below="@+id/name"
         android:layout_width="match_parent"
@@ -26,14 +26,14 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/save"
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:text="@string/save"
             android:layout_height="wrap_content" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/cancel"
             android:layout_weight="1"
             android:layout_width="fill_parent"

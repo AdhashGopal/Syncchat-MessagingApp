@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.chatapp.android">
+    package="com.chatapp.synchat">
 
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -35,7 +35,8 @@
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
         tools:ignore="ProtectedPermissions" />
 
     <uses-feature android:name="android.hardware.camera" />
@@ -47,18 +48,18 @@
 
 
     <!-- HTC -->
-    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
-    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
 
     <!-- Sony -->
-    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
-    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
 
     <!-- Apex -->
-    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
 
     <!-- Solid -->
-    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
 
     <!-- Huawei -->
     <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
@@ -75,12 +76,12 @@
 
     <!-- MAP Permission -->
     <permission
-        android:name="com.chatapp.android.permission.MAPS_RECEIVE"
+        android:name="com.chatapp.synchat.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
 
     <application
-        android:name="com.chatapp.android.core.CoreController"
+        android:name="com.chatapp.synchat.core.CoreController"
         android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_app_launcher"
@@ -92,7 +93,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.chatapp.android"
+            android:authorities="com.chatapp.synchat"
             android:exported="false"
             android:grantUriPermissions="true">
 
@@ -122,87 +123,87 @@
 
 
         <activity
-            android:name="com.chatapp.android.app.ADFSWebViewActivity"
+            android:name="com.chatapp.synchat.app.ADFSWebViewActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.IntialLoaderActivity"
+            android:name="com.chatapp.synchat.app.IntialLoaderActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.VerifyPhoneScreen"
+            android:name="com.chatapp.synchat.app.VerifyPhoneScreen"
             android:configChanges="orientation|screenSize"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
-        <receiver android:name="com.chatapp.android.core.connectivity.NetworkChangeReceiver">
+        <receiver android:name="com.chatapp.synchat.core.connectivity.NetworkChangeReceiver">
             <intent-filter>
                 <action android:name="net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".core.socket.AlarmService"
+            android:name="com.chatapp.synchat.core.socket.AlarmService"
             android:exported="false" />
 
         <activity
-            android:name="com.chatapp.android.app.GoogleMapView"
+            android:name="com.chatapp.synchat.app.GoogleMapView"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.MemberContactSearch"
+            android:name="com.chatapp.synchat.app.MemberContactSearch"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.RegisterActivity"
+            android:name="com.chatapp.synchat.app.RegisterActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.chatapp.android.app.ChooseCountryScreen"
+            android:name="com.chatapp.synchat.app.ChooseCountryScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.EmailVerifyPendingActivity"
+            android:name="com.chatapp.synchat.app.EmailVerifyPendingActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.Savecontact"
+            android:name="com.chatapp.synchat.app.Savecontact"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ImagecaptionActivity"
+            android:name="com.chatapp.synchat.app.ImagecaptionActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Networkusage"
+            android:name="com.chatapp.synchat.app.Networkusage"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Emailchat_Activitypage"
+            android:name="com.chatapp.synchat.app.Emailchat_Activitypage"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ImageZoom"
+            android:name="com.chatapp.synchat.app.ImageZoom"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.MediaAcitivity"
+            android:name="com.chatapp.synchat.app.MediaAcitivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppMediaTheme" />
         <activity
-            android:name="com.chatapp.android.app.ChatappSmsVScreen"
+            android:name="com.chatapp.synchat.app.ChatappSmsVScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.PinEnterActivity"
+            android:name="com.chatapp.synchat.app.PinEnterActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysVisible">
@@ -253,12 +254,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chatapp.android.app.ChatappProfileInfoScreen"
+            android:name="com.chatapp.synchat.app.ChatappProfileInfoScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.HomeScreen"
+            android:name="com.chatapp.synchat.app.HomeScreen"
             android:alwaysRetainTaskState="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label=""
@@ -268,86 +269,86 @@
             android:uiOptions="splitActionBarWhenNarrow"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.chatapp.android.app.WelcomeScreen"
+            android:name="com.chatapp.synchat.app.WelcomeScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.StatusEditActivity"
+            android:name="com.chatapp.synchat.app.StatusEditActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChatappSettings"
+            android:name="com.chatapp.synchat.app.ChatappSettings"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChangeNameScreen"
+            android:name="com.chatapp.synchat.app.ChangeNameScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.BlockContactList"
+            android:name="com.chatapp.synchat.app.BlockContactList"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.SingleMessageInfoActivity"
+            android:name="com.chatapp.synchat.app.SingleMessageInfoActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.GroupMessageInfoActivity"
+            android:name="com.chatapp.synchat.app.GroupMessageInfoActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Status"
+            android:name="com.chatapp.synchat.app.Status"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName="com.chatapp.android.app.HomeScreen"
+            android:parentActivityName="com.chatapp.synchat.app.HomeScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.StatusNewScreen"
+            android:name="com.chatapp.synchat.app.StatusNewScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|adjustPan" />
         <activity
-            android:name="com.chatapp.android.app.SettingContact"
+            android:name="com.chatapp.synchat.app.SettingContact"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActionBar" />
         <activity
-            android:name="com.chatapp.android.app.ChatappProfileScreen"
+            android:name="com.chatapp.synchat.app.ChatappProfileScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.StarredItemList"
+            android:name="com.chatapp.synchat.app.StarredItemList"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.DeleteAccount"
+            android:name="com.chatapp.synchat.app.DeleteAccount"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChangeNumber"
+            android:name="com.chatapp.synchat.app.ChangeNumber"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Security"
+            android:name="com.chatapp.synchat.app.Security"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChatappPrivacy"
+            android:name="com.chatapp.synchat.app.ChatappPrivacy"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Archivelist"
+            android:name="com.chatapp.synchat.app.Archivelist"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.SelectPeopleForBlock"
+            android:name="com.chatapp.synchat.app.SelectPeopleForBlock"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.contactlist.SearchPeopleForGroupChat"
+            android:name="com.chatapp.synchat.app.contactlist.SearchPeopleForGroupChat"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.contactlist.ContactSearchActivity"
+            android:name="com.chatapp.synchat.app.contactlist.ContactSearchActivity"
             android:alwaysRetainTaskState="true"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label=""
@@ -357,67 +358,67 @@
             android:uiOptions="splitActionBarWhenNarrow"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name="com.chatapp.android.app.AboutHelp"
+            android:name="com.chatapp.synchat.app.AboutHelp"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName="com.chatapp.android.app.ChatappSettings"
+            android:parentActivityName="com.chatapp.synchat.app.ChatappSettings"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.SelectPeopleForGroupChat"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.chatapp.android.app.ChatappNewPageAbout"
+            android:name="com.chatapp.synchat.app.SelectPeopleForGroupChat"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChangeNumber_sub"
+            android:name="com.chatapp.synchat.app.ChatappNewPageAbout"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.NotificationSettings"
+            android:name="com.chatapp.synchat.app.ChangeNumber_sub"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.synchat.app.NotificationSettings"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActionBar" />
         <activity
-            android:name="com.chatapp.android.app.ChatSettings"
+            android:name="com.chatapp.synchat.app.ChatSettings"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChatHistory"
+            android:name="com.chatapp.synchat.app.ChatHistory"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Systemstatus"
+            android:name="com.chatapp.synchat.app.Systemstatus"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ContactSettings"
+            android:name="com.chatapp.synchat.app.ContactSettings"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.DataUsage"
+            android:name="com.chatapp.synchat.app.DataUsage"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName="com.chatapp.android.app.HomeScreen"
+            android:parentActivityName="com.chatapp.synchat.app.HomeScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.GroupCreation"
-            android:configChanges="orientation|screenSize"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="com.chatapp.android.app.SendContact"
+            android:name="com.chatapp.synchat.app.GroupCreation"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Account_main_list"
+            android:name="com.chatapp.synchat.app.SendContact"
             android:configChanges="orientation|screenSize"
-            android:parentActivityName="com.chatapp.android.app.ChatappSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chatapp.synchat.app.Account_main_list"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName="com.chatapp.synchat.app.ChatappSettings"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="support.PARENT_ACTIVITY"
                 android:value=".app.HomeScreen" />
         </activity>
         <activity
-            android:name="com.chatapp.android.app.ChatViewActivity"
+            android:name="com.chatapp.synchat.app.ChatViewActivity"
             android:configChanges="orientation|screenLayout"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActionBar"
@@ -434,26 +435,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chatapp.android.app.AddContactScreen"
+            android:name="com.chatapp.synchat.app.AddContactScreen"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ChatLockActivity"
+            android:name="com.chatapp.synchat.app.ChatLockActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.EmailSettings"
+            android:name="com.chatapp.synchat.app.EmailSettings"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.PasswordEmailActivity"
+            android:name="com.chatapp.synchat.app.PasswordEmailActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.About_contactus"
+            android:name="com.chatapp.synchat.app.About_contactus"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -462,23 +463,23 @@
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />-->
         <activity
-            android:name="com.chatapp.android.app.GroupInfo"
+            android:name="com.chatapp.synchat.app.GroupInfo"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.ChangeGroupName"
+            android:name="com.chatapp.synchat.app.ChangeGroupName"
             android:configChanges="orientation|screenSize"
             android:label="Enter new subject"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.AddMemberToGroup"
+            android:name="com.chatapp.synchat.app.AddMemberToGroup"
             android:configChanges="orientation|screenSize"
             android:label="Add Participants"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActionBar" />
         <activity
-            android:name="com.chatapp.android.app.UserProfile"
+            android:name="com.chatapp.synchat.app.UserProfile"
             android:configChanges="orientation|screenSize"
             android:label="Profile Photo"
             android:screenOrientation="portrait">
@@ -499,49 +500,49 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chatapp.android.app.AudioFilesListActivity"
+            android:name="com.chatapp.synchat.app.AudioFilesListActivity"
             android:configChanges="orientation|screenSize"
             android:label="Audio Files"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ForwardContact"
+            android:name="com.chatapp.synchat.app.ForwardContact"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.Forward_avater"
+            android:name="com.chatapp.synchat.app.Forward_avater"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.ShareFromThirdPartyAppActivity"
+            android:name="com.chatapp.synchat.app.ShareFromThirdPartyAppActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.WallpaperColor"
+            android:name="com.chatapp.synchat.app.WallpaperColor"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.UserInfo"
+            android:name="com.chatapp.synchat.app.UserInfo"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActionBar" />
         <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
         <activity android:name="in.myinnos.awesomeimagepicker.activities.AlbumSelectActivity" />
         <activity
-            android:name="com.chatapp.android.app.DeleteAccount2Activity"
+            android:name="com.chatapp.synchat.app.DeleteAccount2Activity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.chatapp.android.app.calls.IncomingCallActivity"
+            android:name="com.chatapp.synchat.app.calls.IncomingCallActivity"
             android:configChanges="orientation|screenSize"
             android:excludeFromRecents="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.calls.CallsActivity"
+            android:name="com.chatapp.synchat.app.calls.CallsActivity"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.calls.CallPrepareScreen"
+            android:name="com.chatapp.synchat.app.calls.CallPrepareScreen"
             android:configChanges="orientation|screenLayout|screenSize"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -554,22 +555,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.chatapp.android.app.calls.CallsContactActivity"
+            android:name="com.chatapp.synchat.app.calls.CallsContactActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.chatapp.android.app.calls.CallInfoActivity"
+            android:name="com.chatapp.synchat.app.calls.CallInfoActivity"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActionBar" />
 
-        <service android:name="com.chatapp.android.app.ChatappContactsService" />
+        <service android:name="com.chatapp.synchat.app.ChatappContactsService" />
         <service
-            android:name="com.chatapp.android.core.socket.MessageService"
+            android:name="com.chatapp.synchat.core.socket.MessageService"
             android:enabled="true"
             android:exported="true"
             android:stopWithTask="false" />
 
-        <receiver android:name="com.chatapp.android.app.utils.ServiceKillReceiver">
+        <receiver android:name="com.chatapp.synchat.app.utils.ServiceKillReceiver">
             <intent-filter>
                 <action android:name="SERVICE_KILLED" />
             </intent-filter>
@@ -579,7 +580,7 @@
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
         -->
 
-        <service android:name="com.chatapp.android.core.service.ContactsSync" />
+        <service android:name="com.chatapp.synchat.core.service.ContactsSync" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -590,7 +591,7 @@
             android:value="f26cd8c9d9604d96a26ffdfde1752711" />
         -->
 
-        <receiver android:name="com.chatapp.android.app.utils.DateChangeBroadcastReceiver">
+        <receiver android:name="com.chatapp.synchat.app.utils.DateChangeBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.TIME_TICK" />
                 <action android:name="android.intent.action.DATE_CHANGED" />
@@ -598,14 +599,14 @@
                 <action android:name="android.intent.action.TIME_SET" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.chatapp.android.app.DeviceBootCompletedReceiver">
+        <receiver android:name="com.chatapp.synchat.app.DeviceBootCompletedReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name="com.chatapp.android.account.AccountAuthenticatorService"
+            android:name="com.chatapp.synchat.account.AccountAuthenticatorService"
             android:exported="true"
             android:process=":auth">
             <intent-filter>
@@ -617,7 +618,7 @@
                 android:resource="@xml/authenticator" />
         </service>
         <service
-            android:name="com.chatapp.android.account.ContactsSyncAdapterService"
+            android:name="com.chatapp.synchat.account.ContactsSyncAdapterService"
             android:exported="true"
             android:process=":contacts">
             <intent-filter>
@@ -632,7 +633,7 @@
                 android:resource="@xml/contacts" />
         </service>
 
-        <receiver android:name="com.chatapp.android.app.utils.AccountCompleteReceiver">
+        <receiver android:name="com.chatapp.synchat.app.utils.AccountCompleteReceiver">
             <intent-filter>
                 <action android:name="com.chatapp.android.account_complete" />
             </intent-filter>
@@ -641,18 +642,18 @@
         <!-- Handy Script Activities -->
 
         <activity
-            android:name=".app.calls.FakeOutgoingcall_Activity"
+            android:name="com.chatapp.synchat.app.calls.FakeOutgoingcall_Activity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_fake_outgoingcall_"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.chatapp.android.app.BroadcastListActivity" />
+        <activity android:name="com.chatapp.synchat.app.BroadcastListActivity" />
         <activity
-            android:name=".core.DownloadManagerActivity"
+            android:name="com.chatapp.synchat.core.DownloadManagerActivity"
             android:theme="@style/SplashTheme" />
 
         <activity
-            android:name=".app.ReLoadingActivityNew"
+            android:name="com.chatapp.synchat.app.ReLoadingActivityNew"
             android:autoVerify="true"
             android:exported="true"
             android:theme="@style/SplashTheme">
@@ -733,16 +734,21 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="com.chatapp.android.app.ChangePinActivity"
+            android:name="com.chatapp.synchat.app.ChangePinActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name="com.chatapp.synchat.app.LogInActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service
-            android:name="com.chatapp.android.app.RefreshDatabaseService"
+            android:name="com.chatapp.synchat.app.RefreshDatabaseService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="com.chatapp.android.app.FileDownloadService"
+            android:name="com.chatapp.synchat.app.FileDownloadService"
             android:enabled="true"
             android:exported="true" />
 
@@ -755,7 +761,7 @@
             android:name="io.fabric.ApiKey"
             android:value="2676c3ae182051dc3971f78f8c5ec16c42c4165c" />
         <receiver
-            android:name="com.chatapp.android.app.Receiver.WakeReceiver"
+            android:name="com.chatapp.synchat.app.Receiver.WakeReceiver"
             android:enabled="true"
             android:exported="true"
             android:launchMode="singleTask"

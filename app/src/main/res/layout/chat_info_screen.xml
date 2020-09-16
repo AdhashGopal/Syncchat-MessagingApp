@@ -25,7 +25,7 @@
                 android:padding="5dp"
                 android:src="@mipmap/arrow_left" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/messageinfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
                 android:padding="5dp"
                 android:paddingBottom="1dp">
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/txtMsg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
                     android:scaleType="centerCrop"
                     android:visibility="gone" />
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/imagecaption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
                     android:layout_height="wrap_content"
                     android:visibility="gone">
 
-                    <com.chatapp.android.app.widget.CircleImageView
+                    <com.chatapp.synchat.app.widget.CircleImageView
                         android:id="@+id/contactImage"
                         android:layout_width="54dp"
                         android:layout_height="54dp"
@@ -113,7 +113,7 @@
                         android:padding="3dp"
                         android:src="@mipmap/contact_off" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/contactName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                                 android:paddingTop="5dp"
                                 android:src="@drawable/headsetsent" />
 
-                            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                                 android:id="@+id/duration"
                                 android:layout_width="wrap_content"
                                 android:layout_height="20dp"
@@ -258,7 +258,7 @@
                         android:src="@drawable/ic_play_circle_outline_white_48dp"
                         android:visibility="visible" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/videocaption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -281,7 +281,7 @@
                         android:layout_height="25dp"
                         android:src="@drawable/file_sent" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/docname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -309,7 +309,7 @@
                         android:scaleType="fitXY" />
                 </RelativeLayout>
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/ts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -342,7 +342,7 @@
                 android:layout_height="20dp"
                 android:src="@drawable/ic_blue_tick" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/readbylbl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -353,7 +353,7 @@
                 android:textColor="#242424"
                 android:textSize="14sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/readby_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -370,7 +370,7 @@
                 android:layout_below="@+id/readby_data"
                 android:src="@drawable/ic_white_tick" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/deliveredtolbl"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -382,7 +382,7 @@
                 android:textColor="#242424"
                 android:textSize="14sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/deliveredto_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -425,7 +425,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <com.chatapp.android.app.widget.WhatsappBoldTextView
+                        <com.chatapp.synchat.app.widget.WhatsappBoldTextView
                             android:id="@+id/readbylbl_group"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -462,7 +462,7 @@
                             android:layout_marginTop="@dimen/margin_3"
                             android:layout_marginRight="@dimen/margin_5" />
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/tvReadPending"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -495,7 +495,7 @@
                         android:orientation="vertical">
 
 
-                        <com.chatapp.android.app.widget.WhatsappBoldTextView
+                        <com.chatapp.synchat.app.widget.WhatsappBoldTextView
                             android:id="@+id/tvDeliverLbl"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -534,7 +534,7 @@
                             android:layout_marginTop="@dimen/margin_3"
                             android:layout_marginRight="@dimen/margin_5" />
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/tvDeliverPending"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

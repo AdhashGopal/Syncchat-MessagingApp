@@ -14,13 +14,13 @@
         android:layout_height="wrap_content"
         >
 
-        <com.chatapp.android.app.widget.CircleImageView
+        <com.chatapp.synchat.app.widget.CircleImageView
             android:id="@+id/userprofile"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@mipmap/chat_attachment_profile_default_image_frame" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/fromname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
             android:layout_toRightOf="@+id/fromname"
             android:src="@drawable/audio_play" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/toname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
             android:textSize="14sp"
             />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/datelbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/imagelayout">
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/lblMsgFrom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                 android:progressDrawable="@drawable/seekbar_progress"
                 android:thumb="@drawable/whiteseekbarthum" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/ts"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
@@ -240,7 +240,7 @@
                     android:paddingTop="5dp"
                     android:src="@drawable/headsetsent" />
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/duration"
                     android:layout_width="wrap_content"
                     android:layout_height="20dp"

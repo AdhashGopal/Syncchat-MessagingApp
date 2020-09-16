@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         >
 
-        <com.chatapp.android.app.widget.CircleImageView
+        <com.chatapp.synchat.app.widget.CircleImageView
             android:id="@+id/userprofile"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@mipmap/chat_attachment_profile_default_image_frame" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/fromname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             android:layout_toRightOf="@+id/fromname"
             android:src="@drawable/audio_play" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/toname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -53,7 +53,7 @@
             android:textSize="14sp"
             />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/datelbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/lblMsgFrom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                 />
         </RelativeLayout>
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -175,7 +175,7 @@
                 android:progressDrawable="@drawable/seekbar_progress_re"
                 android:thumb="@drawable/blueseekbarthum" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/recodingduration"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -186,7 +186,7 @@
                 android:textColor="@color/lblFromName"
                 android:textSize="11sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/time_ts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -212,7 +212,7 @@
 
                 />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -232,7 +232,7 @@
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/rlPlayCtrl">
 
-            <com.chatapp.android.app.widget.CircleImageView
+            <com.chatapp.synchat.app.widget.CircleImageView
                 android:id="@+id/record_image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
@@ -270,7 +270,7 @@
                         android:paddingTop="5dp"
                         android:src="@drawable/headset" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/duration"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/enter_pin_gradient"
-    tools:context="com.chatapp.android.app.PinEnterActivity">
+    tools:context="com.chatapp.synchat.app.PinEnterActivity">
 
     <ImageView
         android:layout_width="32dp"

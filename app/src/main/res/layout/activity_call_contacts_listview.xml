@@ -44,7 +44,7 @@
             android:paddingBottom="10dp"
             android:visibility="gone" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/activity_call_contacts_listview_headerName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
             android:layout_toLeftOf="@+id/activity_call_contacts_listview_searchIMG"
             />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/activity_call_contacts_listview_contactCount"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -92,7 +92,7 @@
             android:layout_marginRight="25dp"
             android:layout_alignParentRight="true" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
             android:id="@+id/activity_call_contacts_listview_etSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

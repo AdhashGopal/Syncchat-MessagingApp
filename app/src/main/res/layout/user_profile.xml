@@ -25,7 +25,7 @@
                 android:padding="5dp"
                 android:src="@mipmap/arrow_left" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/notification_actionbar_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -53,7 +53,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp">
 
-                    <com.chatapp.android.app.widget.CircleImageView
+                    <com.chatapp.synchat.app.widget.CircleImageView
                         android:id="@+id/userprofile1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent" android:src="@mipmap/chat_attachment_profile_default_image_frame"
@@ -185,7 +185,7 @@
                         <!--android:textSize="15sp"-->
                         <!--/>-->
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/username2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -203,7 +203,7 @@
                             android:layout_marginTop="10dp"
                             android:background="#f7f7f7"/>
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/user_email"
                             android:layout_below="@+id/view1"
                             android:layout_width="wrap_content"
@@ -224,7 +224,7 @@
 
 
 
-                        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                             android:id="@+id/statustextview2"
                             android:drawableRight="@drawable/edit"
                             android:layout_width="match_parent"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#b52838</color>
-    <color name="colorPrimaryDark">#b52838</color>
-    <color name="colorAccent">#b52838</color>
+    <color name="colorPrimary">#DE1615</color>
+    <color name="colorPrimaryDark">#DE1615</color>
+    <color name="colorAccent">#DE1615</color>
     <color name="chatscreen">#f0f0f0</color>
     <color name="loader_screen_text">#2E394B</color>
     <color name="unread_txt_color">#B3B3B3</color>
@@ -11,9 +11,9 @@
     <color name="whatsapp_green_background">#DCF8C6</color>
     <color name="reply_titles_color">#4e4e4e</color>
 
-    <color name="colorSecondary">#76229f</color>
+    <color name="colorSecondary">#DE1615</color>
     <!--*83afaa  #054d44* 95e99f-->
-    <color name="tabFourColor">#372577</color>
+    <color name="tabFourColor">#DE1615</color>
     <color name="maxTextSize">#D5D5D5</color>
     <color name="ripple_dark_grey">#BDBDBD</color>
     <color name="ripple_light_grey">#EEEEEE</color>
@@ -26,7 +26,7 @@
     <color name="transparent">@android:color/transparent</color>
     <color name="appthemecolour">#372577</color>
     <color name="dividerLine">#F2F2F2</color>
-    <color name="Statusbar">#372577</color>
+    <color name="Statusbar">#DE1615</color>
     <color name="chatlist_messagecolor">#808080</color>
     <color name="common_action_bar_splitter">#d2d2d2</color>
     <color name="numberpic_divdercolor">#E4E4E4</color>

@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
       >
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0 Friends"
@@ -47,7 +47,7 @@
         />
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/contact_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

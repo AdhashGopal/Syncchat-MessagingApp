@@ -15,7 +15,7 @@
         android:paddingBottom="10dp"
         android:src="@drawable/send_chat" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +31,7 @@
         android:textColor="#242424"
         android:textSize="13sp" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/dataType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

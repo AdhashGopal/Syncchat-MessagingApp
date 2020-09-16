@@ -19,7 +19,7 @@
             android:layout_centerInParent="true"
             android:src="@mipmap/arrow_left" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/About_contactus_actionbar_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/ic_white_tick_single" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/next_About_contactus"
             android:layout_width="70dp"
             android:layout_height="match_parent"
@@ -72,7 +72,7 @@
         android:layout_below="@+id/About_contactus_r1"
         android:background="#ffffff">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
             android:id="@+id/About_contactus_editText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             android:layout_marginRight="10dp"
             android:background="@color/colorPrimary" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
             android:id="@+id/About_contactus_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -127,7 +127,7 @@
         android:layout_marginBottom="20dp"
         android:background="#ffffff">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/About_contactus_screenshot_text"
             android:layout_width="match_parent"
             android:layout_height="50dp"

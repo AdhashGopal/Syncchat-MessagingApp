@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:background="@drawable/custom_dialog_border">
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
         android:id="@+id/text"
         android:layout_width="fill_parent"
@@ -20,7 +20,7 @@
         android:textStyle="bold" />
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
         android:id="@+id/cancelsize"
         android:layout_width="fill_parent"

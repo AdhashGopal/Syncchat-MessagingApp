@@ -34,6 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </androidx.appcompat.widget.Toolbar>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/disable_touch_toolbar"
             android:layout_width="match_parent"
@@ -102,8 +103,10 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorPrimary"
             android:padding="10dp"
-            android:src="@mipmap/ic_chat_send" />
+            android:src="@mipmap/ic_chat_send"
+            android:tint="@color/colorPrimary" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -122,7 +125,7 @@
             android:visibility="gone"
             android:weightSum="100">
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/tvBlock"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -140,7 +143,7 @@
                 android:layout_marginBottom="5dp"
                 android:background="@color/numberpic_divdercolor" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/tvAddToContact"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -179,10 +182,10 @@
                         android:layout_alignParentTop="true"
                         android:layout_centerVertical="true"
                         android:layout_marginTop="10dp"
-                        android:visibility="visible"/>
+                        android:visibility="visible" />
                 </FrameLayout>
 
-                <com.chatapp.android.app.widget.CustomRecyclerView
+                <com.chatapp.synchat.app.widget.CustomRecyclerView
                     android:id="@+id/list_view_messages"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -215,9 +218,10 @@
             android:layout_margin="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/ic_down_arrow"
+            android:tint="@color/colorPrimary"
             android:visibility="gone" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
             android:id="@+id/unreadcount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -480,13 +484,13 @@
                 android:padding="5dp"
                 android:visibility="gone">
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                     android:id="@+id/notingroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
                     android:layout_centerHorizontal="true"
-                    android:text="@string/participant_not" />
+                    android:text="@string/participant_not"
+                    android:visibility="gone" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -543,9 +547,9 @@
                         android:layout_centerVertical="true"
                         android:layout_margin="5dp"
                         android:background="@null"
-                        android:maxLength="65000"
                         android:hint="@string/type_message"
                         android:inputType="textCapSentences|textMultiLine|textAutoCorrect"
+                        android:maxLength="65000"
                         android:maxLines="4"
                         android:privateImeOptions="disableSticker=true;disableGifKeyboard=true"
                         android:scrollbars="vertical"
@@ -573,7 +577,7 @@
                         android:src="@drawable/audio_play"
                         android:visibility="gone" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
                         android:id="@+id/slidetocencel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -652,6 +656,7 @@
                 android:layout_centerVertical="true"
                 android:background="@drawable/send"
                 android:scaleType="center"
+                android:tint="@color/colorPrimary"
                 android:visibility="gone" />
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -660,6 +665,7 @@
                 android:layout_height="42dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/record"
+                android:tint="@color/colorPrimary"
                 android:visibility="visible" />
 
 
@@ -841,7 +847,7 @@
             android:padding="10dp"
             android:visibility="gone">
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/headlist"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -856,7 +862,7 @@
                 android:src="@drawable/ic_thumbs_down" />
 
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/report_spam"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -880,7 +886,7 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/ic_block" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/block_contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -907,7 +913,7 @@
                 android:src="@drawable/add_contact" />
 
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/add_contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -945,7 +951,7 @@
             android:padding="5dp"
             android:visibility="gone">
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/tvShareLbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -963,7 +969,7 @@
                 android:padding="5dp"
                 android:src="@drawable/gmail" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/tvGmailLbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -983,7 +989,7 @@
                 android:padding="5dp"
                 android:src="@drawable/letter" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                 android:id="@+id/tvEmailLbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

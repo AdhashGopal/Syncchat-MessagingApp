@@ -56,6 +56,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_margin="15dp"
+            android:backgroundTint="@color/colorPrimary"
             android:background="@drawable/circle_color_primary"
             android:src="@mipmap/chat_contact_icon_off"
             />

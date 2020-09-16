@@ -17,7 +17,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:layout_toRightOf="@+id/backnavigate"
             android:id="@+id/text_action_title"
             android:layout_width="250dp"

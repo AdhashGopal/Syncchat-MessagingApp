@@ -30,7 +30,7 @@
                     android:src="@drawable/back_button_actionbar"
                     android:visibility="gone" />
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -78,7 +78,7 @@
 
                     >
 
-                    <com.chatapp.android.app.widget.CircleImageView
+                    <com.chatapp.synchat.app.widget.CircleImageView
                         android:id="@+id/selectImage_profileInfo"
                         android:layout_width="159dp"
                         android:layout_height="158dp"

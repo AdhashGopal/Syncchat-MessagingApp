@@ -26,7 +26,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp">
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
                     android:id="@+id/media"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -70,7 +70,7 @@
             android:background="@color/white"
             android:padding="4dp">
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
                 android:id="@+id/mute"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -170,7 +170,7 @@
             android:paddingTop="5dp"
             android:paddingBottom="5dp">
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
                 android:id="@+id/head"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -180,7 +180,7 @@
 
                 android:textSize="@dimen/medium_txt_size2" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/tvStatus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -207,7 +207,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                     android:id="@+id/tvPhone"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -281,7 +281,7 @@
             android:layout_marginTop="@dimen/margin_13"
             android:background="@color/white">
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
                 android:id="@+id/tvCommonGroup"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -296,7 +296,7 @@
                 android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/medium_txt_size2" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
                 android:id="@+id/tvCommonGroup_Count"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -328,7 +328,7 @@
             />
 
 
-        <com.chatapp.android.app.widget.WhatsappBoldTextView
+        <com.chatapp.synchat.app.widget.WhatsappBoldTextView
             android:id="@+id/tv_start_secret_chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -361,7 +361,7 @@
                 android:tint="@color/red" />
 
 
-            <com.chatapp.android.app.widget.WhatsappBoldTextView
+            <com.chatapp.synchat.app.widget.WhatsappBoldTextView
                 android:id="@+id/tv_block"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

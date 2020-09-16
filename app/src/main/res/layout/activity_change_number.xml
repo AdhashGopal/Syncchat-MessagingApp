@@ -25,7 +25,7 @@
                 android:layout_centerInParent="true"
                 android:src="@mipmap/arrow_left" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/changenumber_actionbar_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -59,7 +59,7 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_white_tick_single" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/next_changenumber"
                 android:layout_width="70dp"
                 android:layout_height="match_parent"
@@ -84,7 +84,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/ic_change_number" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/changenumber_1sttext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
                 android:textColor="#a1a2a2"
                 android:textSize="13sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/changenumber_2ndtext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -110,7 +110,7 @@
                 android:textColor="#a1a2a2"
                 android:textSize="13sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/changenumber_3rdtext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

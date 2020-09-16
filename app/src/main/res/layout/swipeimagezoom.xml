@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/imagezoom">
 
-        <com.chatapp.android.app.widget.ZoomImageView
+        <com.chatapp.synchat.app.widget.ZoomImageView
             android:id="@+id/imagezoom_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

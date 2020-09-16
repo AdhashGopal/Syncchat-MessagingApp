@@ -17,21 +17,21 @@
     <ContactsDataKind
         android:detailSocialSummary="true"
         android:icon="@drawable/notificationlogo"
-        android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.android.message"
+        android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.synchat.message"
         android:summaryColumn="data2"
         android:detailColumn="data3"
         />
     <ContactsDataKind
         android:detailSocialSummary="true"
         android:icon="@drawable/notificationlogo"
-        android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.android.voice_call"
+        android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.synchat.voice_call"
         android:summaryColumn="data5"
         android:detailColumn="data6"
         />
     <ContactsDataKind
         android:detailSocialSummary="true"
         android:icon="@drawable/notificationlogo"
-        android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.android.video_call"
+        android:mimeType="vnd.android.cursor.item/vnd.com.chatapp.synchat.video_call"
         android:summaryColumn="data8"
         android:detailColumn="data9"
         />

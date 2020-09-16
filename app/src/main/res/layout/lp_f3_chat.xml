@@ -22,7 +22,7 @@
         android:layout_below="@+id/header_text"
         android:background="?android:selectableItemBackground">
 
-        <com.chatapp.android.app.widget.CircleImageView
+        <com.chatapp.synchat.app.widget.CircleImageView
             android:id="@+id/storeImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
@@ -69,7 +69,7 @@
 
                 />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/storeName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -89,7 +89,7 @@
                 android:textStyle="bold" />
 
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/newMessageDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1.4">
 
-                            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                                 android:id="@+id/newMessage"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -211,7 +211,7 @@
                 </RelativeLayout>
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                     android:id="@+id/tvTyping"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

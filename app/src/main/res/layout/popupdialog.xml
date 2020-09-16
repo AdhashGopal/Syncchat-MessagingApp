@@ -5,7 +5,7 @@
     android:background="@drawable/custom_dialog_border"
     android:gravity="center">
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
         android:id="@+id/text"
         android:layout_width="fill_parent"
@@ -17,7 +17,7 @@
         android:textStyle="bold" />
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
         android:id="@+id/text4"
         android:layout_width="fill_parent"

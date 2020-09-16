@@ -25,7 +25,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/splashscreen" />
+                    android:src="@drawable/launch_splash" />
 
                 <TextView
                     android:layout_width="70dp"
@@ -129,7 +129,7 @@
                 <!--android:background="@color/scrennname_txtcolor" />-->
                 <!--</RelativeLayout>-->
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiEditText
                     android:id="@+id/phoneNumber"
                     android:layout_width="0dp"
                     android:layout_height="70dp"
@@ -216,7 +216,7 @@
                 android:layout_below="@+id/v2"/>
 
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/tvTermsAndConditions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

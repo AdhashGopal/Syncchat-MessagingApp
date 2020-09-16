@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.chatapp.android.app.MediaFragment">
+    tools:context="com.chatapp.synchat.app.MediaFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMedia"

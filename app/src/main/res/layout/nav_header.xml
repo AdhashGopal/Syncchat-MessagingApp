@@ -12,7 +12,7 @@
         android:background="@color/colorPrimary"
         />
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/ivProfilePic"
         android:layout_width="130dp"
         android:layout_height="130dp"
@@ -20,7 +20,7 @@
         android:layout_centerInParent="true"
         />
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tvName"

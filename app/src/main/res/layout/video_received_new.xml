@@ -54,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/lblMsgFrom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                         android:src="@drawable/down"
                         android:visibility="visible" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                         android:id="@+id/imagesize"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                     android:layout_alignParentBottom="true"
                     android:visibility="gone">
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/ts_abovecaption"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
                         android:layout_marginStart="5dp"
                         android:background="@drawable/video_camera" />
 
-                    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                         android:id="@+id/duration_above"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -207,7 +207,7 @@
 
             </RelativeLayout>
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/captiontext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -229,7 +229,7 @@
                 android:layout_below="@+id/captiontext"
                 android:visibility="gone">
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                     android:id="@+id/ts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -263,7 +263,7 @@
                     android:layout_marginStart="5dp"
                     android:background="@drawable/video_camera" />
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
                     android:id="@+id/duration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

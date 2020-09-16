@@ -33,7 +33,7 @@
             android:layout_toRightOf="@+id/linkimage"
             android:background="@drawable/link_descrip">
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/linkname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         </RelativeLayout>
     </RelativeLayout>
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/tvViewMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

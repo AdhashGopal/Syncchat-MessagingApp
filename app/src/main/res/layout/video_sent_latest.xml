@@ -141,7 +141,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/vidshow"
             android:layout_marginBottom="@dimen/margin_2"
             android:visibility="visible">
-            <com.chatapp.android.app.widget.CircleImageView
+            <com.chatapp.synchat.app.widget.CircleImageView
                 android:id="@+id/pause_resume_icon_video"
                 android:layout_width="@dimen/margin_35"
                 android:layout_height="@dimen/margin_35"
@@ -248,7 +248,7 @@
 
 
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/captiontext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

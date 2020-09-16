@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="10dp">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/texthead"
             android:layout_width="match_parent"
             android:layout_height="30dp"
@@ -115,7 +115,7 @@
         android:weightSum="2">
 
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
             android:id="@+id/cancel"
             android:layout_width="0dp"
@@ -128,7 +128,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="11sp" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/ok"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -6,7 +6,7 @@
     android:padding="10dp"
     >
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/text"
         android:layout_width="fill_parent"
         android:layout_height="30dp"
@@ -57,7 +57,7 @@
             android:textSize="13sp" />
     </RadioGroup>
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
 
         android:id="@+id/cancel_chatbackup"
         android:layout_width="wrap_content"

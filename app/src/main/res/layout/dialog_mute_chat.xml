@@ -6,7 +6,7 @@
     android:background="@drawable/custom_dialog_border"
     android:padding="8dp"
     >
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -97,7 +97,7 @@
     android:weightSum="2"
     android:layout_below="@+id/check1"
     >
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/cancel"
         android:layout_width="0dp"
         android:layout_weight="1"
@@ -110,7 +110,7 @@
         android:textColor="#1EC4FA"
         android:textSize="11sp" />
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/ok"
         android:layout_width="0dp"
         android:layout_weight="1"

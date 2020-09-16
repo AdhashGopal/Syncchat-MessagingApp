@@ -34,7 +34,7 @@
         android:layout_toRightOf="@+id/backButton">
 
 
-        <com.chatapp.android.app.widget.CircleImageView
+        <com.chatapp.synchat.app.widget.CircleImageView
             android:id="@+id/profileImageChatScreen"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -49,7 +49,7 @@
             android:layout_toRightOf="@+id/profileImageChatScreen"
             android:orientation="vertical">
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/usernamechatsceen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
                 android:textStyle="bold"
                 android:visibility="visible" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/statuschatsceen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/tvTyping"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

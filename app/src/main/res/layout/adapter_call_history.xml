@@ -6,7 +6,7 @@
     android:gravity="center"
     android:padding="5dp">
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/ivProfilePic"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -23,7 +23,7 @@
         android:layout_toRightOf="@id/ivProfilePic"
         android:orientation="vertical">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextViewLight
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextViewLight
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/ic_in_call_missed" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/tvTS"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

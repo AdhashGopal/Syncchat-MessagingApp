@@ -6,7 +6,7 @@
     android:background="@android:color/white"
     >
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/ivGroupDp"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -25,7 +25,7 @@
         android:layout_marginStart="10dp"
         android:layout_centerVertical="true"
         >
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/tvGroupName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
             android:textSize="14sp"
             android:text="@string/Group_Name_here"
         />
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/tvGroupContacts"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

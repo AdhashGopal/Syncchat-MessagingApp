@@ -86,7 +86,7 @@
             android:layout_alignParentBottom="true"
             />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/ts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

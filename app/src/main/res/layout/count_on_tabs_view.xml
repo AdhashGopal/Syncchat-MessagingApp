@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     >
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:gravity="center"
         android:textSize="@dimen/txt_size_small4"
     />
-    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
         android:id="@+id/tvCount"
         android:layout_width="20dp"
         android:layout_height="20dp"

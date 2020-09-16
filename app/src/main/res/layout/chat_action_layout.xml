@@ -28,7 +28,7 @@
         />
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
         android:id="@+id/etSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

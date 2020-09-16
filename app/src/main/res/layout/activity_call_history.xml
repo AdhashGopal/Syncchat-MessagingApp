@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+    <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
         android:id="@+id/btnCall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
             android:id="@+id/tvNoCalls"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

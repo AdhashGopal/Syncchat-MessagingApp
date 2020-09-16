@@ -10,7 +10,7 @@
         android:layout_height="64dp"
         android:progressDrawable="@drawable/color_primary_progress_dialog"
     />
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Email verification pending!"

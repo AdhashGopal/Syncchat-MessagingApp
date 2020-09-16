@@ -37,7 +37,7 @@
 -dontwarn org.codehaus.**
 -dontwarn rx.internal.**
 
--keep class com.chatapp.android.core.model.**{*;}
+-keep class com.chatapp.synchat.core.model.**{*;}
 #payload
 -keep class com.achat.lib.model.**{*;}
 

@@ -113,7 +113,7 @@
                         android:layout_marginRight="7dp"
                         android:src="@drawable/icon_down_arrow_expand"/>
 
-                    <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+                    <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                         android:id="@+id/selectCountry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -135,7 +135,7 @@
                         android:background="@color/scrennname_txtcolor" />
                 </RelativeLayout>
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiEditText
                     android:id="@+id/phoneNumber"
                     android:layout_width="0dp"
                     android:layout_height="70dp"
@@ -177,7 +177,7 @@
                 android:layout_marginRight="20dp"
                 android:background="#E8E8E8" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/send_message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -190,7 +190,7 @@
                 android:textColor="#666666"
                 android:textSize="12sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/charge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
                 />
 
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/tvTermsAndConditions"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

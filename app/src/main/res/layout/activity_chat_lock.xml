@@ -19,7 +19,7 @@
             android:layout_centerInParent="true"
             android:src="@mipmap/arrow_left" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/headingChatlock"
             android:layout_width="100dp"
             android:layout_height="match_parent"
@@ -36,7 +36,7 @@
     </RelativeLayout>
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
         android:layout_marginTop="7dp"
         android:padding="10dp">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/newPasswordLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
             android:id="@+id/newPassword_Et"
             android:layout_width="fill_parent"
             android:layout_height="35dp"
@@ -105,7 +105,7 @@
         android:layout_marginLeft="3dp"
         android:layout_marginTop="7dp">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/confirmPasswordLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
             android:id="@+id/confirmPassword_Et"
             android:layout_width="fill_parent"
             android:layout_height="35dp"
@@ -144,7 +144,7 @@
     </RelativeLayout>
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegButton
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegButton
         android:id="@+id/button_setPwd"
         android:layout_width="match_parent"
         android:layout_height="40dp"

@@ -22,7 +22,7 @@
             android:padding="10dp"
             android:src="@mipmap/arrow_left" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/text_action_title"
             android:layout_width="250dp"
             android:layout_height="match_parent"
@@ -55,7 +55,7 @@
                 android:padding="10dp">
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/emailLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                     android:src="@drawable/send_mail" />
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiEditText
                     android:id="@+id/email_Et"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -124,7 +124,7 @@
                 android:padding="10dp">
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/recoveryemailLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -144,7 +144,7 @@
                     android:src="@drawable/send_mail" />
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiEditText
                     android:id="@+id/recoveryMail_Et"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
                 android:padding="10dp">
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+                <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                     android:id="@+id/recoveryphoneLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -213,7 +213,7 @@
                     android:src="@drawable/recovery_call" />
 
 
-                <com.chatapp.android.app.widget.AvnNextLTProDemiEditText
+                <com.chatapp.synchat.app.widget.AvnNextLTProDemiEditText
                     android:id="@+id/recoveryphone_Et"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -270,7 +270,7 @@
                 android:textColor="#242424"
                 android:textSize="13sp" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiButton
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiButton
                 android:id="@+id/button_ok"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"

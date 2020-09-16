@@ -17,7 +17,7 @@
             android:layout_centerInParent="true"
             android:src="@mipmap/arrow_left" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/headingarchive"
             android:layout_width="250dp"
             android:layout_height="match_parent"

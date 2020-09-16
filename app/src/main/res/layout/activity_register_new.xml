@@ -23,7 +23,7 @@
         android:layout_below="@+id/img_back"
         android:layout_marginLeft="@dimen/margin_10"
         android:padding="10dp"
-        android:text="@string/non_organisation"
+        android:text="@string/register"
         android:textColor="@color/title"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -175,14 +175,13 @@
                 android:layout_marginTop="@dimen/margin_8"
                 app:hintTextAppearance="@style/HintText">
 
-                <com.google.android.material.textfield.TextInputEditText
+                <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
                     android:id="@+id/edt_ref_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/reference_emailID"
+                    android:hint="@string/hint_pwd"
                     android:imeOptions="actionDone"
-                    android:inputType="textEmailAddress"
-                    android:maxLength="120"
+                    android:inputType="textPassword"
                     android:singleLine="true"
                     android:textColor="@color/title"
                     android:textSize="@dimen/txt_size_15" />
@@ -191,54 +190,54 @@
         </LinearLayout>
     </ScrollView>
 
-    <RelativeLayout
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/scroll_fields"
-        android:id="@+id/bottom_layout"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/ic_login_shape"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_marginTop="@dimen/margin_10"
-            android:id="@+id/txt_organisation"
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/scroll_fields"
+            android:id="@+id/bottom_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:layout_centerInParent="true"
-            android:text="@string/already_loged_in"
-            android:textColor="@color/white"
-            android:textSize="@dimen/txt_size_small4" />
-
-      <!--  <com.andexert.library.RippleView
-            android:gravity="center"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/txt_organisation"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_10"
-            android:visibility="visible">-->
+            android:layout_height="200dp"
+            android:background="@drawable/ic_login_shape"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txt_nonorganisation"
+                android:layout_marginTop="@dimen/margin_10"
+                android:id="@+id/txt_organisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:text="@string/already_loged_in"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_small4" />
+
+          <!--  <com.andexert.library.RippleView
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txt_organisation"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:padding="@dimen/margin_5"
-                android:clickable="true"
-                android:layout_below="@+id/txt_organisation"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
                 android:layout_marginTop="@dimen/margin_10"
-                android:text="@string/sign_up"
-                android:textColor="@color/white"
-                android:background="@drawable/login_background_new"
-                android:textSize="@dimen/medium_txt_size2"
-                android:focusable="true" />
-        <!--</com.andexert.library.RippleView>-->
+                android:visibility="visible">-->
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/txt_nonorganisation"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_5"
+                    android:clickable="true"
+                    android:layout_below="@+id/txt_organisation"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_background_new"
+                    android:textSize="@dimen/medium_txt_size2"
+                    android:focusable="true" />
+            <!--</com.andexert.library.RippleView>-->
+
+        </RelativeLayout>
 
 
 </RelativeLayout>

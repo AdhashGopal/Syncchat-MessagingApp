@@ -186,7 +186,7 @@
 
         </RelativeLayout>
 
-        <com.chatapp.android.app.widget.CircleImageView
+        <com.chatapp.synchat.app.widget.CircleImageView
             android:id="@+id/pause_resume_icon"
             android:layout_width="@dimen/margin_35"
             android:layout_height="@dimen/margin_35"
@@ -247,7 +247,7 @@
         app:layout_constraintRight_toRightOf="@+id/relative_layout_message"
         app:layout_constraintTop_toBottomOf="@+id/relativelayout_image">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/captiontext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

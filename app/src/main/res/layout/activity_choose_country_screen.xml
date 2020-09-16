@@ -13,7 +13,7 @@
         android:background="@color/tabFourColor"
         app:theme="@style/ToolbarColoredBackArrow" >
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Selectcountry"
@@ -24,7 +24,7 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
         android:id="@+id/country_picker_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

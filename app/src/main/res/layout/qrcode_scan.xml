@@ -5,7 +5,7 @@
     android:background="@color/transparent"
     android:orientation="vertical">
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/texthead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

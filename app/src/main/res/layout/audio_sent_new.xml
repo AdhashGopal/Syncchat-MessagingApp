@@ -198,7 +198,7 @@
         app:layout_constraintTop_toTopOf="@+id/iv_play_icon" />
 
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/record_image"
         android:layout_width="45dp"
         android:layout_height="45dp"

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:padding="5dp">
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/layout_inflater_contacts_items_userPhoto_contacts"
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -26,7 +26,7 @@
         android:layout_toRightOf="@+id/layout_inflater_contacts_items_userPhoto_contacts"
         android:paddingLeft="10dp">
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/layout_inflater_contacts_items_uNameTXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
             android:textColor="#3f3f3f"
             />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/layout_inflater_contacts_items_devstatusTXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

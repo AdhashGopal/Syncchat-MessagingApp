@@ -22,7 +22,7 @@
             android:paddingBottom="10dp"
             />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/text_actionbar_1"
             android:layout_width="250dp"
             android:layout_height="match_parent"
@@ -54,7 +54,7 @@
             android:paddingTop="10dp"
             android:src="@drawable/personprofile" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/contact_save_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
             android:text=""
             android:textStyle="bold" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/organisation_details"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

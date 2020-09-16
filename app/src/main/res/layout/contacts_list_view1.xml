@@ -9,7 +9,7 @@
     android:paddingRight="10dp"
     android:paddingBottom="5dp">
 
-    <com.chatapp.android.app.widget.CircleImageView
+    <com.chatapp.synchat.app.widget.CircleImageView
         android:id="@+id/userPhoto_contacts"
         android:layout_width="45dp"
         android:layout_height="45dp"
@@ -78,7 +78,7 @@
 
         android:paddingLeft="10dp">
 
-        <com.chatapp.android.app.widget.CustomDemiTextView
+        <com.chatapp.synchat.app.widget.CustomDemiTextView
 
             android:id="@+id/userName_contacts"
 
@@ -96,7 +96,7 @@
 
             />
 
-        <com.chatapp.android.app.widget.CustomRegTextView
+        <com.chatapp.synchat.app.widget.CustomRegTextView
 
             android:id="@+id/status_contacts"
 
@@ -125,7 +125,7 @@
 
     </RelativeLayout>
 
-    <com.chatapp.android.app.widget.CustomRegTextView
+    <com.chatapp.synchat.app.widget.CustomRegTextView
 
         android:id="@+id/mobileText"
 

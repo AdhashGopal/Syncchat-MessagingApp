@@ -42,7 +42,7 @@
                 android:src="@mipmap/arrow_left"
                 android:visibility="gone" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
                 android:id="@+id/selectcontact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
                 android:id="@+id/selectcontactmember"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -108,7 +108,7 @@
                 android:background="@mipmap/chats_search_icon_off"
                 android:visibility="visible" />
 
-            <com.chatapp.android.app.widget.AvnNextLTProRegEditText
+            <com.chatapp.synchat.app.widget.AvnNextLTProRegEditText
                 android:id="@+id/etSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -167,7 +167,7 @@
         />
 
 
-    <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+    <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
         android:id="@+id/contact_empty"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

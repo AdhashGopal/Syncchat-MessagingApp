@@ -45,7 +45,7 @@
         android:layout_marginEnd="5dp"
         android:layout_marginStart="10dp">
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextView
             android:id="@+id/lblMsgFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,7 +68,7 @@
 
 
 
-        <com.chatapp.android.app.widget.AvnNextLTProRegTextViewLight
+        <com.chatapp.synchat.app.widget.AvnNextLTProRegTextViewLight
             android:id="@+id/ts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -19,7 +19,7 @@
             android:padding="5dp"
             android:src="@mipmap/arrow_left" />
 
-        <com.chatapp.android.app.widget.AvnNextLTProDemiTextView
+        <com.chatapp.synchat.app.widget.AvnNextLTProDemiTextView
             android:id="@+id/networkusage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
