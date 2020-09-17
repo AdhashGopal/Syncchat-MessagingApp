@@ -882,7 +882,7 @@ public class MessageService extends Service {
                     String channel = "";
 
                     builder = new NotificationCompat.Builder(getApplicationContext(), "1")
-                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_initial_loader))
+                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_app_launcher))
                             .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.drawable.synchat_logo : R.mipmap.ic_app_launcher)
                             .setSound(notificationSound)
                             .setLights(Color.RED, 3000, 3000)
@@ -899,7 +899,7 @@ public class MessageService extends Service {
                 } else {
                     builder = new NotificationCompat.Builder(this)
                             .setChannelId("1")
-                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_initial_loader))
+                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_app_launcher))
                             // Set Ticker Message
                             .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.drawable.synchat_logo : R.mipmap.ic_app_launcher)
                             .setAutoCancel(true)
