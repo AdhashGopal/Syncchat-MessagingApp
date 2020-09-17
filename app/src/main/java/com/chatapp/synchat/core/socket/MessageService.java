@@ -997,7 +997,7 @@ public class MessageService extends Service {
                     String channel = "";
 
                     builder = new NotificationCompat.Builder(getApplicationContext(), "1")
-                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_initial_loader))
+                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_app_launcher))
                             .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.drawable.synchat_logo : R.mipmap.ic_app_launcher)
                             .setSound(notificationSound)
                             .setLights(Color.RED, 3000, 3000)
@@ -1014,7 +1014,7 @@ public class MessageService extends Service {
                 } else {
                     builder = new NotificationCompat.Builder(this)
                             .setChannelId("1")
-                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_initial_loader))
+                            .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_app_launcher))
                             .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.drawable.synchat_logo : R.mipmap.ic_app_launcher)
                             // Set Ticker Message
                             .setAutoCancel(true)
@@ -4347,7 +4347,7 @@ public class MessageService extends Service {
                         channel="12";
                     }*/
                         builder = new NotificationCompat.Builder(getApplicationContext(), "1")
-                                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_initial_loader))
+                                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_app_launcher))
                                 .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.drawable.synchat_logo : R.mipmap.ic_app_launcher)
                                 .setSound(notificationSound)
                                 .setLights(Color.RED, 3000, 3000)
@@ -4364,8 +4364,8 @@ public class MessageService extends Service {
                     } else {
                         builder = new NotificationCompat.Builder(this)
                                 .setChannelId("1")
-                                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.logo_initial_loader))
-                                .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.drawable.synchat_logo : R.mipmap.ic_app_launcher)
+                                .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_app_launcher))
+                                .setSmallIcon(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O ? R.mipmap.ic_app_launcher : R.mipmap.ic_app_launcher)
                                 // Set Ticker Message
                                 .setTicker("Message from \t" + username)
                                 .setAutoCancel(true)
@@ -4426,7 +4426,7 @@ public class MessageService extends Service {
                     style.setBigContentTitle(this.getResources().getString(R.string.notification_title));
 
 
-                    remoteViews.setImageViewResource(R.id.imagenotileft, R.drawable.logo_initial_loader);
+                    remoteViews.setImageViewResource(R.id.imagenotileft, R.mipmap.ic_app_launcher);
                     remoteViews.setTextViewText(R.id.title, (this.getResources().getString(R.string.notification_title)));
 
                     String strMessageCount = " messages ";

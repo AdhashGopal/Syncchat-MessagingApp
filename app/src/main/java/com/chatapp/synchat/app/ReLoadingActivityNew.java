@@ -677,8 +677,8 @@ public class ReLoadingActivityNew extends Activity {
                             SessionManager sessionManager = SessionManager.getInstance(ReLoadingActivityNew.this);
                             sessionManager.setTwilioMode(twilioMode);
                             mSocketManager.disconnect();
-                            //String adfsReturnUrl = object.getString("adfs_return_url");
-                            //SessionManager.getInstance(ReLoadingActivityNew.this).setAdfsReturnUrl(adfsReturnUrl);
+                            String adfsReturnUrl = object.getString("adfs_return_url");
+                            SessionManager.getInstance(ReLoadingActivityNew.this).setAdfsReturnUrl(adfsReturnUrl);
                             String contactUsEmailId = object.getString("contactus_email_address");
                             System.out.println("===contactUsEmailId" + contactUsEmailId);
                             String chatLock = object.getString("chat_lock");
@@ -691,9 +691,9 @@ public class ReLoadingActivityNew extends Activity {
                             int rootAllowed = object.getInt("root_allowed");// 0 - not allowed, 1 - allowed
                             int androidVersion = object.getInt("android_version");
                             int autoUpdate = object.getInt("autoupdate");// in app installation,0- browser download, 1- in app download
-//                            final String autoDeleteTimeInSeconds = object.getString("auto_delete_sec"); // auto delete send or receive message after read
-//                            Log.d("autoDeleteTimeInSeconds", "autoDeleteTimeInSeconds --> " + autoDeleteTimeInSeconds);
-//                            sessionManager.setAutoDeleteTime(autoDeleteTimeInSeconds);
+                            final String autoDeleteTimeInSeconds = object.getString("auto_delete_sec"); // auto delete send or receive message after read
+                            Log.d("autoDeleteTimeInSeconds", "autoDeleteTimeInSeconds --> " + autoDeleteTimeInSeconds);
+                            sessionManager.setAutoDeleteTime(autoDeleteTimeInSeconds);
 
                             final String updateUrl = object.getString("update_url");
                             if (object.has("achat_payload_url")) {

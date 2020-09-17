@@ -263,7 +263,8 @@
                 android:padding="10dp"
                 android:text="@string/sign_up"
                 android:textColor="@color/white"
-                android:textSize="@dimen/medium_txt_size2" />
+                android:textSize="@dimen/medium_txt_size2"
+                tools:ignore="MissingClass" />
         </com.andexert.library.RippleView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

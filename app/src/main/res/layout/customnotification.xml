@@ -14,7 +14,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="5dp"
-            android:src="@drawable/chatapp_newlogo" />
+            android:src="@mipmap/ic_app_launcher" />
 
         <ImageView
             android:id="@+id/imagenotileftlogo"
@@ -23,7 +23,7 @@
             android:layout_below="@+id/title"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="15dp"
-            android:src="@drawable/logo_initial_loader" />
+            android:src="@mipmap/ic_app_launcher" />
 
         <TextView
             android:id="@+id/title"
